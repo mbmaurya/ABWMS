@@ -1,5 +1,5 @@
 import React from "react";
-import { footerbase, footerHr, footerSectionOne, footerSectionTwo } from "../../styles/styles";
+import { footerbase, footerHr, footerSectionOne, footerSectionTwo } from "../../styles";
 import footerImg from '../../assets/footer/footer-logo.svg';
 
 function Footer() {
