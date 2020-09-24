@@ -1,0 +1,20 @@
+/* Webfont: PFEncoreSansPro-Bold */
+
+
+@font-face {
+    font-family: 'pf_encore_sans_probold';
+    src: url('pfencoresanspro-bold.eot');
+    src: url('pfencoresanspro-bold.eot?#iefix') format('embedded-opentype'),
+         url('pfencoresanspro-bold.woff2') format('woff2'),
+         url('pfencoresanspro-bold.woff') format('woff'),
+         url('pfencoresanspro-bold.svg#pf_encore_sans_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}

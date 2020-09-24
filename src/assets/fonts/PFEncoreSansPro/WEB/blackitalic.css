@@ -1,0 +1,20 @@
+/* Webfont: PFEncoreSansPro-BlackItalic */
+
+
+@font-face {
+    font-family: 'pf_encore_sans_proBlkIt';
+    src: url('pfencoresanspro-blackitalic.eot');
+    src: url('pfencoresanspro-blackitalic.eot?#iefix') format('embedded-opentype'),
+         url('pfencoresanspro-blackitalic.woff2') format('woff2'),
+         url('pfencoresanspro-blackitalic.woff') format('woff'),
+         url('pfencoresanspro-blackitalic.svg#pf_encore_sans_proBlkIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}

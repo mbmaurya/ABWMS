@@ -1,0 +1,21 @@
+/* Webfont: PFHandbookPro-BoldItalic */
+
+
+
+@font-face {
+    font-family: 'pf_handbook_probold_italic';
+    src: url('pfhandbookpro-bolditalic.eot');
+    src: url('pfhandbookpro-bolditalic.eot?#iefix') format('embedded-opentype'),
+         url('pfhandbookpro-bolditalic.woff2') format('woff2'),
+         url('pfhandbookpro-bolditalic.woff') format('woff'),
+         url('pfhandbookpro-bolditalic.svg#pf_handbook_probold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}

@@ -1,0 +1,20 @@
+/* Webfont: PFEncoreSansPro-HairlineItalic */
+
+
+@font-face {
+    font-family: 'pf_encore_sans_prohairlineIt';
+    src: url('pfencoresanspro-hairlineitalic.eot');
+    src: url('pfencoresanspro-hairlineitalic.eot?#iefix') format('embedded-opentype'),
+         url('pfencoresanspro-hairlineitalic.woff2') format('woff2'),
+         url('pfencoresanspro-hairlineitalic.woff') format('woff'),
+         url('pfencoresanspro-hairlineitalic.svg#pf_encore_sans_prohairlineIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
