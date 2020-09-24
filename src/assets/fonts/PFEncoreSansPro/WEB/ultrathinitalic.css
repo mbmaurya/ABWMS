@@ -1,0 +1,21 @@
+/* Webfont: PFEncoreSansPro-UThinItalic */
+
+
+
+@font-face {
+    font-family: 'pf_encore_sans_proultraThIt';
+    src: url('pfencoresanspro-ultrathinitalic.eot');
+    src: url('pfencoresanspro-ultrathinitalic.eot?#iefix') format('embedded-opentype'),
+         url('pfencoresanspro-ultrathinitalic.woff2') format('woff2'),
+         url('pfencoresanspro-ultrathinitalic.woff') format('woff'),
+         url('pfencoresanspro-ultrathinitalic.svg#pf_encore_sans_proultraThIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}

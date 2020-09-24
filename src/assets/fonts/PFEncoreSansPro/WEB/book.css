@@ -1,0 +1,20 @@
+/* Webfont: PFEncoreSansPro-Book */
+
+
+@font-face {
+    font-family: 'pf_encore_sans_probook';
+    src: url('pfencoresanspro-book.eot');
+    src: url('pfencoresanspro-book.eot?#iefix') format('embedded-opentype'),
+         url('pfencoresanspro-book.woff2') format('woff2'),
+         url('pfencoresanspro-book.woff') format('woff'),
+         url('pfencoresanspro-book.svg#pf_encore_sans_probook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
