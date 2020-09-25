@@ -1,6 +1,11 @@
 import React from "react";
-import { footerbase, footerHr, footerSectionOne, footerSectionTwo } from "../../styles";
-import footerImg from '../../assets/footer/footer-logo.svg';
+import {
+  footerbase,
+  footerHr,
+  footerSectionOne,
+  footerSectionTwo,
+} from "../../styles";
+import footerImg from "../../assets/images/footer/footer-logo.svg";
 
 function Footer() {
   return (

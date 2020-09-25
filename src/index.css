@@ -1,9 +1,14 @@
 @font-face {
-  font-family: 'PFHandbookPro-medium';
+  font-family: "PFHandbookPro-regular";
+  src: url(./assets/fonts/PFHandbookPro/WEB/pfhandbookpro-regular.woff);
+}
+
+@font-face {
+  font-family: "PFHandbookPro-medium";
   src: url(./assets/fonts/PFHandbookPro/WEB/pfhandbookpro-medium.woff);
 }
 @font-face {
-  font-family: 'PFEncoreSansPro-regular';
+  font-family: "PFEncoreSansPro-regular";
   src: url(./assets/fonts/PFEncoreSansPro/WEB/pfencoresanspro-reg.woff);
 }
 
@@ -13,7 +18,17 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, span, ul, li, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li,
+a {
   margin: 0;
   padding: 0;
 }
@@ -24,22 +39,37 @@ ul {
 a {
   text-decoration: none;
 }
-a:hover,a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
+.no-padding {
+  padding: 0;
+}
+
+/* header */
+.header-logo svg {
+  width: 190px;
+  height: auto;
+}
+
+.sub-menu li a:hover {
+  background-color: #e7e7e7;
+}
 
 /* footer */
-.footer-section-one, .footer-section-two {
-  font-family: PFEncoreSansPro-regular, 'san-serif' !important;
+.footer-section-one,
+.footer-section-two {
+  font-family: PFEncoreSansPro-regular, "san-serif" !important;
 }
 .footer-section-one ul li a {
-  color: #A1A2A2;
+  color: #a1a2a2;
   font-size: 14px;
   line-height: 1;
 }
 .footer-section-two ul li a {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   line-height: 2.5;
 }
