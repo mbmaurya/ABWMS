@@ -4,6 +4,7 @@ export const greenText = "#3e593c";
 export const redText = "";
 export const whiteText = "#FFFFFF";
 export const primaryGreen = "#979f6f";
+export const darkGreen = "#3e593c";
 export const primaryRed = "#c7222a";
 
 // footer
