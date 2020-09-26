@@ -31,13 +31,12 @@ export const LinkGroupAnchorLastStyles = {
 
 export const ListGroupTwoStyles = {
   backgroundColor: `${primaryRed}`,
-  padding: "20px",
+  padding: "20px 20px 16px",
 };
 
 export const MainMenuStyles = {
-  display: "flex",
+  display: "block",
   height: "100%",
-  alignItems: "flex-end",
 };
 
 export const MainMenuLinkStyles = {
@@ -47,20 +46,22 @@ export const MainMenuLinkStyles = {
   lineHeight: "20px",
   color: `${whiteText}`,
   textTransform: "uppercase",
-  padding: "12px 16px",
+  padding: "9px 14px",
+  marginTop: "10px",
 };
 
 export const SubMenuStyles = {
+  display: "none",
   position: "absolute",
   width: "225px",
   backgroundColor: `${whiteText}`,
   zIndex: "1",
-  top: "40px",
+  top: "38px",
   left: "0",
 };
 
 export const SubMenuListStyles = {
-  //   padding: "12px",
+  display: "block",
 };
 
 export const SubMenuListAnchorStyles = {
@@ -71,4 +72,9 @@ export const SubMenuListAnchorStyles = {
   padding: "12px",
   textTransform: "Capitalize",
   textDecoration: "none",
+  wordSpacing: "normal",
+};
+
+export const MainMenuRightListStyles = {
+  display: "inline-block",
 };
