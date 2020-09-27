@@ -1,6 +1,16 @@
 @font-face {
+  font-family: "PFHandbookPro-light";
+  src: url(./assets/fonts/PFHandbookPro/WEB/pfhandbookpro-light.woff);
+}
+
+@font-face {
   font-family: "PFHandbookPro-regular";
   src: url(./assets/fonts/PFHandbookPro/WEB/pfhandbookpro-regular.woff);
+}
+
+@font-face {
+  font-family: "PFHandbookPro-bold";
+  src: url(./assets/fonts/PFHandbookPro/WEB/pfhandbookpro-bold.woff);
 }
 
 @font-face {
@@ -58,16 +68,6 @@ a:focus {
   padding: 0;
 }
 
-/* header */
-.header-logo svg {
-  width: 190px;
-  height: auto;
-}
-
-.sub-menu li a:hover {
-  background-color: #e7e7e7;
-}
-
 /* form */
 .form-control:hover, .form-control:focus {
   border: 1px solid #949494 !important;
@@ -91,6 +91,93 @@ li.active:before {
   top: -2px;
   left: -2px;
 }
+
+/* header */
+.header-logo svg {
+  width: 190px;
+  height: auto;
+}
+
+.main-menu li {
+  display: inline-block;
+  word-spacing: 5px;
+}
+
+.main-menu li svg {
+  vertical-align: bottom;
+}
+
+.main-menu li:hover {
+  color: #000000 !important;
+  background-color: #e7e7e7;
+  cursor: pointer;
+}
+
+.main-menu li:hover svg {
+  color: #c7222a;
+}
+
+.main-menu li:hover .sub-menu {
+  display: block !important;
+}
+
+.sub-menu li a:hover {
+  background-color: #e7e7e7;
+}
+
+.main-menu-right li {
+  padding: 0px 10px 0px 0px !important;
+  margin-top: 20px !important;
+  margin-right: 2px;
+}
+
+.main-menu-right li:hover {
+  color: #ffffff !important;
+  background: none;
+  text-decoration: none;
+}
+
+.main-menu-right li svg {
+  padding-left: 5px;
+}
+
+.main-menu-right li:hover svg {
+  color: #ffffff;
+}
+
+.main-menu-right li a {
+  color: #ffffff !important;
+}
+
+.main-menu-right li a:hover {
+  text-decoration: underline;
+}
+
+.main-menu-third svg {
+  vertical-align: middle !important;
+}
+
+.main-menu-third > a {
+  color: #ffffff !important;
+  padding: 0 !important;
+  line-height: 48px !important;
+}
+
+.main-menu-third:hover > a {
+  color: #000000 !important;
+}
+
+.main-menu-third .sub-menu {
+  top: 48px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .header-desktop {
+    display: none;
+  }
+}
+
+/* /header */
 
 /* footer */
 .footer-section-one,
