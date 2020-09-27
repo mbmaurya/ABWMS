@@ -12,15 +12,16 @@ const RowOneStyles = {
 };
 
 const ListStyles = {
+  display: "flex",
+  justifyContent: "flex-end",
+  alignItems: "center",
   width: "100%",
   height: "100%",
-  textAlign: "right",
   paddingTop: "5px",
 };
 
 const ListItemStyles = {
   display: "inline-block",
-  //   width: "50%",
   textAlign: "right",
 };
 
@@ -34,7 +35,7 @@ function MobileLinkGroupFirst() {
   return (
     <div className="container-fluid">
       <div className="row" style={RowOneStyles}>
-        <div className="col-6">
+        <div className="col-6 mobile-logo">
           <HeaderMobileLogo />
         </div>
         <div className="col-6">
