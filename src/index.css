@@ -93,6 +93,10 @@ li.active:before {
 }
 
 /* header */
+.header-mobile {
+  display: none;
+}
+
 .header-logo svg {
   width: 190px;
   height: auto;
@@ -174,6 +178,14 @@ li.active:before {
 @media screen and (max-width: 1200px) {
   .header-desktop {
     display: none;
+  }
+  .header-mobile {
+    display: block;
+  }
+  .header-mobile > .container-fluid > .row svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 }
 
