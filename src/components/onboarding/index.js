@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
-import { formContainer, box, formBox, btn, clearBtn, buttonGroup } from '../../styles';
+import { formContainer, formBox, formBoxMobile, btn, clearBtn, buttonGroup, useViewport } from '../../styles';
 import AddBank from './AddBank';
 import BankDetails from './BankDetails';
 import VerifyKyc from './VerifyKyc';
@@ -9,6 +9,9 @@ import Steps from './Steps';
 
 function Onboarding() {
         const [currentStep, setCurrentStep] = useState(1);
+
+        const {width} = useViewport();
+        const breakpoint = 767;
 
         const prev = () => {
                 currentStep <=1 ?setCurrentStep(1) : setCurrentStep(currentStep - 1);
@@ -21,7 +24,7 @@ function Onboarding() {
         return (
                 <Container style={formContainer}>
                         <Steps currentStep={currentStep} />
-                        <Form style={{...box, ...formBox}}>
+                        <Form style={(width < breakpoint) ? formBoxMobile : formBox}>
                                 <VerifyKyc currentStep={currentStep} />
                                 <BankDetails currentStep={currentStep} />
                                 <AddBank currentStep={currentStep} />

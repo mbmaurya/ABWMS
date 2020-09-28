@@ -1,3 +1,5 @@
+import {useState, useEffect} from 'react'
+
 export const blackText = "#000000";
 export const greyText = "#6c7174";
 export const greenText = "#3e593c";
@@ -16,9 +18,15 @@ export const box = {
 }
 
 export const formBox = {
+  ...box,
   padding: 51,
   width: '100%',
   borderBottom: `1px solid ${accentYellow}`
+}
+
+export const formBoxMobile = {
+  ...formBox,
+  padding: 22
 }
 
 export const boxTitle = {
@@ -190,3 +198,17 @@ export const footerHr = {
 export const footerbase = {
   color: whiteText,
 };
+
+
+export const useViewport = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
+  // Return the width so we can use it in our components
+  return { width };
+}
