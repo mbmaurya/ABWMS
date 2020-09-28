@@ -2,13 +2,10 @@ import React from 'react';
 import {useDropzone} from 'react-dropzone';
 import {Button} from 'react-bootstrap';
 import {ReactComponent as UploadIcon} from '../../assets/images/transaction/upload.svg'
-import { dropzone, dropzoneMobile, dropzoneBtn, dropzoneHint, dropzonePara, dropzoneSpan, useViewport } from '../../styles';
+import { dropzone, dropzoneBtn, dropzoneHint, dropzonePara, dropzoneSpan } from '../../styles';
 
 function FileDropzone(props) {
         const {acceptedFiles, getRootProps, getInputProps} = useDropzone();
-
-        const {width} = useViewport();
-        const breakpoint = 767;
 
         const files = acceptedFiles.map(file => (
                 <li key={file.path}>
@@ -19,7 +16,7 @@ function FileDropzone(props) {
 
         return (
                 <div>
-                       <div {...getRootProps({className: 'dropzone'})} style={(width < breakpoint) ? dropzoneMobile : dropzone}>
+                       <div {...getRootProps({className: 'dropzone'})} style={dropzone}>
                                 <input {...getInputProps()} />
                                 <p style={dropzonePara}>Drag and drop or <span style={dropzoneSpan}>browse</span></p>
                                 <UploadIcon />
