@@ -6,8 +6,7 @@ import LinkGroupFirst from "./linkgroupfirst";
 import LinkGroupSecond from "./linkgroupsecond";
 import LinkGroupThird from "./linkgroupthird";
 import TextBand from "./textband";
-import MobileLinkGroupFirst from "./mobilelinkgroupfirst";
-import SlideMenu from "./slidemenu";
+import MobileLinkGroupFirst from "./mobilemenu/mobilelinkgroupfirst";
 
 function Header() {
   return (
@@ -23,7 +22,6 @@ function Header() {
 
       <header className="header header-mobile">
         <MobileLinkGroupFirst />
-        <SlideMenu />
       </header>
     </div>
   );
