@@ -10,7 +10,7 @@ import Steps from './Steps';
 
 function Onboarding() {
         const [currentStep, setCurrentStep] = useState(1);
-        const [isVerified, setIsVerified] = useState(true);
+        const [isVerified, setIsVerified] = useState(false);
 
         const {width} = useViewport();
         const breakpoint = 767;
