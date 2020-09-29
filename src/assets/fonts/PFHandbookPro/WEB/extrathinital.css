@@ -1,0 +1,21 @@
+/* Webfont: PFHandbookPro-XThinItalic */
+
+
+
+@font-face {
+    font-family: 'pf_handbook_proXThIt';
+    src: url('pfhandbookpro-extrathinital.eot');
+    src: url('pfhandbookpro-extrathinital.eot?#iefix') format('embedded-opentype'),
+         url('pfhandbookpro-extrathinital.woff2') format('woff2'),
+         url('pfhandbookpro-extrathinital.woff') format('woff'),
+         url('pfhandbookpro-extrathinital.svg#pf_handbook_proXThIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}

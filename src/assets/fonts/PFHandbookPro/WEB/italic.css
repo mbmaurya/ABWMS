@@ -1,0 +1,21 @@
+/* Webfont: PFHandbookPro-Italic */
+
+
+
+@font-face {
+    font-family: 'pf_handbook_proitalic';
+    src: url('pfhandbookpro-italic.eot');
+    src: url('pfhandbookpro-italic.eot?#iefix') format('embedded-opentype'),
+         url('pfhandbookpro-italic.woff2') format('woff2'),
+         url('pfhandbookpro-italic.woff') format('woff'),
+         url('pfhandbookpro-italic.svg#pf_handbook_proitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}

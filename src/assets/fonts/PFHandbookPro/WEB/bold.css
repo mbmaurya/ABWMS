@@ -1,0 +1,21 @@
+/* Webfont: PFHandbookPro-Bold */
+
+
+
+@font-face {
+    font-family: 'pf_handbook_probold';
+    src: url('pfhandbookpro-bold.eot');
+    src: url('pfhandbookpro-bold.eot?#iefix') format('embedded-opentype'),
+         url('pfhandbookpro-bold.woff2') format('woff2'),
+         url('pfhandbookpro-bold.woff') format('woff'),
+         url('pfhandbookpro-bold.svg#pf_handbook_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}

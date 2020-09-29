@@ -1,0 +1,21 @@
+/* Webfont: PFEncoreSansPro-XThinItalic */
+
+
+
+@font-face {
+    font-family: 'pf_encore_sans_proXThIt';
+    src: url('pfencoresanspro-xthinitalic.eot');
+    src: url('pfencoresanspro-xthinitalic.eot?#iefix') format('embedded-opentype'),
+         url('pfencoresanspro-xthinitalic.woff2') format('woff2'),
+         url('pfencoresanspro-xthinitalic.woff') format('woff'),
+         url('pfencoresanspro-xthinitalic.svg#pf_encore_sans_proXThIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
