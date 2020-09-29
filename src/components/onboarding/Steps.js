@@ -3,7 +3,8 @@ import { ListGroup } from 'react-bootstrap';
 import { steps, stepElipse } from '../../styles';
 
 
-function Steps({currentStep}) {
+function Steps({currentStep, isVerified}) {
+        if (currentStep === 3 && !isVerified) return null;
         return (
                 <ListGroup as="ul" style={steps}>
                                 {
@@ -13,7 +14,7 @@ function Steps({currentStep}) {
 
                                 }
                                 {
-                                        (currentStep === 2 || currentStep === 3) ?
+                                        (currentStep === 2 || currentStep === 3 ) ?
                                         <ListGroup.Item as="li" style={stepElipse} active></ListGroup.Item> :
                                         <ListGroup.Item as="li" style={stepElipse}></ListGroup.Item>
 

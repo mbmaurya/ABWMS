@@ -1,22 +1,19 @@
 import React, {useState} from 'react';
-import NotVerified from './NotVerified';
 import { bankDetail, addBankLink } from '../../styles';
 import {ReactComponent as BankDetailsIcon} from '../../assets/images/transaction/bank-account-details.svg';
 import Title from './Title';
 import { Col, Row } from 'react-bootstrap';
 import BankDetailsInputs from './BankDetailsInputs';
 
-function AddBank({currentStep}) {
-        const [isVerified, setIsVerified] = useState(true);
+function AddBank({currentStep, isVerified}) {
         const [addBank, setAddBank] = useState(false);
         if(currentStep !== 3) {
                 return null
         }
         return (
-                <div>
+                isVerified ? 
+                (<div>
                         {
-                                !isVerified ?
-                                <NotVerified /> : 
                                 <div>
                                         <Title icon={<BankDetailsIcon />} title="Bank Account Details" />
                                         <Row>
@@ -35,7 +32,7 @@ function AddBank({currentStep}) {
                                         }
                                 </div>
                         }
-                </div>
+                </div>) : null
         )
 }
 
