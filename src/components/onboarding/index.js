@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
-import { formContainer, formBox, formBoxMobile, btn, clearBtn, buttonGroup, useViewport } from '../../styles';
+import { formContainer, box, formBox, btn, clearBtn, buttonGroup } from '../../styles';
 import AddBank from './AddBank';
 import BankDetails from './BankDetails';
 import NotVerified from './NotVerified';
@@ -11,9 +11,6 @@ import Steps from './Steps';
 function Onboarding() {
         const [currentStep, setCurrentStep] = useState(1);
         const [isVerified, setIsVerified] = useState(false);
-
-        const {width} = useViewport();
-        const breakpoint = 767;
 
         const prev = () => {
                 currentStep <=1 ?setCurrentStep(1) : setCurrentStep(currentStep - 1);
