@@ -1,2 +1,0 @@
-# Redirects for netlify server
-/onboarding/VerifyKyc.js /onboarding/VerifyKyc

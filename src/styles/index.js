@@ -273,6 +273,8 @@ export const cardItemWhite = {
   gridRowGap: "12px",
   boxShadow: `0px 10px 35px 0 rgba(0, 0, 0, 0.1)`,
   margin: "0 auto",
+  border: 'none',
+  borderRadius: 0
 };
 export const cardItem = {
   display: "grid",

@@ -84,6 +84,20 @@ a:focus {
   background-color: #f2f3f0 !important;
 }
 
+.bigCardInput:hover, .bigCardInput:focus {
+  border: 1px solid #949494 !important;
+}
+.bigCardInput::-webkit-outer-spin-button,
+.bigCardInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 /* steps */
 li.active:before {
   content: "";

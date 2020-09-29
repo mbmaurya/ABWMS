@@ -4,7 +4,7 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import Onboarding from "./components/onboarding";
 import Dashboard from "./components/dashboard";
-import Home from "./pages/homepage";
+import Home from "./components/homepage";
 
 function App() {
   return (

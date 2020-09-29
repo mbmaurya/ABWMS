@@ -17,7 +17,7 @@ function BuyIn() {
             checked={buy === "buy in rupee"}
             onChange={(e) => setBuy(e.target.value)}
           />
-          <div class="circle"></div>
+          <div className="circle"></div>
           <label
             style={{ color: "#6c7174", fontSize: "14px" }}
             className="ml-2"
@@ -33,7 +33,7 @@ function BuyIn() {
             checked={buy === "buy in grams"}
             onChange={(e) => setBuy(e.target.value)}
           />
-          <div class="circle"></div>
+          <div className="circle"></div>
           <label
             style={{ color: "#6c7174", fontSize: "14px" }}
             className="ml-2"
@@ -47,7 +47,7 @@ function BuyIn() {
         <input
           className="bigCardInput"
           style={bigCardInput}
-          type="text"
+          type="number"
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
