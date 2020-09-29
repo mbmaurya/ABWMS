@@ -3,12 +3,14 @@ import { Button, Container, Form } from 'react-bootstrap';
 import { formContainer, formBox, formBoxMobile, btn, clearBtn, buttonGroup, useViewport } from '../../styles';
 import AddBank from './AddBank';
 import BankDetails from './BankDetails';
+import NotVerified from './NotVerified';
 import VerifyKyc from './VerifyKyc';
 import AddressDetails from './AddressDetails';
 import Steps from './Steps';
 
 function Onboarding() {
         const [currentStep, setCurrentStep] = useState(1);
+        const [isVerified, setIsVerified] = useState(true);
 
         const {width} = useViewport();
         const breakpoint = 767;
@@ -23,11 +25,12 @@ function Onboarding() {
 
         return (
                 <Container style={formContainer}>
-                        <Steps currentStep={currentStep} />
+                        <Steps currentStep={currentStep} isVerified={isVerified}/>
                         <Form style={(width < breakpoint) ? formBoxMobile : formBox}>
                                 <VerifyKyc currentStep={currentStep} />
                                 <BankDetails currentStep={currentStep} />
-                                <AddBank currentStep={currentStep} />
+                                <NotVerified currentStep={currentStep} isVerified={isVerified} />
+                                <AddBank currentStep={currentStep} isVerified={isVerified} />
                                 <AddressDetails currentStep={currentStep} />
                         </Form>
                         <div className="button-group" style={buttonGroup}>
