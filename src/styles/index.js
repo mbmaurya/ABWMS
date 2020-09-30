@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-
+import bannerImg from "../assets/images/landing-page/banner.jpg";
 export const blackText = "#000000";
 export const darkGrey = "#444749";
 export const lightGrey = "#dddddd";
@@ -153,6 +153,7 @@ export const btn = {
   backgroundColor: greenText,
   border: "none",
   borderRadius: 2,
+  cursor: 'pointer'
 };
 export const clearBtn = {
   padding: 0,
@@ -178,6 +179,8 @@ export const addBankLink = {
   textDecoration: "underline",
   cursor: "pointer",
 };
+
+
 
 // FOOTER
 export const footerSectionOne = {
@@ -214,3 +217,109 @@ export const useViewport = () => {
   // Return the width so we can use it in our components
   return { width };
 }
+
+
+
+// HOME
+
+export const banner = {
+  backgroundImage: `url(${bannerImg})`,
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  height: `425px`,
+  width: "100%",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "start",
+  position: "relative",
+  zIndex: -1,
+};
+
+export const heading = {
+  color: "#fff",
+  fontSize: "60px",
+};
+
+export const bigCard = {
+  display: "grid",
+  gridTemplateRows: "30% 80%",
+  gridTemplateColumns: "repeat(3,1fr)",
+  padding: "50px 80px",
+  alignItems: "center",
+  justifyContent: "center",
+  boxShadow: "0px 10px 35px 0 rgba(0, 0, 0, 0.1)",
+  backgroundColor: "#fffffb",
+  borderRadius: 0,
+  marginTop: "-40px",
+  // zIndex: 2,
+};
+
+export const bigCardHeading = {
+  margin: "auto",
+  gridColumn: "1/-1",
+};
+
+export const bigCardButton = {
+  margin: "auto 0 auto auto",
+};
+
+export const currentPrice = {
+  gridRow: "2/3",
+  margin: "auto auto auto 0",
+};
+export const buyIn = {
+  margin: "auto",
+};
+
+export const bigCardInput = {
+  border: `1px solid ${lightGrey}`,
+  borderRadius: "2px",
+  padding: "5px 20px",
+  width: "100%",
+  fontSize: "24px",
+  fontWeight: 500,
+};
+
+export const prizeBorder = {
+  border: `1px solid ${lightGrey}`,
+  padding: "2px 15px",
+  color: greenText,
+  fontSize: "13px",
+  fontWeight: "bold",
+  cursor: "pointer",
+};
+
+export const cardItemWhite = {
+  padding: "20px",
+  display: "grid",
+  gridTemplateColumns: "20% 60%",
+  gridTemplateRows: "40% 60%",
+  gridRowGap: "12px",
+  boxShadow: `0px 10px 35px 0 rgba(0, 0, 0, 0.1)`,
+  margin: "0 auto",
+  border: 'none',
+  borderRadius: 0
+};
+export const cardItem = {
+  display: "grid",
+  gridRowGap: "12px",
+  gridTemplateColumns: "20% 60%",
+  gridTemplateRows: "40% 60%",
+  border: "none",
+  margin: "0 auto 20px 0",
+  backgroundColor: "transparent",
+};
+
+export const CardContainer = {
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fill,minmax(400px,1fr))",
+  gridGap: "50px",
+};
+
+export const cardItem2 = {
+  display: "flex",
+  flexDirection: "column",
+  boxShadow: `0px 10px 35px 0 rgba(0, 0, 0, 0.1)`,
+  padding: 30,
+  marginRight: 30,
+};
