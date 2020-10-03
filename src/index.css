@@ -74,7 +74,7 @@ a:focus {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -465,4 +465,89 @@ input[type="radio"] {
 }
 input[type="radio"]:checked ~ .circle:after {
   opacity: 1;
+}
+
+/* Dashboard */
+.my-dashboard {
+  margin: 40px 0px;
+}
+
+.my-dashboard .buy-now {
+  text-align: right;
+}
+
+.my-dashboard .dashboard-card-header {
+  position: relative;
+  border-bottom: 1px solid #f7a500;
+}
+
+.my-dashboard .dashboard-card-header p {
+  font-family: "PFHandbookPro-regular", sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  color: #3e593c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px 10px 80px;
+}
+
+.my-dashboard .dashboard-card-header p span {
+  display: block;
+  font-size: 16px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+
+.my-dashboard .dashboard-card-header p svg {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+  .my-dashboard .dashboard-card-body ul {
+    padding: 15px !important;
+  }
+
+  .my-dashboard .dashboard-card-body ul li {
+    vertical-align: top !important;
+  }
+
+  .my-dashboard .dashboard-card-body ul li p {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .my-dashboard .buy-now .btn {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  .my-dashboard .dashboard-card-body ul li:nth-child(1),
+  .my-dashboard .dashboard-card-body ul li:nth-child(2) {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .my-dashboard .dashboard-card-body ul li:nth-child(3) {
+    padding-top: 0;
+    margin-top: 20px;
+    border-right: 1px solid #cdcece;
+  }
+
+  .my-dashboard .dashboard-card-body ul li p {
+    font-size: 2rem !important;
+    line-height: 2.2rem !important;
+    margin-bottom: 15px;
+  }
+
+  .my-dashboard .dashboard-card-body ul li:nth-child(4) {
+    padding-left: 15px;
+    margin-top: 20px;
+  }
+
+  .my-dashboard .dashboard-card {
+    width: 100% !important;
+  }
 }
