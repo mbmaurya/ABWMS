@@ -323,3 +323,80 @@ export const cardItem2 = {
   padding: 30,
   marginRight: 30,
 };
+
+
+// GOLD TRANSACTIONS
+export const transactionContainer = {
+  ...formContainer,
+  marginTop: 50,
+  marginBottom: 60,
+  maxWidth: 1051,
+  alignItems: 'unset'
+}
+
+export const stepsDiv = {
+  marginTop: 43
+}
+
+export const stepsListItem = {
+  marginBottom: 32,
+  display: 'flex',
+  alignItems: 'center',
+  fontSize: 18,
+  color: greyText,
+  position: 'relative',
+}
+
+export const listIcon = {
+  marginRight: 12,
+  height: 32,
+  width: 32,
+  backgroundColor: accentYellow,
+  borderRadius: 100,
+}
+
+export const transactionBox = {
+  ...box,
+  height: 519, 
+  minHeight: 519,
+  maxWidth: 491,
+  marginTop: -30, 
+  marginLeft: 'auto',
+  padding: '30px 30px 40px 30px'
+}
+
+export const goldRateBox = {
+  marginTop: 5,
+  padding: '2px 22px',
+  backgroundColor: '#f1f1f1',
+  borderRadius: 3
+}
+
+export const goldRatePara = {
+  fontSize: 21,
+  color: greyText
+}
+
+export const goldRateSpan = {
+  fontSize: 28,
+  color: blackText
+}
+
+export const table = {
+  fontSize: 18,
+  color: greyText
+}
+
+export const tdRight = {
+  textAlign: 'right',
+  color: blackText
+}
+
+export const tfoot = {
+  backgroundColor: darkGreen,
+  color: whiteText
+}
+export const tfootright = {
+  textAlign: 'right',
+  fontSize: 20
+}

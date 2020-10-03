@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
-import { Button, Container, Form } from 'react-bootstrap';
-import { formContainer, formBox, formBoxMobile, btn, clearBtn, buttonGroup, useViewport } from '../../styles';
+import { Container, Form } from 'react-bootstrap';
+import { formContainer, formBox, formBoxMobile, useViewport } from '../../styles';
 import AddBank from './AddBank';
 import BankDetails from './BankDetails';
 import NotVerified from './NotVerified';
 import VerifyKyc from './VerifyKyc';
 import AddressDetails from './AddressDetails';
 import Steps from './Steps';
+import BtnGroup from '../global/BtnGroup';
 
 function Onboarding() {
         const [currentStep, setCurrentStep] = useState(1);
@@ -33,10 +34,7 @@ function Onboarding() {
                                 <AddBank currentStep={currentStep} isVerified={isVerified} />
                                 <AddressDetails currentStep={currentStep} />
                         </Form>
-                        <div className="button-group" style={buttonGroup}>
-                                <Button style={clearBtn} onClick={() => prev()}>Back</Button>
-                                <Button style={btn} onClick={() => next()}>Proceed</Button>
-                        </div>
+                        <BtnGroup prev={prev} next={next} />
                 </Container>
         )
 }

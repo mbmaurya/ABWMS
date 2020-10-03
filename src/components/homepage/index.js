@@ -23,10 +23,11 @@ import GTIcon from "../../assets/images/landing-page/good-and-transparent-price.
 import SafeLockerIcon from "../../assets/images/landing-page/safe-locker.svg";
 import PurityIcon from "../../assets/images/landing-page/purity-guranteed.svg";
 import BuyIn from "./components/BuyIn";
-import TimeLeft from "./components/TimeLeft";
+import TimeLeft from "../global/TimeLeft";
 
 const Home = () => {
-  const [price, setPrice] = useState('5,457.55');
+  const [goldRate, setGoldRate] = useState(5375.38);
+  const rate = new Intl.NumberFormat('en-IN').format(goldRate);
   return (
     <main>
       {/* First Fold */}
@@ -54,7 +55,7 @@ const Home = () => {
         <div className="currentPriceContainer" style={currentPrice}>
           <h5 className="mb-4 subtitle">Current price/gm incl of GST</h5>
           <h3 className="mb-2 currentPrice">
-            <span className="currentPrice-small">₹</span>{price}
+            <span className="currentPrice-small">₹</span>{rate}
             <span className="currentPrice-small">/gm</span>
           </h3>
           <p style={{ color: "#6c7174" }}>
@@ -63,7 +64,7 @@ const Home = () => {
             <TimeLeft />
           </p>
         </div>
-        <BuyIn />
+        <BuyIn component="homepage" goldRate={goldRate} />
         <div className="bigCardButton" style={bigCardButton}>
           <Link to="/gold-transactions" className="btn" style={btn} onClick={() => console.log('fouhgi')}>Buy Now</Link>
         </div>
