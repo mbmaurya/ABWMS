@@ -484,7 +484,7 @@ input[type="radio"]:checked ~ .circle:after {
   position: relative;
 }
 .nav-tabs::before {
-  content: '';
+  content: "";
   border-bottom: 1px solid #f7a500;
   height: 0;
   width: 30px;
@@ -493,7 +493,7 @@ input[type="radio"]:checked ~ .circle:after {
   left: -30px;
 }
 .nav-tabs::after {
-  content: '';
+  content: "";
   border-bottom: 1px solid #f7a500;
   height: 0;
   width: 30px;
@@ -522,8 +522,8 @@ input[type="radio"]:checked ~ .circle:after {
   border-bottom: 4px solid #3e593c;
 }
 
-.stepListItem:nth-of-type(-n+2):after {
-  content: '';
+.stepListItem:nth-of-type(-n + 2):after {
+  content: "";
   height: 32px;
   border-right: 1px dotted #6c7174;
   position: absolute;
@@ -533,14 +533,55 @@ input[type="radio"]:checked ~ .circle:after {
 }
 
 tbody tr td {
-  padding: 2px 15px !important
+  padding: 2px 15px !important;
 }
 tfoot tr td {
-  padding: 6px 15px !important
+  padding: 6px 15px !important;
 }
 
 .buyInDiv ul {
-  max-width: 90%
+  max-width: 90%;
+}
+
+@media screen and (max-width: 992px) {
+  .transaction-box {
+    min-height: initial !important;
+    height: auto !important;
+    max-width: initial !important;
+    margin-top: 0;
+  }
+
+  .transaction-container {
+    max-width: max-content !important;
+  }
+
+  .transaction-container .button-group {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .transaction-container .nav-tabs .nav-link {
+    width: 50%;
+    margin-right: 0 !important;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .steps .accordion {
+    margin-bottom: 60px;
+  }
+
+  .payment-method {
+    padding: 15px 0px !important;
+  }
+
+  #buy-gold-tabs-tab-credit-card.nav-link,
+  #buy-gold-tabs-tab-neft.nav-link,
+  #buy-gold-tabs-tab-net-banking.nav-link,
+  #buy-gold-tabs-tab-upi.nav-link {
+    width: 50%;
+    margin-right: 0 !important;
+  }
 }
 
 /* Dashboard */
