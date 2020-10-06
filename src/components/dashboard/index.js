@@ -7,6 +7,7 @@ import Tab from "react-bootstrap/Tab";
 //components
 import MyDashboard from "./mydashboard";
 import DashboardMenu from "./dashboard-menu";
+import MyProfile from "./myprofile";
 
 //Styles
 import { greyBackground } from "../../styles";
@@ -24,7 +25,6 @@ function Dashboard() {
                 <DashboardMenu />
               </Col>
               <Col lg={10}>
-                <UserName assignClass="dashboard-username-desktop" />
                 <Tab.Content defaultActiveKey="dashboard">
                   <Tab.Pane eventKey="transaction">My Transaction</Tab.Pane>
                   <Tab.Pane eventKey="dashboard">
@@ -34,7 +34,7 @@ function Dashboard() {
                     <MyPassbook />
                   </Tab.Pane>
                   <Tab.Pane eventKey="profile">
-                    <MyDashboard />
+                    <MyProfile />
                   </Tab.Pane>
                 </Tab.Content>
               </Col>

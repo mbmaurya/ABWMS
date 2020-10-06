@@ -4,6 +4,7 @@ import React from "react";
 import LockerBalance from "./LockerBalance";
 import DigitalGoldGraph from "./DigitalGoldGraph";
 import Deliver from "./Deliver";
+import UserName from "../username";
 
 //Bootstrap
 import { Col, Row } from "react-bootstrap";
@@ -17,8 +18,10 @@ import PageTitle from "../pagetitle";
 function MyDashboard() {
   return (
     <section className="my-dashboard dashboard-element">
+      <UserName assignClass="dashboard-username-desktop" />
       <PageTitle
         title="My Dashboard"
+        display={true}
         clickFunction={() => console.log("Clicked")}
       />
 
