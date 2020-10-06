@@ -23,10 +23,10 @@ import {
 const SlideMenuContainerStyles = {
   position: "absolute",
   width: "100%",
-  height: "100%",
+  height: "100vh",
   top: "0",
   backgroundColor: "rgb(0, 0, 0, 0.79)",
-  zIndex: "1",
+  zIndex: "2",
   overflowY: "scroll",
   transition: "0.3s all ease-in-out",
 };
