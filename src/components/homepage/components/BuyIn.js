@@ -1,14 +1,20 @@
 import React, { useState } from "react";
-import { bigCardInput, prizeBorder } from "../../../styles/index";
+import { bigCardInput, goldRatePara, prizeBorder } from "../../../styles/index";
+import BuyInOptions from "./BuyInOptions";
 
-function BuyIn() {
+function BuyIn(props) {
+  const {component, goldRate} = props
   const [buy, setBuy] = useState("buy in rupee");
   const [input, setInput] = useState(15000);
+  const [gmInput, setGmInput] = useState(10);
   const selectData = [2500, 5000, 7500, 10000, 15000];
+  const selectGmData = [0.1, 0.5, 1, 3, 5, 10]; 
 
   return (
     <div className="buyin" style={{ margin: "auto", width: "100%" }}>
-      <h5 className="subtitle">Buy-in</h5>
+      {
+        (component === "homepage") ? <h5 className="subtitle">Buy-in</h5> : null
+      }
       <div className="d-flex mt-2">
         <div className="mr-4" style={{ position: "relative" }}>
           <input
@@ -43,53 +49,8 @@ function BuyIn() {
         </div>
       </div>
 
-      <div style={{ position: "relative" }} className="mb-4">
-        <input
-          className="bigCardInput"
-          style={bigCardInput}
-          type="number"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-        />
-        <p
-          style={{
-            position: "absolute",
-            top: "10px",
-            right: "10px",
-            fontSize: "18px",
-            fontWeight: 600,
-          }}
-          className="calculateddata"
-        >
-          = {(Number(input) / 5457.55).toFixed(2)}gm
-        </p>
-        <p
-          style={{
-            position: "absolute",
-            top: "6px",
-            left: "10px",
-            fontSize: "24px",
-            fontWeight: 500,
-          }}
-        >
-          ₹
-        </p>
-      </div>
-      <ul className="d-flex justify-content-between">
-        {selectData.map((data, i) => (
-          <li
-            key={i}
-            style={{
-              ...prizeBorder,
-              background: data === input ? "#3E593C" : "transparent",
-              color: data === input ? "#ffffff" : "#3E593C",
-            }}
-            onClick={() => setInput(data)}
-          >
-            <p>{data}</p>
-          </li>
-        ))}
-      </ul>
+      <BuyInOptions buy={buy} input ={input} setInput={setInput} gmInput={gmInput} setGmInput={setGmInput} selectData={selectData} selectGmData={selectGmData} goldRate={goldRate} />
+      
     </div>
   );
 }

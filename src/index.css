@@ -476,6 +476,73 @@ input[type="radio"]:checked ~ .circle:after {
   opacity: 1;
 }
 
+/* GOLD TRANSACTIONS */
+
+/* tab */
+.nav-tabs {
+  border-bottom: 1px solid #f7a500;
+  position: relative;
+}
+.nav-tabs::before {
+  content: '';
+  border-bottom: 1px solid #f7a500;
+  height: 0;
+  width: 30px;
+  position: absolute;
+  bottom: -1px;
+  left: -30px;
+}
+.nav-tabs::after {
+  content: '';
+  border-bottom: 1px solid #f7a500;
+  height: 0;
+  width: 30px;
+  position: absolute;
+  bottom: -1px;
+  right: -30px;
+}
+
+.nav-tabs .nav-link {
+  font-family: PFHandbookPro-medium, "san-serif";
+  margin-right: 30px;
+  padding: 0;
+  height: 36px;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  color: #6c7174;
+  border: none;
+  background-color: transparent !important;
+}
+.nav-tabs .nav-link:focus {
+  border: none;
+  outline: none;
+}
+.nav-tabs .nav-link.active {
+  border-bottom: 4px solid #3e593c;
+}
+
+.stepListItem:nth-of-type(-n+2):after {
+  content: '';
+  height: 32px;
+  border-right: 1px dotted #6c7174;
+  position: absolute;
+  bottom: -32px;
+  left: 16px;
+  transform: translate(-50%);
+}
+
+tbody tr td {
+  padding: 2px 15px !important
+}
+tfoot tr td {
+  padding: 6px 15px !important
+}
+
+.buyInDiv ul {
+  max-width: 90%
+}
+
 /* Dashboard */
 .my-dashboard {
   margin: 0px 0px 40px;
