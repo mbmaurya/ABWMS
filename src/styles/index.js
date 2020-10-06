@@ -1,8 +1,9 @@
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from "react";
 import bannerImg from "../assets/images/landing-page/banner.jpg";
 export const blackText = "#000000";
 export const darkGrey = "#444749";
 export const lightGrey = "#dddddd";
+export const mediumGrey = "#827880";
 export const greyText = "#6c7174";
 export const greenText = "#3e593c";
 export const redText = "";
@@ -11,6 +12,7 @@ export const primaryGreen = "#979f6f";
 export const darkGreen = "#3e593c";
 export const primaryRed = "#c7222a";
 export const accentYellow = "#f7a500";
+export const greyBackground = "#f7f8f9";
 
 // BOX
 export const box = {
@@ -28,8 +30,8 @@ export const formBox = {
 
 export const formBoxMobile = {
   ...formBox,
-  padding: 22
-}
+  padding: 22,
+};
 
 export const boxTitle = {
   fontFamily: `PFHandbookPro-medium, "san-serif"`,
@@ -153,7 +155,7 @@ export const btn = {
   backgroundColor: greenText,
   border: "none",
   borderRadius: 2,
-  cursor: 'pointer'
+  cursor: "pointer",
 };
 export const clearBtn = {
   padding: 0,
@@ -180,8 +182,6 @@ export const addBankLink = {
   cursor: "pointer",
 };
 
-
-
 // FOOTER
 export const footerSectionOne = {
   padding: 20,
@@ -204,7 +204,6 @@ export const footerbase = {
   color: whiteText,
 };
 
-
 export const useViewport = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -216,9 +215,7 @@ export const useViewport = () => {
 
   // Return the width so we can use it in our components
   return { width };
-}
-
-
+};
 
 // HOME
 
@@ -297,8 +294,8 @@ export const cardItemWhite = {
   gridRowGap: "12px",
   boxShadow: `0px 10px 35px 0 rgba(0, 0, 0, 0.1)`,
   margin: "0 auto",
-  border: 'none',
-  borderRadius: 0
+  border: "none",
+  borderRadius: 0,
 };
 export const cardItem = {
   display: "grid",
