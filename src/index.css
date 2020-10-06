@@ -192,13 +192,13 @@ li.active:before {
 
 @media screen and (max-width: 1200px) {
   .mrgTopMobile100 {
-    margin-top: 150px;
+    margin-top: 100px;
   }
   .header-desktop {
     display: none;
   }
   .header-mobile {
-    position: fixed;
+    position: relative;
     display: block;
     z-index: 2;
     width: 100%;
@@ -481,7 +481,7 @@ input[type="radio"]:checked ~ .circle:after {
   margin: 0px 0px 40px;
 }
 
-.my-dashboard .buy-now {
+.dashboard-element .buy-now {
   text-align: right;
 }
 
@@ -539,7 +539,7 @@ input[type="radio"]:checked ~ .circle:after {
   display: none;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 991px) {
   .dashboard-username-desktop {
     display: none;
   }
@@ -585,8 +585,8 @@ input[type="radio"]:checked ~ .circle:after {
     display: none;
   }
 
-  .my-dashboard h2 {
-    width: 50%;
+  .dashboard-element h2 {
+    width: 100%;
     display: inline-block;
     margin-bottom: 15px;
   }
@@ -600,7 +600,7 @@ input[type="radio"]:checked ~ .circle:after {
     vertical-align: middle;
     color: #3e593c;
     right: 15px;
-    top: 150px;
+    top: 15px;
     z-index: 1;
   }
 
@@ -616,7 +616,7 @@ input[type="radio"]:checked ~ .circle:after {
     font-size: 1.3rem !important;
   }
 
-  .my-dashboard .buy-now .btn {
+  .dashboard-element .buy-now .btn {
     width: 100% !important;
     margin-bottom: 15px;
   }
@@ -670,8 +670,24 @@ input[type="radio"]:checked ~ .circle:after {
     width: 51% !important;
     padding-left: 20px !important;
   }
+}
 
-  .dashboard-mobile-menu {
-    top: 100px;
+/* My Passbook */
+.my-passbook .table {
+  border-collapse: separate;
+  border-spacing: 0px 12px;
+}
+
+.my-passbook .passbook-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .my-passbook .table {
+    display: none;
+  }
+
+  .my-passbook .passbook-mobile {
+    display: block;
   }
 }

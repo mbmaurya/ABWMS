@@ -11,6 +11,7 @@ import DashboardMenu from "./dashboard-menu";
 //Styles
 import { greyBackground } from "../../styles";
 import UserName from "./username";
+import MyPassbook from "./mypassbook";
 
 function Dashboard() {
   return (
@@ -24,15 +25,14 @@ function Dashboard() {
               </Col>
               <Col lg={10}>
                 <UserName assignClass="dashboard-username-desktop" />
-                <Tab.Content
-                  defaultActiveKey="dashboard"
-                  className="mrgTopMobile100"
-                >
+                <Tab.Content defaultActiveKey="dashboard">
                   <Tab.Pane eventKey="transaction">My Transaction</Tab.Pane>
                   <Tab.Pane eventKey="dashboard">
                     <MyDashboard />
                   </Tab.Pane>
-                  <Tab.Pane eventKey="passbook">My Passbook</Tab.Pane>
+                  <Tab.Pane eventKey="passbook">
+                    <MyPassbook />
+                  </Tab.Pane>
                   <Tab.Pane eventKey="profile">
                     <MyDashboard />
                   </Tab.Pane>
