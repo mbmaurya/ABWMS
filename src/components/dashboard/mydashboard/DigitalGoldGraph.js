@@ -13,7 +13,10 @@ import {
 
 function DigitalGoldGrpah() {
   return (
-    <div style={{ ...DashboadrCardStyles, marginLeft: "3%" }}>
+    <div
+      style={{ ...DashboadrCardStyles, marginLeft: "3%" }}
+      className="dashboard-card"
+    >
       <div className="dashboard-card-header">
         <p>
           <GoldGraphIcon />

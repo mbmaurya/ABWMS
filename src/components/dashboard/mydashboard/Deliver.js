@@ -13,7 +13,10 @@ import {
 
 function DigitalGoldGrpah() {
   return (
-    <div style={{ ...DashboadrCardStyles, marginLeft: "1%" }}>
+    <div
+      style={{ ...DashboadrCardStyles, marginLeft: "1%" }}
+      className="dashboard-card"
+    >
       <div className="dashboard-card-header">
         <p style={{ paddingTop: "24px", paddingBottom: "18px" }}>
           <DeliverIcon />

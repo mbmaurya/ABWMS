@@ -13,7 +13,10 @@ import {
 
 function Transfer() {
   return (
-    <div style={{ ...DashboadrCardStyles, marginLeft: "2%" }}>
+    <div
+      style={{ ...DashboadrCardStyles, marginLeft: "2%" }}
+      className="dashboard-card"
+    >
       <div className="dashboard-card-header">
         <p style={{ paddingTop: "24px", paddingBottom: "18px" }}>
           <TransferIcon />

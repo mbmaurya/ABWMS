@@ -18,7 +18,7 @@ import { ReactComponent as LockerIcon } from "../../../assets/images/dashboard/s
 
 function Sold() {
   return (
-    <div style={DashboadrCardStyles}>
+    <div style={DashboadrCardStyles} className="dashboard-card">
       <div className="dashboard-card-header">
         <p style={{ paddingTop: "24px", paddingBottom: "18px" }}>
           <SoldIcon />

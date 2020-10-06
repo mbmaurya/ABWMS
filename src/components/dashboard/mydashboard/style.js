@@ -1,14 +1,5 @@
 import { blackText, greenText, whiteText, greyText } from "../../../styles";
 
-export const UserNameStyles = {
-  fontFamily: "PFHandbookPro-medium, sans-serif",
-  fontSize: "24px",
-  lineHeight: "28px",
-  color: `${greenText}`,
-  letterSpacing: "1px",
-  marginBottom: "15px",
-};
-
 export const BlockTitleStyles = {
   fontFamily: "PFHandbookPro-medium, sans-serif",
   fontSize: "36px",

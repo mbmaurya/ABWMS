@@ -191,11 +191,17 @@ li.active:before {
 }
 
 @media screen and (max-width: 1200px) {
+  .mrgTopMobile100 {
+    margin-top: 150px;
+  }
   .header-desktop {
     display: none;
   }
   .header-mobile {
+    position: fixed;
     display: block;
+    z-index: 2;
+    width: 100%;
   }
 
   .header-mobile .mobile-logo {
@@ -236,6 +242,9 @@ li.active:before {
   @media screen and (max-width: 767px) {
     .slide-menu {
       width: 90% !important;
+    }
+    .mrgTopMobile100 {
+      margin-top: 100px;
     }
   }
 }
@@ -469,7 +478,7 @@ input[type="radio"]:checked ~ .circle:after {
 
 /* Dashboard */
 .my-dashboard {
-  margin: 40px 0px;
+  margin: 0px 0px 40px;
 }
 
 .my-dashboard .buy-now {
@@ -504,9 +513,99 @@ input[type="radio"]:checked ~ .circle:after {
   top: 0px;
 }
 
-@media screen and (max-width: 1024px) {
+.dashboard-menu .nav {
+  display: block;
+}
+
+.dashboard-menu .nav .nav-item .nav-link {
+  display: inline-block;
+  padding: 0;
+  outline: none;
+}
+
+.dashboard-menu .nav .nav-item .nav-link.active div {
+  background-color: #d8e1ce !important;
+}
+
+.dashboard-mobile-menu {
+  display: none;
+}
+
+.dashboard-username-desktop {
+  display: block;
+}
+
+.dashboard-username-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .dashboard-username-desktop {
+    display: none;
+  }
+
+  .dashboard-username-mobile {
+    display: block;
+    margin: 0 !important;
+    padding: 15px;
+    width: 80%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #cacfb6;
+  }
+
+  .dashboard-menu-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: 80px;
+    background-color: rgba(252, 252, 252, 0.9);
+    z-index: 2;
+  }
+
+  .dashboard-menu {
+    width: 80% !important;
+    z-index: 1;
+    height: auto !important;
+  }
+
+  .dashboard-menu .nav .nav-item a,
+  .dashboard-menu .nav .nav-item a div {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .dashboard-menu .nav .nav-item a div p {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+  }
+
+  .my-dashboard h3 {
+    display: none;
+  }
+
+  .my-dashboard h2 {
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .dashboard-mobile-menu {
+    display: inline-block;
+    position: absolute;
+    text-align: right;
+    font-size: 42px;
+    line-height: 42px;
+    vertical-align: middle;
+    color: #3e593c;
+    right: 15px;
+    top: 150px;
+    z-index: 1;
+  }
+
   .my-dashboard .dashboard-card-body ul {
-    padding: 15px !important;
+    padding: 15px 15px 15px 30px !important;
   }
 
   .my-dashboard .dashboard-card-body ul li {
@@ -516,9 +615,7 @@ input[type="radio"]:checked ~ .circle:after {
   .my-dashboard .dashboard-card-body ul li p {
     font-size: 1.3rem !important;
   }
-}
 
-@media screen and (max-width: 767px) {
   .my-dashboard .buy-now .btn {
     width: 100% !important;
     margin-bottom: 15px;
@@ -534,6 +631,12 @@ input[type="radio"]:checked ~ .circle:after {
     padding-top: 0;
     margin-top: 20px;
     border-right: 1px solid #cdcece;
+    width: 45% !important;
+  }
+
+  .my-dashboard .dashboard-card-body ul li:nth-child(4) {
+    width: 55% !important;
+    padding-left: 30px !important;
   }
 
   .my-dashboard .dashboard-card-body ul li p {
@@ -549,5 +652,26 @@ input[type="radio"]:checked ~ .circle:after {
 
   .my-dashboard .dashboard-card {
     width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 30px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .my-dashboard .dashboard-card-body ul {
+    padding: 15px !important;
+  }
+
+  .my-dashboard .dashboard-card-body ul li:nth-child(3) {
+    width: 49% !important;
+  }
+
+  .my-dashboard .dashboard-card-body ul li:nth-child(4) {
+    width: 51% !important;
+    padding-left: 20px !important;
+  }
+
+  .dashboard-mobile-menu {
+    top: 100px;
   }
 }
