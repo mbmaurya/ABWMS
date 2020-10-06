@@ -3,6 +3,7 @@ import bannerImg from "../assets/images/landing-page/banner.jpg";
 export const blackText = "#000000";
 export const darkGrey = "#444749";
 export const lightGrey = "#dddddd";
+export const mediumGrey = "#827880";
 export const greyText = "#6c7174";
 export const greenText = "#3e593c";
 export const redText = "";

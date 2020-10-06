@@ -8,8 +8,8 @@ const dashboardUsername = {
   lineHeight: "28px",
   color: `${greenText}`,
   letterSpacing: "1px",
-  marginTop: "50px",
-  marginBottom: "15px",
+  marginTop: "30px",
+  marginBottom: "0px",
 };
 
 const UserName = (props) => {
