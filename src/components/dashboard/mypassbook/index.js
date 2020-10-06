@@ -198,6 +198,7 @@ function MyPassbook() {
     <div className="my-passbook dashboard-element">
       <PageTitle
         title="My Passbook"
+        display={true}
         clickFunction={() => console.log("Clicked")}
       />
       <Row>

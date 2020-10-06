@@ -691,3 +691,36 @@ input[type="radio"]:checked ~ .circle:after {
     display: block;
   }
 }
+
+/* MyProfile */
+.personal-details {
+  margin-bottom: 30px;
+}
+
+.personal-details .myprofile-body input {
+  border: none;
+}
+
+@media screen and (max-width: 767px) {
+  .personal-details .myprofile-container {
+    margin-top: 0 !important;
+    margin-bottom: 30px;
+  }
+  .personal-details .myprofile-header {
+    padding-left: 15px !important;
+  }
+  .personal-details .myprofile-body {
+    padding-left: 15px !important;
+  }
+
+  .personal-details .myprofile-body ul li {
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .personal-details .myprofile-body ul li p {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}

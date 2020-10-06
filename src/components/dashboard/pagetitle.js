@@ -21,9 +21,13 @@ function PageTitle(props) {
         <h2 style={BlockTitleStyles}>{props.title}</h2>
       </Col>
       <Col lg={6} className="buy-now">
-        <Button style={btn} onClick={props.clickFunction}>
-          Buy Now
-        </Button>
+        {props.display ? (
+          <Button style={btn} onClick={props.clickFunction}>
+            Buy Now
+          </Button>
+        ) : (
+          ""
+        )}
       </Col>
     </Row>
   );
