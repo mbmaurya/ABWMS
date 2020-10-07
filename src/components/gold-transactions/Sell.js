@@ -6,8 +6,8 @@ import StepOne from "../../assets/images/transaction/buy-gold-step-1.svg";
 import StepTwo from "../../assets/images/transaction/buy-gold-step-2.svg";
 import StepThree from "../../assets/images/transaction/buy-gold-step-3.svg";
 
-function Buy() {
-  const listTitle = "How to buy Gold?";
+function Sell() {
+  const listTitle = "How to sell Gold?";
   const stepsList = [
     {
       icon: StepOne,
@@ -15,11 +15,11 @@ function Buy() {
     },
     {
       icon: StepTwo,
-      text: "Confirm the payment details",
+      text: "Confirm bank account details",
     },
     {
       icon: StepThree,
-      text: "Get Gold in your account",
+      text: "Get money in selected bank account in 48 hrs",
     },
   ];
 
@@ -29,10 +29,10 @@ function Buy() {
         <StepLists listTitle={listTitle} stepsList={stepsList} />
       </Col>
       <Col lg={6}>
-        <TransactionBox type="buy" noInput={false} />
+        <TransactionBox type="sell" noInput={false} />
       </Col>
     </Row>
   );
 }
 
-export default Buy;
+export default Sell;
