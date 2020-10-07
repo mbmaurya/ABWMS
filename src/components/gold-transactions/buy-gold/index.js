@@ -79,7 +79,7 @@ function BuyGold() {
             justifyContent: "center",
             alignItems: "center",
           }}
-          to={`/`}
+          to={`/gold-transactions/successfull`}
         >
           Proceed
         </Link>
