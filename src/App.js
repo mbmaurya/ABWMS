@@ -8,6 +8,9 @@ import Dashboard from "./components/dashboard";
 import GoldTransactions from "./components/gold-transactions";
 import BuyGold from "./components/gold-transactions/buy-gold";
 import BuyGoldSuccessfully from "./components/gold-transactions/buy-gold/successfull";
+import SelectAccount from "./components/gold-transactions/sell-gold";
+import SellGoldSuccessfully from "./components/gold-transactions/sell-gold/Successfull";
+import SellGoldFailure from "./components/gold-transactions/sell-gold/Failure";
 
 function App() {
   return (
@@ -23,6 +26,15 @@ function App() {
           path="/gold-transactions/successfull"
           component={BuyGoldSuccessfully}
         />
+        <Route
+          path="/gold-transactions/sell-gold/successfull"
+          component={SellGoldSuccessfully}
+        />
+        <Route
+          path="/gold-transactions/sell-gold/failure"
+          component={SellGoldFailure}
+        />
+        <Route path="/gold-transactions/sell" component={SelectAccount} />
         <Footer />
       </div>
     </Router>

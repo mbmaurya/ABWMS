@@ -1,7 +1,7 @@
 import React from "react";
 import { bigCardInput } from "../../../styles";
 
-function BuyInGm(props) {
+function SellInGm(props) {
   const { input, setInput, goldRate } = props;
   return (
     <React.Fragment>
@@ -39,4 +39,4 @@ function BuyInGm(props) {
   );
 }
 
-export default BuyInGm;
+export default SellInGm;

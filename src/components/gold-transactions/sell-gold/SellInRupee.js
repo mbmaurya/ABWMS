@@ -1,7 +1,7 @@
 import React from "react";
 import { bigCardInput } from "../../../styles";
 
-function BuyInGm(props) {
+function SellInRupee(props) {
   const { input, setInput, goldRate } = props;
   return (
     <React.Fragment>
@@ -22,7 +22,7 @@ function BuyInGm(props) {
         }}
         className="calculateddata"
       >
-        = ₹{(Number(input) * goldRate).toFixed(2)}
+        = {(Number(input) * goldRate).toFixed(2)}gm
       </p>
       <p
         style={{
@@ -33,10 +33,10 @@ function BuyInGm(props) {
           fontWeight: 500,
         }}
       >
-        g
+        ₹
       </p>
     </React.Fragment>
   );
 }
 
-export default BuyInGm;
+export default SellInRupee;

@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import Buy from "./Buy";
 import DeliveryIcon from "../../assets/images/transaction/delivery.svg";
 import TransferIcon from "../../assets/images/transaction/transfer.svg";
+import Sell from "./Sell";
 
 function GoldTransactions() {
   const [key, setKey] = useState("buy");
@@ -27,7 +28,7 @@ function GoldTransactions() {
             <Buy />
           </Tab>
           <Tab eventKey="sell" title={<span>Sell Gold</span>}>
-            <p>Sell Gold</p>
+            <Sell />
           </Tab>
           <Tab
             eventKey="delivery"
