@@ -832,3 +832,15 @@ tfoot tr td {
     vertical-align: top;
   }
 }
+
+/* Gold Transaction Successfull */
+@media screen and (max-width: 767px) {
+  .gold-transaction-successfull {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .gold-transaction-successfull > div:first-of-type {
+    padding: 15px !important;
+  }
+}
