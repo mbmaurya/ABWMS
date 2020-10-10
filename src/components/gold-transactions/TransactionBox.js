@@ -5,6 +5,7 @@ import Buy from "./Buy";
 import GoldRate from "./GoldRate";
 import Summary from "./Summary";
 import SellIn from "./sell-gold/SellIn";
+import DeliverIn from "./delivery/DeliverIn";
 
 function TransactionBox(props) {
   const { noInput, type } = props;
@@ -17,6 +18,9 @@ function TransactionBox(props) {
         break;
       case "sell":
         return <SellIn />;
+        break;
+      case "deliver":
+        return <DeliverIn />;
       default:
         return null;
         break;
@@ -26,14 +30,25 @@ function TransactionBox(props) {
   return (
     <div
       className="transaction-box"
-      style={!noInput ? transactionBox : { ...transactionBox, marginTop: 12 }}
+      style={
+        type != "deliver"
+          ? transactionBox
+          : { ...transactionBox, height: "auto", minHeight: "auto" }
+      }
     >
-      <GoldRate goldRate={goldRate} />
-      <div className="buyInDiv" style={{ marginTop: 40, marginBottom: 40 }}>
+      {type != "deliver" ? <GoldRate goldRate={goldRate} /> : ""}
+      <div
+        className="buyInDiv"
+        style={
+          type != "deliver"
+            ? { marginTop: 40, marginBottom: 40 }
+            : { mergin: 0 }
+        }
+      >
         {checkType(type)}
       </div>
-      {!noInput ? <hr /> : null}
-      <Summary />
+      {type != "deliver" ? <hr /> : null}
+      {type != "deliver" ? <Summary /> : ""}
     </div>
   );
 }

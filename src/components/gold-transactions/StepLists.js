@@ -1,21 +1,30 @@
 import React, { useState } from "react";
 import { Image, Button, Card, Accordion } from "react-bootstrap";
-import { boxTitle, stepsDiv, stepsListItem, listIcon } from "../../styles";
+import {
+  boxTitle,
+  stepsDiv,
+  stepsListItem,
+  listIcon,
+  subTitle,
+} from "../../styles";
 
-function StepLists({ listTitle, stepsList }) {
+function StepLists({ listTitle, listSubTitle, stepsList }) {
   const isMobile = window.innerWidth <= 992;
 
   const BoxTitle = () => {
     return (
-      <h3 style={{ ...boxTitle, color: "black", marginBottom: 18 }}>
-        {listTitle}
-      </h3>
+      <>
+        <h3 style={{ ...boxTitle, color: "black", marginBottom: 0 }}>
+          {listTitle}
+        </h3>
+        <p style={subTitle}>{listSubTitle}</p>
+      </>
     );
   };
 
   const Lists = () => {
     return (
-      <ul>
+      <ul style={{ marginTop: "28px" }}>
         {stepsList.map((list, i) => {
           return (
             <li key={i} style={stepsListItem} className="stepListItem">
@@ -49,7 +58,12 @@ function StepLists({ listTitle, stepsList }) {
     <div style={stepsDiv} className="steps">
       {isMobile ? (
         <Accordion defaultActiveKey="0">
-          <Accordion.Toggle as={Button} variant="link" eventKey="0">
+          <Accordion.Toggle
+            as={Button}
+            variant="link"
+            eventKey="0"
+            style={{ textAlign: "left" }}
+          >
             <BoxTitle />
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="0">

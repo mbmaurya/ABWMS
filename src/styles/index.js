@@ -10,6 +10,7 @@ export const redText = "";
 export const whiteText = "#FFFFFF";
 export const primaryGreen = "#979f6f";
 export const darkGreen = "#3e593c";
+export const lightGreen = "#969f6e";
 export const primaryRed = "#c7222a";
 export const accentYellow = "#f7a500";
 export const greyBackground = "#f7f8f9";
@@ -42,6 +43,14 @@ export const boxTitle = {
   lineHeight: 1,
   color: greenText,
   textTransform: "uppercase",
+};
+
+export const subTitle = {
+  fontFamily: `PFHandbookPro-regular, "san-serif"`,
+  fontSize: "18px",
+  lineHeight: "21px",
+  color: greyText,
+  marginTop: "10px",
 };
 
 // step elipse
@@ -321,28 +330,27 @@ export const cardItem2 = {
   marginRight: 30,
 };
 
-
 // GOLD TRANSACTIONS
 export const transactionContainer = {
   ...formContainer,
   marginTop: 50,
   marginBottom: 60,
   maxWidth: 1051,
-  alignItems: 'unset'
-}
+  alignItems: "unset",
+};
 
 export const stepsDiv = {
-  marginTop: 43
-}
+  marginTop: 43,
+};
 
 export const stepsListItem = {
   marginBottom: 32,
-  display: 'flex',
-  alignItems: 'center',
+  display: "flex",
+  alignItems: "center",
   fontSize: 18,
   color: greyText,
-  position: 'relative',
-}
+  position: "relative",
+};
 
 export const listIcon = {
   marginRight: 12,
@@ -350,50 +358,50 @@ export const listIcon = {
   width: 32,
   backgroundColor: accentYellow,
   borderRadius: 100,
-}
+};
 
 export const transactionBox = {
   ...box,
-  height: 519, 
+  height: 519,
   minHeight: 519,
   maxWidth: 491,
-  marginTop: -30, 
-  marginLeft: 'auto',
-  padding: '30px 30px 40px 30px'
-}
+  marginTop: -30,
+  marginLeft: "auto",
+  padding: "30px 30px 40px 30px",
+};
 
 export const goldRateBox = {
   marginTop: 5,
-  padding: '2px 22px',
-  backgroundColor: '#f1f1f1',
-  borderRadius: 3
-}
+  padding: "2px 22px",
+  backgroundColor: "#f1f1f1",
+  borderRadius: 3,
+};
 
 export const goldRatePara = {
   fontSize: 21,
-  color: greyText
-}
+  color: greyText,
+};
 
 export const goldRateSpan = {
   fontSize: 28,
-  color: blackText
-}
+  color: blackText,
+};
 
 export const table = {
   fontSize: 18,
-  color: greyText
-}
+  color: greyText,
+};
 
 export const tdRight = {
-  textAlign: 'right',
-  color: blackText
-}
+  textAlign: "right",
+  color: blackText,
+};
 
 export const tfoot = {
   backgroundColor: darkGreen,
-  color: whiteText
-}
+  color: whiteText,
+};
 export const tfootright = {
-  textAlign: 'right',
-  fontSize: 20
-}
+  textAlign: "right",
+  fontSize: 20,
+};
