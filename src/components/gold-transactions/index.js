@@ -12,6 +12,7 @@ import Buy from "./Buy";
 import DeliveryIcon from "../../assets/images/transaction/delivery.svg";
 import TransferIcon from "../../assets/images/transaction/transfer.svg";
 import Sell from "./Sell";
+import Delivery from "./delivery";
 
 function GoldTransactions() {
   const [key, setKey] = useState("buy");
@@ -39,7 +40,7 @@ function GoldTransactions() {
               </span>
             }
           >
-            <p>Delivery</p>
+            <Delivery />
           </Tab>
           <Tab
             eventKey="transfer"
@@ -58,17 +59,19 @@ function GoldTransactions() {
         <Link style={clearBtn} to="/">
           Back
         </Link>
-        <Link
-          style={{
-            ...btn,
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-          to={`/gold-transactions/${key}`}
-        >
-          Proceed
-        </Link>
+        {key != "delivery" ? (
+          <Link
+            style={{
+              ...btn,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            to={`/gold-transactions/${key}`}
+          >
+            Proceed
+          </Link>
+        ) : null}
       </div>
     </Container>
   );

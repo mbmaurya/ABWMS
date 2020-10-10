@@ -82,6 +82,11 @@ input[type="number"] {
   padding: 0;
 }
 
+.error {
+  color: #c7222a;
+  border-color: #c7222a;
+}
+
 /* form */
 .form-control:hover,
 .form-control:focus {
@@ -472,6 +477,14 @@ input[type="radio"] {
   opacity: 0;
   cursor: pointer;
 }
+
+.modal-body input[type="radio"] {
+  display: inline-block;
+  opacity: 1;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
 input[type="radio"]:checked ~ .circle:after {
   opacity: 1;
 }
