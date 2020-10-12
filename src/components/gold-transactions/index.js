@@ -13,6 +13,7 @@ import DeliveryIcon from "../../assets/images/transaction/delivery.svg";
 import TransferIcon from "../../assets/images/transaction/transfer.svg";
 import Sell from "./Sell";
 import Delivery from "./delivery";
+import Transfer from "./transfer";
 
 function GoldTransactions() {
   const [key, setKey] = useState("buy");
@@ -51,7 +52,7 @@ function GoldTransactions() {
               </span>
             }
           >
-            <p>Transfer</p>
+            <Transfer />
           </Tab>
         </Tabs>
       </div>

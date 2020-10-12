@@ -12,6 +12,7 @@ import SelectAccount from "./components/gold-transactions/sell-gold";
 import SellGoldSuccessfully from "./components/gold-transactions/sell-gold/Successfull";
 import SellGoldFailure from "./components/gold-transactions/sell-gold/Failure";
 import DeliveryPin from "./components/gold-transactions/delivery/DeliveryPin";
+import TransferGoldSucessfully from "./components/gold-transactions/transfer/Successfull";
 
 function App() {
   return (
@@ -37,6 +38,10 @@ function App() {
         />
         <Route path="/gold-transactions/sell" component={SelectAccount} />
         <Route path="/gold-transactions/delivery/pin" component={DeliveryPin} />
+        <Route
+          path="/gold-transactions/transfer"
+          component={TransferGoldSucessfully}
+        />
         <Footer />
       </div>
     </Router>
