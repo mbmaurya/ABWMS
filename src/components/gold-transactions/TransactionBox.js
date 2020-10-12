@@ -6,6 +6,7 @@ import GoldRate from "./GoldRate";
 import Summary from "./Summary";
 import SellIn from "./sell-gold/SellIn";
 import DeliverIn from "./delivery/DeliverIn";
+import TransferIn from "./transfer/TransferIn";
 
 function TransactionBox(props) {
   const { noInput, type } = props;
@@ -21,9 +22,21 @@ function TransactionBox(props) {
         break;
       case "deliver":
         return <DeliverIn />;
+      case "transfer":
+        return <TransferIn />;
       default:
         return null;
         break;
+    }
+  };
+
+  const display = null;
+
+  const Type = () => {
+    if (type == "deliver" || type == "transfer") {
+      return false;
+    } else {
+      return true;
     }
   };
 
@@ -31,24 +44,20 @@ function TransactionBox(props) {
     <div
       className="transaction-box"
       style={
-        type != "deliver"
+        Type()
           ? transactionBox
           : { ...transactionBox, height: "auto", minHeight: "auto" }
       }
     >
-      {type != "deliver" ? <GoldRate goldRate={goldRate} /> : ""}
+      {Type() ? <GoldRate goldRate={goldRate} /> : ""}
       <div
         className="buyInDiv"
-        style={
-          type != "deliver"
-            ? { marginTop: 40, marginBottom: 40 }
-            : { mergin: 0 }
-        }
+        style={Type() ? { marginTop: 40, marginBottom: 40 } : { mergin: 0 }}
       >
         {checkType(type)}
       </div>
-      {type != "deliver" ? <hr /> : null}
-      {type != "deliver" ? <Summary /> : ""}
+      {Type() ? <hr /> : null}
+      {Type() ? <Summary /> : ""}
     </div>
   );
 }
