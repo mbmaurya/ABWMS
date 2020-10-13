@@ -1,0 +1,96 @@
+[
+    {
+        "mainHeading" : "Protecting", 
+        "url": "nbdks", 
+        "innerMenu" : [
+            {
+                "label" : "Life Insurance",
+                "url"   : "https://lifeinsurance.adityabirlacapital.com/"
+            },
+            {
+                "label" : "Health Insurance",
+                "url"   : "https://www.adityabirlacapital.com/healthinsurance/#!/homepage"
+            },
+            {
+                "label" : "Multiply Wellness",
+                "url"   : "https://www.adityabirlacapital.com/multiply-wellness/#!/home"
+            },
+            {
+                "label" : "Motor Insurance",
+                "url"   : "https://motorinsurance.adityabirlacapital.com/Pages/Individual/Products/Motor-Insurance.aspx"
+            },
+            {
+                "label" : "Travel Insurance",
+                "url"   : "https://travelinsurance.adityabirlacapital.com/Pages/Individual/Products/Overseas-Travel.aspx"
+            }]
+    },
+    {
+        "mainHeading" : "Investing", 
+        "url": "nbdks", 
+        "innerMenu" : [
+            {
+                "label" : "Mutual Funds",
+                "url"   : "https://mutualfund.adityabirlacapital.com/"
+            },
+            {
+                "label" : "Stock and Securities",
+                "url"   : "https://stocksandsecurities.adityabirlacapital.com/"
+            },
+            {
+                "label" : "Wealth Management",
+                "url"   : "https://wealthmanagement.adityabirlacapital.com/"
+            },
+            {
+                "label" : "Portfolio Management Services",
+                "url"   : "https://portfoliomanagementservices.adityabirlacapital.com/"
+            },
+            {
+                "label" : "Pension Funds",
+                "url"   : "https://pensionfund.adityabirlacapital.com/"
+            },
+            {
+                "label" : "Real Estate Investments ",
+                "url"   : "http://realestateinvestment.adityabirlacapital.com/"
+            }]
+    },
+    {
+        "mainHeading" : "Financing", 
+        "url": "nbdks", 
+        "innerMenu" : [
+            {
+                "label" : "Home Finance",
+                "url"   : "https://homefinance.adityabirlacapital.com/"
+            },
+            {
+                "label" : "Personal Finance",
+                "url"   : "https://personalfinance.adityabirlacapital.com/"
+            },
+            {
+                "label" : "SME Finance ",
+                "url"   : "https://smefinance.adityabirlacapital.com/Pages/Individual/Products/Overview.aspx"
+            },
+            {
+                "label" : "Loan Against Securities",
+                "url"   : "https://loanagainstsecurities.adityabirlacapital.com/Pages/Individual/Products/Overview.aspx"
+            },
+            {
+                "label" : "Mortgage Finance",
+                "url"   : "https://mortgagefinance.adityabirlacapital.com/Pages/Individual/Products/Overview.aspx"
+            }]
+        },
+    {
+        "mainHeading" : "Advising", 
+        "url": "nbdks", 
+        "innerMenu" : [
+            {
+                "label" : "MoneyForLife Planner",
+                "url"   : "https://advising.adityabirlacapital.com/money-for-life-planner"
+            },
+            {
+                "label" : "ABC of Money",
+                "url"   : "https://www.adityabirlacapital.com/abc-of-money"
+            }
+            
+        ]
+    }
+]
