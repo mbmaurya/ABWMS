@@ -1,0 +1,65 @@
+[
+    {
+        "mainHeading": "Mutual Funds",
+        "url": "#",
+        "children": [
+            {
+                "label": "Home",
+                "url": "https://mywealth.adityabirlacapital.com",
+                "prodID": "2"
+            },
+            {
+                "label": "Open Investment Account",
+                "url": "https://mywealth.adityabirlacapital.com/registration/sign-in",
+                "prodID": "2"
+            },
+            {
+                "label": "Explore Solutions",
+                "url": "https://mywealth.adityabirlacapital.com/mf-transaction/Category",
+                "prodID": "2"
+            }
+        ]
+    },
+    {
+        "mainHeading": "Loans",
+        "url": "#",
+        "children": [
+            {
+                "label": "Personal Loan",
+                "url": "https://personalloan.myuniverse.in/",
+                "prodID": "11"
+            },
+            {
+                "label": "Home Loan",
+                "url": "https://mywealth.adityabirlacapital.com/home-loan-india/",
+                "prodID": "5"
+            }
+        ]
+    },
+    {
+        "mainHeading": "Health Insurance",
+        "url": "https://mywealth.adityabirlacapital.com/health-insurance/",
+        "children": []
+    },
+    {
+        "mainHeading": "Tax e-Filing",
+        "url": "https://mywealth.adityabirlacapital.com/income-tax-filing/",
+        "children": []
+    },
+    {
+        "mainHeading": "About Us",
+        "url": "#",
+        "children": [
+            {
+                "label": "Company Profile",
+                "url": "https://wealthmanagement.adityabirlacapital.com/about-us/company-profile",
+                "prodID": "1"
+            },
+            {
+                "label": "Our People",
+                "url": "https://wealthmanagement.adityabirlacapital.com/about-us/our-people",
+                "prodID": "1"
+            }
+        ]
+    }
+]
