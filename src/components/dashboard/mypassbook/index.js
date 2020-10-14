@@ -93,7 +93,31 @@ const passbookData = [
     price: "5350",
     grams: "4.5327",
     amount: "25,000",
-    transaction: "Credit Card",
+    transaction: "Transaction Failed",
+  },
+  {
+    date: "25-Aug-2020",
+    orderType: "SELL",
+    price: "5350",
+    grams: "4.5327",
+    amount: "25,000",
+    transaction: "HDFC Bank",
+  },
+  {
+    date: "25-Aug-2020",
+    orderType: "TRANSFER",
+    price: "5350",
+    grams: "4.5327",
+    amount: "25,000",
+    transaction: "Transfer to Viswanath Birje",
+  },
+  {
+    date: "25-Aug-2020",
+    orderType: "DELIVER",
+    price: "5350",
+    grams: "4.5327",
+    amount: "25,000",
+    transaction: "Delivered To Nilesh Patel",
   },
   {
     date: "25-Aug-2020",
@@ -105,51 +129,27 @@ const passbookData = [
   },
   {
     date: "25-Aug-2020",
-    orderType: "BUY",
+    orderType: "SELL",
     price: "5350",
     grams: "4.5327",
     amount: "25,000",
-    transaction: "Credit Card",
+    transaction: "HDFC bank",
   },
   {
     date: "25-Aug-2020",
-    orderType: "BUY",
+    orderType: "TRANSFER",
     price: "5350",
     grams: "4.5327",
     amount: "25,000",
-    transaction: "Credit Card",
+    transaction: "Transfer to Viswanath Birje",
   },
   {
     date: "25-Aug-2020",
-    orderType: "BUY",
+    orderType: "SELL",
     price: "5350",
     grams: "4.5327",
     amount: "25,000",
-    transaction: "Credit Card",
-  },
-  {
-    date: "25-Aug-2020",
-    orderType: "BUY",
-    price: "5350",
-    grams: "4.5327",
-    amount: "25,000",
-    transaction: "Credit Card",
-  },
-  {
-    date: "25-Aug-2020",
-    orderType: "BUY",
-    price: "5350",
-    grams: "4.5327",
-    amount: "25,000",
-    transaction: "Credit Card",
-  },
-  {
-    date: "25-Aug-2020",
-    orderType: "BUY",
-    price: "5350",
-    grams: "4.5327",
-    amount: "25,000",
-    transaction: "Credit Card",
+    transaction: "HDFC bank",
   },
 ];
 
@@ -157,7 +157,7 @@ const printPassbookData = passbookData.map((data) => (
   <tr style={PassbookDataContainerStyles}>
     <td style={PassbookDataStyles}>{data.date}</td>
     <td style={PassbookDataStyles}>{data.orderType}</td>
-    <td style={PassbookDataStyles}>{data.price}</td>
+    <td style={PassbookDataStyles}>{Number(data.price).toFixed(1)}</td>
     <td style={PassbookDataStyles}>{data.grams}</td>
     <td style={PassbookDataStyles}>{data.amount}</td>
     <td style={PassbookDataStyles}>{data.transaction}</td>

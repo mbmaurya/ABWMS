@@ -112,7 +112,7 @@ function SellGoldSuccessfully() {
           }}
           to={`/dashboard`}
         >
-          Go To Dashboard
+          Continue
         </Link>
       </div>
     </Container>

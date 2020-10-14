@@ -4,6 +4,7 @@ import { ReactComponent as PersonalDetailsIcon } from "../../../assets/images/pr
 import { ReactComponent as EditDetailsIcon } from "../../../assets/images/profile/edit-icon.svg";
 import { ReactComponent as BankDetailsIcon } from "../../../assets/images/profile/bank-account-details.svg";
 import { ReactComponent as AddressDetailsIcon } from "../../../assets/images/profile/address.svg";
+
 import UserName from "../username";
 import {
   accentYellow,
@@ -12,6 +13,7 @@ import {
   mediumGrey,
   greenText,
   redText,
+  addBankLink,
 } from "../../../styles";
 import PageTitle from "../pagetitle";
 
@@ -41,10 +43,22 @@ const MyProfileHeadingStyles = {
 };
 
 const MyProfileBodyStyles = {
-  padding: "15px 15px 15px 90px",
+  padding: "15px 15px 25px 90px",
 };
 
+const PersonalDetailsListStyles = {
+  display: "inline-block",
+  width: "25%",
+  marginTop: "10px",
+  verticalAlign: "top",
+};
 const MyProfileBodyListStyles = {
+  display: "inline-block",
+  width: "20%",
+  marginTop: "10px",
+  verticalAlign: "top",
+};
+const AddressDetailListStyles = {
   display: "inline-block",
   width: "20%",
   marginTop: "10px",
@@ -89,6 +103,11 @@ const redPill = {
   border: `1px solid ${redText}`,
 };
 
+const Icon = {
+  width: 64,
+  height: 64,
+};
+
 function MyProfile() {
   return (
     <div className="personal-details dashboard-element">
@@ -97,7 +116,7 @@ function MyProfile() {
         <Col>
           <div className="myprofile-container" style={MyProfileContainerStyles}>
             <div className="myprofile-header" style={MyProfileHeaderStyles}>
-              <PersonalDetailsIcon />
+              <PersonalDetailsIcon style={Icon} />
               <h3 style={MyProfileHeadingStyles}>Personal Details</h3>
               <a href="#" style={EditIconStyles}>
                 <EditDetailsIcon />
@@ -105,31 +124,35 @@ function MyProfile() {
             </div>
             <div className="myprofile-body" style={MyProfileBodyStyles}>
               <ul>
-                <li style={MyProfileBodyListStyles}>
+                <li style={PersonalDetailsListStyles}>
                   <p style={MyProfileBodyTitleStyles}>Name</p>
-                  <p style={MyProfileBodyValueStyles}>Nilesh Pates</p>
+                  <p style={MyProfileBodyValueStyles}>Nilesh Patel</p>
                 </li>
-                <li style={MyProfileBodyListStyles}>
+                <li style={PersonalDetailsListStyles}>
                   <p style={MyProfileBodyTitleStyles}>PAN No.</p>
                   <p style={MyProfileBodyValueStyles}>ABCDE4556F</p>
                 </li>
-                <li style={MyProfileBodyListStyles}>
+                <li style={PersonalDetailsListStyles}>
                   <p style={MyProfileBodyTitleStyles}>Email ID</p>
                   <p style={MyProfileBodyValueStyles}>xxxxxxxxxx@gmail.com</p>
                 </li>
-                <li style={MyProfileBodyListStyles}>
+                <li style={PersonalDetailsListStyles}>
                   <p style={MyProfileBodyTitleStyles}>Mobile Number</p>
                   <p style={MyProfileBodyValueStyles}>9966332255</p>
                 </li>
               </ul>
               <ul style={{ marginTop: "15px", marginBottom: "15px" }}>
                 <li style={MyProfileBodyListStyles}>
-                  <p style={MyProfileBodyTitleStyles}>KYC Compliance Status</p>
+                  <p style={MyProfileBodyTitleStyles}>
+                    KYC Compliance <br className="textBreaker" />
+                    Status
+                  </p>
                   <p
                     style={{
                       ...MyProfileBodyValueStyles,
                       ...pill,
                       ...greenPill,
+                      width: "auto",
                     }}
                   >
                     Verified
@@ -145,7 +168,7 @@ function MyProfile() {
         <Col>
           <div className="myprofile-container" style={MyProfileContainerStyles}>
             <div className="myprofile-header" style={MyProfileHeaderStyles}>
-              <BankDetailsIcon />
+              <BankDetailsIcon style={Icon} />
               <h3 style={MyProfileHeadingStyles}>BANK DETAILS</h3>
               <a href="#" style={EditIconStyles}>
                 <EditDetailsIcon />
@@ -202,12 +225,21 @@ function MyProfile() {
                       ...MyProfileBodyValueStyles,
                       ...pill,
                       ...greenPill,
+                      width: "auto",
                     }}
                   >
                     Active
                   </p>
                 </li>
               </ul>
+              <p>
+                <i
+                  style={{ marginRight: 5 }}
+                  class="fa fa-plus-circle"
+                  aria-hidden="true"
+                ></i>
+                <span style={addBankLink}>Add Bank</span>
+              </p>
             </div>
           </div>
         </Col>
@@ -217,7 +249,7 @@ function MyProfile() {
         <Col>
           <div className="myprofile-container" style={MyProfileContainerStyles}>
             <div className="myprofile-header" style={MyProfileHeaderStyles}>
-              <AddressDetailsIcon />
+              <AddressDetailsIcon style={Icon} />
               <h3 style={MyProfileHeadingStyles}>Address Details</h3>
               <a href="#" style={EditIconStyles}>
                 <EditDetailsIcon />
@@ -225,21 +257,22 @@ function MyProfile() {
             </div>
             <div className="myprofile-body" style={MyProfileBodyStyles}>
               <ul>
-                <li style={MyProfileBodyListStyles}>
+                <li style={{ ...AddressDetailListStyles, width: "40%" }}>
                   <p style={MyProfileBodyTitleStyles}>Address</p>
-                  <p style={MyProfileBodyValueStyles}>
+                  <p style={{ ...MyProfileBodyValueStyles, width: "60%" }}>
                     xxxxx xxxxx xxxxxx xxxxxxx, xxxxx xxxx, xxxxxx.
                   </p>
                 </li>
-                <li style={MyProfileBodyListStyles}>
+
+                <li style={AddressDetailListStyles}>
                   <p style={MyProfileBodyTitleStyles}>City</p>
                   <p style={MyProfileBodyValueStyles}>Mumbai</p>
                 </li>
-                <li style={MyProfileBodyListStyles}>
+                <li style={AddressDetailListStyles}>
                   <p style={MyProfileBodyTitleStyles}>State</p>
                   <p style={MyProfileBodyValueStyles}>Maharashtra</p>
                 </li>
-                <li style={MyProfileBodyListStyles}>
+                <li style={AddressDetailListStyles}>
                   <p style={MyProfileBodyTitleStyles}>Pincode</p>
                   <p style={MyProfileBodyValueStyles}>400096</p>
                 </li>

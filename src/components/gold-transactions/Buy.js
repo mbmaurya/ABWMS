@@ -7,7 +7,7 @@ import StepTwo from "../../assets/images/transaction/buy-gold-step-2.svg";
 import StepThree from "../../assets/images/transaction/buy-gold-step-3.svg";
 
 function Buy() {
-  const listTitle = "How to buy Gold?";
+  const listTitle = "How to buy gold?";
   const stepsList = [
     {
       icon: StepOne,

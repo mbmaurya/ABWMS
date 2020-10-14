@@ -36,7 +36,7 @@ function Sold() {
                 lineHeight: "27px",
               }}
             >
-              &#x20B9; 4,50,000
+              &#x20B9; 1,50,000
             </p>
           </li>
           <li style={DashboardCardElementStyles}>

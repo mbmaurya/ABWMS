@@ -12,6 +12,7 @@ function Delivery() {
   const listSubTitle =
     "Now get your 24K Gold delivered to your doorstep directly in the form of gold coin.";
 
+  const listSecondaryTitle = "How to get Gold Coin delivered?";
   const stepsList = [
     {
       icon: StepOne,
@@ -34,8 +35,10 @@ function Delivery() {
           listTitle={listTitle}
           listSubTitle={listSubTitle}
           stepsList={stepsList}
+          listSecondaryTitle={listSecondaryTitle}
         />
       </Col>
+
       <Col lg={6}>
         <TransactionBox type="deliver" noInput={false} />
       </Col>

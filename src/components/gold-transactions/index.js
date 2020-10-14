@@ -9,8 +9,10 @@ import {
 } from "../../styles";
 import { Link } from "react-router-dom";
 import Buy from "./Buy";
-import DeliveryIcon from "../../assets/images/transaction/delivery.svg";
-import TransferIcon from "../../assets/images/transaction/transfer.svg";
+import DeliveryIcon from "../../assets/images/landing-page/get-deliver.svg";
+import TransferIcon from "../../assets/images/landing-page/transfer.svg";
+import SellGoldIcon from "../../assets/images/transaction/redeem-gold.svg";
+import GoldIcon from "../../assets/images/landing-page/buy-export-as-gold.svg";
 import Sell from "./Sell";
 import Delivery from "./delivery";
 import Transfer from "./transfer";
@@ -26,19 +28,53 @@ function GoldTransactions() {
           activeKey={key}
           onSelect={(k) => setKey(k)}
         >
-          <Tab eventKey="buy" title={<span>Buy Gold</span>}>
+          <Tab
+            eventKey="buy"
+            title={
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginTop: "-8px",
+                }}
+              >
+                <img src={GoldIcon} style={{ width: 30, marginRight: 8 }} /> Buy
+                <span>Gold</span>
+              </div>
+            }
+          >
             <Buy />
           </Tab>
-          <Tab eventKey="sell" title={<span>Sell Gold</span>}>
+          <Tab
+            eventKey="sell"
+            title={
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginTop: "-8px",
+                }}
+              >
+                <img src={SellGoldIcon} style={{ width: 30, marginRight: 8 }} />
+                <span>Sell Gold</span>
+              </div>
+            }
+          >
             <Sell />
           </Tab>
           <Tab
             eventKey="delivery"
             title={
-              <span>
-                <img src={DeliveryIcon} style={{ width: 24, marginRight: 8 }} />
-                Delivery
-              </span>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginTop: "-8px",
+                }}
+              >
+                <img src={DeliveryIcon} style={{ width: 30, marginRight: 8 }} />
+                <span>Delivery</span>
+              </div>
             }
           >
             <Delivery />
@@ -46,10 +82,16 @@ function GoldTransactions() {
           <Tab
             eventKey="transfer"
             title={
-              <span>
-                <img src={TransferIcon} style={{ width: 18, marginRight: 8 }} />
-                Transfer
-              </span>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginTop: "-8px",
+                }}
+              >
+                <img src={TransferIcon} style={{ width: 30, marginRight: 8 }} />
+                <span>Transfer</span>
+              </div>
             }
           >
             <Transfer />
@@ -58,7 +100,7 @@ function GoldTransactions() {
       </div>
       <div className="button-group" style={buttonGroup}>
         <Link style={clearBtn} to="/">
-          Back
+          <i class="fa fa-angle-left" aria-hidden="true"></i> &nbsp;Back
         </Link>
         {key != "delivery" ? (
           <Link

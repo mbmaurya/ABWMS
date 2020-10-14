@@ -34,6 +34,32 @@ export const formBoxMobile = {
   padding: 22,
 };
 
+export const titleContainer = {
+  display: "flex",
+  alignItems: "center",
+  marginBottom: 28,
+  position: "relative",
+};
+export const boxParagraph = {
+  fontFamily: `PFHandbookPro-medium, "san-serif"`,
+  fontSize: 21,
+  fontWeight: 500,
+  letterSpacing: "2.63px",
+  lineHeight: 1,
+  color: greenText,
+  textTransform: "uppercase",
+};
+
+export const goldTitle = {
+  fontFamily: `PFHandbookPro-medium, "san-serif"`,
+  marginBottom: 28,
+  fontSize: 21,
+  fontWeight: 500,
+  lineHeight: 1,
+  color: greenText,
+  position: "relative",
+};
+
 export const boxTitle = {
   fontFamily: `PFHandbookPro-medium, "san-serif"`,
   marginBottom: 28,
@@ -43,6 +69,7 @@ export const boxTitle = {
   lineHeight: 1,
   color: greenText,
   textTransform: "uppercase",
+  position: "relative",
 };
 
 export const subTitle = {
@@ -63,8 +90,8 @@ export const steps = {
 export const stepElipse = {
   padding: 0,
   marginLeft: 10,
-  height: 13,
-  width: 13,
+  height: 11,
+  width: 11,
   borderRadius: "100%",
   backgroundColor: accentYellow,
   border: "none",
@@ -84,6 +111,7 @@ export const formLabel = {
   fontSize: 18,
   lineHeight: 1,
   color: greyText,
+  position: "relative",
 };
 
 export const formInput = {
@@ -113,6 +141,12 @@ export const dropzone = {
 export const dropzoneMobile = {
   ...dropzone,
   flexDirection: "column",
+};
+export const uploadIcon = {
+  order: -1,
+};
+export const dropzoneParaMobile = {
+  marginBottom: 30,
 };
 
 export const dropzonePara = {
@@ -241,6 +275,14 @@ export const banner = {
   zIndex: -1,
 };
 
+export const bannerImageText = {
+  position: "absolute",
+  right: "32%",
+  bottom: 50,
+  color: "#fff",
+  fontSize: "18px",
+};
+
 export const heading = {
   color: "#fff",
   fontSize: "60px",
@@ -288,11 +330,12 @@ export const bigCardInput = {
 
 export const prizeBorder = {
   border: `1px solid ${lightGrey}`,
-  padding: "2px 15px",
+  padding: "2px 10px",
   color: greenText,
   fontSize: "13px",
   fontWeight: "bold",
   cursor: "pointer",
+  borderRadius: "2px",
 };
 
 export const cardItemWhite = {

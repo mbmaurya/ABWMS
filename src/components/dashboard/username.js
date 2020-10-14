@@ -15,7 +15,11 @@ const dashboardUsername = {
 const UserName = (props) => {
   return (
     <h3 style={dashboardUsername} className={props.assignClass}>
-      Hello Nilesh Patel!
+      Hello Nilesh Patel!!
+      <i
+        style={{ position: "absolute", right: 10, top: 20 }}
+        className="fa fa-angle-down dasboard-username-dropdown"
+      ></i>
     </h3>
   );
 };

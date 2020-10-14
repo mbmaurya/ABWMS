@@ -36,7 +36,7 @@ function TransferIn() {
 
         <Row>
           <Col md={6}>
-            <Form.Label style={LabelStyles}>Amounnt( &#x20B9;)</Form.Label>
+            <Form.Label style={LabelStyles}>Amount( &#x20B9;)</Form.Label>
             <Form.Control type="number" placeholder=""></Form.Control>
           </Col>
           <Col md={6}>

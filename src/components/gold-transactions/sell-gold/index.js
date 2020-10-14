@@ -42,7 +42,7 @@ function SelectAccount() {
             <Col lg={6}>
               <h3 style={HeadingStyles}>Select an account</h3>
               <p style={SubHeadingStyles}>
-                Amount will be creadited to your account
+                Amount will be credited to your account
               </p>
               <div>
                 <Form>

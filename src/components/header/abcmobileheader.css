@@ -1,0 +1,275 @@
+@media (max-width: 800px) {
+  .abc_mobile_header {
+    max-width: 420px;
+    width: 80%;
+    background-color: #fff;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    padding-top: 0px;
+    visibility: hidden;
+    transform: translateX(110%);
+    transition: transform ease-out 0.3s;
+    overflow: hidden;
+  }
+  .abc_mobile_header.open {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .abc_nav_header {
+    margin: 0;
+    height: 157px;
+    background-color: #c7222a;
+  }
+  .abc_nav_header .logo {
+    background: url(../../assets/images/header/ABG_Birla-3D-Logo_Mobile.png)
+      no-repeat 20px 15px;
+    width: 240px;
+    height: 60px;
+    display: block;
+    margin: 0;
+  }
+  /* .close_menu { position: absolute; right: 20px; top: 40px; color: #fff;  } */
+  .abc_mobile_header .close_menu:before,
+  .abc_mobile_header .close_menu:after {
+    position: absolute;
+    right: 35px;
+    content: " ";
+    height: 24px;
+    width: 2px;
+    background-color: #fff;
+    top: 30px;
+    cursor: pointer;
+  }
+  .abc_mobile_header .close_menu:before {
+    transform: rotate(45deg);
+  }
+  .abc_mobile_header .close_menu:after {
+    transform: rotate(-45deg);
+  }
+  .mobile_icons {
+    margin-top: 35px;
+    display: block;
+    height: 81px;
+  }
+  .mobile_icons .marrgt5 {
+    width: 45%;
+    text-align: center;
+    display: inline-block;
+    line-height: 70px;
+    margin: 0;
+  }
+  .home_icon_big {
+    background: url(../../assets/images/header/big-home.svg) no-repeat center
+      center;
+    width: 100%;
+    height: 40px;
+    display: block;
+  }
+  .phone_icon_big {
+    background: url(../../assets/images/header/big-phone.svg) no-repeat center
+      center;
+    width: 100%;
+    height: 40px;
+    display: block;
+    border-left: 1px solid #999;
+  }
+  .user_icon_big {
+    background: url(../../assets/images/header/big-log-in.svg) no-repeat center
+      center;
+    width: 100%;
+    height: 40px;
+    display: block;
+  }
+  .pifa_menu {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .pifa_menu ul {
+    list-style: none;
+    padding-left: 0px;
+  }
+  .pifa_menu ul li {
+    border-left: 8px solid #fff;
+    padding: 7px 0 7px 25px;
+    margin-bottom: 35px;
+  }
+  .pifa_menu ul li a {
+    font-family: "PFHandbookPro-Regular";
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.27;
+    letter-spacing: normal;
+    color: #444749 !important;
+    display: block;
+  }
+  .pifa_menu ul li .inner_pifa_menu {
+    padding-left: 0;
+  }
+  .protectingHd {
+    font-family: "PFHandbookPro-Bold";
+    font-size: 28px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    margin-bottom: 4px;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+  .pifa_menu ul li .inner_pifa_menu li {
+    width: 47%;
+    display: inline-block;
+    margin: 4px 0;
+    vertical-align: top;
+    border: 0;
+    padding-left: 0;
+  }
+  .pifa_menu ul li .inner_pifa_menu li a {
+    font-size: 16px;
+  }
+  .pifa_menu ul li:first-child,
+  .pifa_menu ul li:first-child .protectingHd {
+    border-color: #da9089;
+    color: #da9089;
+  }
+  .pifa_menu ul li:nth-child(2),
+  .pifa_menu ul li:nth-child(2) .protectingHd {
+    border-color: #969f6e;
+    color: #969f6e;
+  }
+  .pifa_menu ul li:nth-child(3),
+  .pifa_menu ul li:nth-child(3) .protectingHd {
+    border-color: #d4ae69;
+    color: #d4ae69;
+  }
+  .pifa_menu ul li:last-child,
+  .pifa_menu ul li:last-child .protectingHd {
+    border-color: #c7222a;
+    color: #c7222a;
+  }
+  .overflow_class {
+    overflow-y: scroll;
+    height: 100%;
+    position: relative;
+  }
+  .top_pifa_menu {
+    width: 80%;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  .othersToggle {
+    padding-left: 20px;
+  }
+  .hide {
+    display: none;
+  }
+  .top_pifa_menu ul {
+    list-style: none;
+    padding-left: 40px;
+  }
+  .top_pifa_menu ul li a {
+    font-family: "PFHandbookPro-Regular";
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.27;
+    letter-spacing: normal;
+    color: #444749 !important;
+    display: block;
+    margin-top: 15px;
+  }
+  .mob-footer {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 430px) {
+  .abc_mobile_header {
+    width: 100%;
+  }
+  .header-title {
+    padding-left: 12px !important;
+  }
+  .logo {
+    background-size: 85%;
+    width: 240px;
+  }
+  .pifa_right_mobile {
+    margin-top: 38px;
+  }
+  .logo-container {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  .col-menu-right {
+    margin-right: 10px;
+  }
+  .bottombar_active .nav_title1 {
+    padding-left: 12px;
+  }
+  .title {
+    padding-left: 12px;
+  }
+  .bottombar_active .nav_title1 a {
+    font-size: 24px;
+  }
+  .fa {
+    vertical-align: text-bottom;
+  }
+}
+@media (max-width: 390px) {
+  .logo-container {
+    height: 70px;
+  }
+
+  .logo {
+    background-size: 95%;
+    width: 200px;
+  }
+  .pifa_right_mobile {
+    margin-top: 35px;
+  }
+  .bottombar_active .nav_title1 a {
+    font-size: 20px;
+  }
+  .bottombar_active {
+    height: 35px;
+  }
+  .title {
+    padding-left: 12px;
+    font-size: 14px;
+  }
+  .col-menu-right {
+    margin: 5px 10px 0 8px;
+  }
+  .support-ul .support-li.cart {
+    margin-top: -32px;
+    margin-right: -11px;
+  }
+  .support-ul .support-li {
+    padding: 0 0px 0 0;
+    height: 35px;
+    margin-top: 5px;
+  }
+  .cart_icon {
+    height: 35px;
+  }
+  .bottombar_active .nav_title1 {
+    padding-top: 8px;
+  }
+  .mobile_header.open .main_menu ul li {
+    height: auto;
+  }
+  .mobile_header.open .main_menu ul li.dropdown:hover .dropdown-menu {
+    width: 100%;
+    box-shadow: none;
+  }
+}

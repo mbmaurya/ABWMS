@@ -2,7 +2,7 @@ import React from "react";
 import { bigCardInput, prizeBorder } from "../../../styles";
 import SellInGm from "./SellInGm";
 import SellInRupee from "./SellInRupee";
-
+import currenyFormater from "../../global/currencyFormater";
 function SellInOptions(props) {
   const {
     sell,
@@ -35,7 +35,7 @@ function SellInOptions(props) {
                 }}
                 onClick={() => setInput(data)}
               >
-                <p>{data}</p>
+                <p>{currenyFormater.format(data)}</p>
               </li>
             ))
           : selectGmData.map((data, i) => (
