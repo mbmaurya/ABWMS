@@ -331,7 +331,9 @@ class header extends Component {
               </div>
             </div>
             <div className="bottombar_dark_active">
-              <span className="header-title">Aditya Birla Finance Limited</span>
+              <p className="header-title">
+                Aditya Birla Sun Life Asset Management Company LTD
+              </p>
             </div>
           </div>
 

@@ -38,7 +38,7 @@ function OrderBox({ weight, makingCharges }) {
     <>
       <div style={OrderBoxStyles}>
         <GoldCoin style={{ marginBottom: "10px" }} />
-        <p style={OrderBoxContentStyles}>{weight} gm Gold 999.9</p>
+        <p style={OrderBoxContentStyles}>{weight} gm Gold 999.9</p>
         <p style={OrderBoxContentStyles}>
           Making charges &#x20B9;{makingCharges}
         </p>
@@ -46,6 +46,7 @@ function OrderBox({ weight, makingCharges }) {
           style={{
             ...clearBtn,
             ...OrderButtonStyles,
+            borderRadius: 4,
           }}
           onClick={handleShow}
         >

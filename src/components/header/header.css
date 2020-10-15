@@ -222,10 +222,14 @@
 
 .bottombar_active .nav_title {
   padding-left: 48px;
-  padding-top: 7px;
+  padding-top: 4px;
   display: inline-block;
   text-decoration: none;
   /* vertical-align: middle; */
+}
+
+.bottombar_active .nav_title:hover {
+  text-decoration: underline;
 }
 
 .bottombar_active .nav_title a {
@@ -496,6 +500,11 @@
   .head_top {
     display: none;
   }
+  
+  .header-title {
+    padding-left: 20px !important;
+  }
+
 
   .header-desp {
     margin: 0;

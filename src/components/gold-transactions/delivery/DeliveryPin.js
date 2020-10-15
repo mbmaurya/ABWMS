@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ReactComponent as GoldPackImage } from "../../../assets/images/transaction/gold-delivery.svg";
+import BtnGroup from "../../global/BtnGroup";
 import { Link } from "react-router-dom";
 import {
   transactionContainer,
@@ -84,9 +85,9 @@ function DeliveryPin() {
                     }}
                   >
                     <span style={{ fontSize: "18px" }}>
-                      Making charges <b>&#x20B9;316</b>
-                    </span>
-                    <br />
+                      Making charges <br />
+                      <b>&#x20B9;316</b>
+                    </span>{" "}
                     Inclusive of all taxes
                   </li>
                   <li
@@ -110,11 +111,7 @@ function DeliveryPin() {
           </Row>
         </div>
 
-        <div className="button-group" style={buttonGroup}>
-          <Link style={clearBtn} to="/gold-transactions">
-            Back
-          </Link>
-        </div>
+        <BtnGroup />
       </Container>
     </>
   );

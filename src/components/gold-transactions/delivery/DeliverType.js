@@ -35,10 +35,12 @@ function DeliverType({ display }) {
               name="deliverGold"
               label="New purchase gold deliver "
               onClick={() => history.push(path)}
+              className="full-width"
             />
 
             <Form.Check
               style={FormCheckStyles}
+              className="full-width"
               type="radio"
               name="deliverGold"
               label="Existing gold deliver"

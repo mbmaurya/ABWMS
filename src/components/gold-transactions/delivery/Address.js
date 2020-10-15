@@ -4,13 +4,17 @@ import { Form, Row, Col, FormControl } from "react-bootstrap";
 function Address() {
   return (
     <>
-      <h3 style={{ marginBottom: "40px" }}>Address</h3>
+      <h3 style={{ marginBottom: "40px" }}>Address Details</h3>
       <Form>
         <Row>
           <Col md={12}>
             <Form.Group>
               <Form.Label>Address*</Form.Label>
-              <Form.Control types="text"></Form.Control>
+              <Form.Control
+                style={{ fontWeight: "bold" }}
+                placeholder="Please Enter Your Address"
+                types="text"
+              ></Form.Control>
             </Form.Group>
           </Col>
         </Row>
@@ -18,13 +22,18 @@ function Address() {
           <Col md={6}>
             <Form.Group>
               <Form.Label>City</Form.Label>
-              <Form.Control type="text" placeholder="Mumbai"></Form.Control>
+              <Form.Control
+                style={{ fontWeight: "bold" }}
+                type="text"
+                placeholder="Mumbai"
+              ></Form.Control>
             </Form.Group>
           </Col>
           <Col md={6}>
             <Form.Group>
               <Form.Label>State</Form.Label>
               <Form.Control
+                style={{ fontWeight: "bold" }}
                 type="text"
                 placeholder="Maharashtra"
               ></Form.Control>
@@ -35,13 +44,21 @@ function Address() {
           <Col md={6}>
             <Form.Group>
               <Form.Label>Country</Form.Label>
-              <Form.Control type="text" placeholder="India"></Form.Control>
+              <Form.Control
+                style={{ fontWeight: "bold" }}
+                type="text"
+                placeholder="India"
+              ></Form.Control>
             </Form.Group>
           </Col>
           <Col md={6}>
             <Form.Group>
               <Form.Label>Pin Code*</Form.Label>
-              <Form.Control type="number" placeholder="400001"></Form.Control>
+              <Form.Control
+                style={{ fontWeight: "bold" }}
+                type="number"
+                placeholder="400001"
+              ></Form.Control>
             </Form.Group>
           </Col>
         </Row>

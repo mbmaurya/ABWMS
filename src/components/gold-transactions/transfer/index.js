@@ -7,7 +7,7 @@ import StepTwo from "../../../assets/images/transaction/buy-gold-step-2.svg";
 import StepThree from "../../../assets/images/transaction/buy-gold-step-3.svg";
 
 function Transfer() {
-  const listTitle = "How to transfer Gold?";
+  const listTitle = "How to transfer gold?";
 
   const listSubTitle = "";
 

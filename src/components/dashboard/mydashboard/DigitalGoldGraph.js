@@ -21,7 +21,7 @@ function DigitalGoldGrpah() {
         <p>
           <GoldGraphIcon />
           Digital Gold Graph
-          <span>Gold - 24K 99.9%</span>
+          <span style={{ textTransform: "capitalize" }}>Gold - 24K 99.9%</span>
         </p>
       </div>
       <div className="dashboard-card-body">

@@ -70,7 +70,7 @@ function BuyGold() {
       </div>
       <div className="button-group" style={buttonGroup}>
         <Link style={clearBtn} to="/gold-transactions">
-          Back
+          <i class="fa fa-angle-left" aria-hidden="true"></i> &nbsp;Back
         </Link>
         <Link
           style={{

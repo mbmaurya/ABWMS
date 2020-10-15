@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import { Image, Button, Card, Accordion } from "react-bootstrap";
 import {
-  boxTitle,
+  goldTitle,
   stepsDiv,
   stepsListItem,
   listIcon,
   subTitle,
 } from "../../styles";
 
-function StepLists({ listTitle, listSubTitle, stepsList }) {
+function StepLists({ listTitle, listSubTitle, stepsList, listSecondaryTitle }) {
   const isMobile = window.innerWidth <= 992;
 
   const BoxTitle = () => {
     return (
       <>
-        <h3 style={{ ...boxTitle, color: "black", marginBottom: 0 }}>
+        <h3 style={{ ...goldTitle, color: "black", marginBottom: 0 }}>
           {listTitle}
         </h3>
         <p style={subTitle}>{listSubTitle}</p>
@@ -25,7 +25,7 @@ function StepLists({ listTitle, listSubTitle, stepsList }) {
   const Lists = () => {
     return (
       <ul style={{ marginTop: "28px" }}>
-        {stepsList.map((list, i) => {
+        {(stepsList || []).map((list, i) => {
           return (
             <li key={i} style={stepsListItem} className="stepListItem">
               <div style={listIcon}>
@@ -73,6 +73,16 @@ function StepLists({ listTitle, listSubTitle, stepsList }) {
       ) : (
         <section>
           <BoxTitle />
+          <h3
+            style={{
+              ...goldTitle,
+              color: "black",
+              marginBottom: 0,
+              marginTop: 30,
+            }}
+          >
+            {listSecondaryTitle ? listSecondaryTitle : null}
+          </h3>
           <Lists />
         </section>
       )}

@@ -195,6 +195,11 @@
   .abc_mobile_header {
     width: 100%;
   }
+  
+  .header-title {
+    padding-left: 12px !important;
+  }
+
   .logo {
     background-size: 85%;
     width: 240px;
@@ -226,6 +231,7 @@
   .logo-container {
     height: 70px;
   }
+
   .logo {
     background-size: 95%;
     width: 200px;

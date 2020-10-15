@@ -18,7 +18,9 @@ function PageTitle(props) {
   return (
     <Row noGutters={true} style={{ alignItems: "flex-end", marginTop: "15px" }}>
       <Col lg={6}>
-        <h2 style={BlockTitleStyles}>{props.title}</h2>
+        <h2 style={BlockTitleStyles} className="BlockTitleStyles">
+          {props.title}
+        </h2>
       </Col>
       <Col lg={6} className="buy-now">
         {props.display ? (

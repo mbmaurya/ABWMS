@@ -92,7 +92,9 @@ function DashboardMenu() {
         </div>
       </div>
       <div className="dashboard-mobile-menu" onClick={openMenu}>
-        <FontAwesomeIcon icon={faBars} />
+        <span className="line-dashboard"></span>
+        <span className="line-dashboard"></span>
+        <span className="line-dashboard"></span>
       </div>
     </div>
   );

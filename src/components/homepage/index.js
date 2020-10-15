@@ -8,6 +8,7 @@ import {
   bigCardButton,
   currentPrice,
   CardContainer,
+  bannerImageText,
 } from "../../styles/index";
 import { Link } from "react-router-dom";
 
@@ -27,23 +28,26 @@ import TimeLeft from "../global/TimeLeft";
 
 const Home = () => {
   const [goldRate, setGoldRate] = useState(5375.38);
-  const rate = new Intl.NumberFormat('en-IN').format(goldRate);
+  const rate = new Intl.NumberFormat("en-IN").format(goldRate);
   return (
     <main>
       {/* First Fold */}
 
       <div className="banner" style={banner}>
         <div className="container heading" style={heading}>
-          <h1 className="mb-4">
+          <h1>
             Buy &amp; Sell Digital Gold <br /> Online Instantly
           </h1>
-          <button className="btn" style={btn}>
+          <button className="btn heading-button" style={btn}>
             Buy Now
             <span className="btn-icon">
               <i className="fa fa-arrow-right fa-lg" aria-hidden="true"></i>
             </span>
           </button>
         </div>
+        <p className="bannerSmallText">
+          Rishi Jain & Shivna Jain / Newly Married, Corporate Professional
+        </p>
       </div>
 
       {/* Buy Gold Online */}
@@ -55,7 +59,8 @@ const Home = () => {
         <div className="currentPriceContainer" style={currentPrice}>
           <h5 className="mb-4 subtitle">Current price/gm incl of GST</h5>
           <h3 className="mb-2 currentPrice">
-            <span className="currentPrice-small">₹</span>{rate}
+            <span className="currentPrice-small">₹</span>
+            {rate}
             <span className="currentPrice-small">/gm</span>
           </h3>
           <p style={{ color: "#6c7174" }}>
@@ -66,7 +71,14 @@ const Home = () => {
         </div>
         <BuyIn component="homepage" goldRate={goldRate} />
         <div className="bigCardButton" style={bigCardButton}>
-          <Link to="/gold-transactions" className="btn" style={btn} onClick={() => console.log('fouhgi')}>Buy Now</Link>
+          <Link
+            to="/gold-transactions"
+            className="btn"
+            style={btn}
+            onClick={() => console.log("fouhgi")}
+          >
+            Buy Now
+          </Link>
         </div>
       </div>
 
@@ -151,7 +163,7 @@ to visit to a jeweler. It takes time and effort to purchase physical gold."
               content="SafeGold is a product of Digital Gold India. This company focusses on using technology to improve transparency and efficiency in buying gold. The SafeGold immediately buys gold for the customer as soon as it receives the order. It issues an invoice with the rate and amount of gold and applicable taxes."
             />
             <Card2Item
-              title="About SafeGold"
+              title="About Aditya Birla Wealth Management"
               content="SafeGold is a product of Digital Gold India. This company focusses on using technology to improve transparency and efficiency in buying gold. The SafeGold immediately buys gold for the customer as soon as it receives the order. It issues an invoice with the rate and amount of gold and applicable taxes."
             />
           </div>
