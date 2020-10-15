@@ -272,7 +272,7 @@ export const banner = {
   alignItems: "center",
   justifyContent: "start",
   position: "relative",
-  zIndex: -1,
+  zIndex: 0,
 };
 
 export const bannerImageText = {
@@ -289,6 +289,7 @@ export const heading = {
 };
 
 export const bigCard = {
+  position: "absolute",
   display: "grid",
   gridTemplateRows: "30% 80%",
   gridTemplateColumns: "repeat(3,1fr)",
@@ -299,7 +300,9 @@ export const bigCard = {
   backgroundColor: "#fffffb",
   borderRadius: 0,
   marginTop: "-40px",
-  // zIndex: 2,
+  left: "50%",
+  transform: "translateX(-50%)",
+  zIndex: 2,
 };
 
 export const bigCardHeading = {

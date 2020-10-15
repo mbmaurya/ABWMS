@@ -7,7 +7,7 @@ import {
   clearBtn,
   buttonGroup,
 } from "../../styles";
-import { Link } from "react-router-dom";
+import { Link, BrowserRouter as Router, Route, useRouteMatch } from "react-router-dom";
 import Buy from "./Buy";
 import DeliveryIcon from "../../assets/images/landing-page/get-deliver.svg";
 import TransferIcon from "../../assets/images/landing-page/transfer.svg";
@@ -16,8 +16,11 @@ import GoldIcon from "../../assets/images/landing-page/buy-export-as-gold.svg";
 import Sell from "./Sell";
 import Delivery from "./delivery";
 import Transfer from "./transfer";
+import Switch from "react-bootstrap/esm/Switch";
+import BuyGold from "./buy-gold";
 
 function GoldTransactions() {
+  let match = useRouteMatch();
   const [key, setKey] = useState("buy");
 
   return (
@@ -110,7 +113,7 @@ function GoldTransactions() {
               justifyContent: "center",
               alignItems: "center",
             }}
-            to={`/gold-transactions/${key}`}
+            to={`${match.path}/${key}`}
           >
             Proceed
           </Link>

@@ -52,6 +52,7 @@ function SellInOptions(props) {
               </li>
             ))}
       </ul>
+      
     </div>
   );
 }

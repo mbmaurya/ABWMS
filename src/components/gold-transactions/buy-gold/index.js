@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Tabs, Tab } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, matchPath, useRouteMatch } from "react-router-dom";
 import {
   box,
   transactionContainer,
@@ -15,6 +15,7 @@ import NetBanking from "./NetBanking";
 import Upi from "./Upi";
 
 function BuyGold() {
+  const match = useRouteMatch();
   const [key, setKey] = useState("credit-card");
 
   return (
@@ -79,7 +80,7 @@ function BuyGold() {
             justifyContent: "center",
             alignItems: "center",
           }}
-          to={`/gold-transactions/successfull`}
+          to={`${match.path}/successfull`}
         >
           Proceed
         </Link>

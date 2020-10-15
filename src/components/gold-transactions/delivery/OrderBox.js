@@ -42,7 +42,7 @@ function OrderBox({ weight, makingCharges }) {
         <p style={OrderBoxContentStyles}>
           Making charges &#x20B9;{makingCharges}
         </p>
-        <Link
+        <a
           style={{
             ...clearBtn,
             ...OrderButtonStyles,
@@ -51,7 +51,7 @@ function OrderBox({ weight, makingCharges }) {
           onClick={handleShow}
         >
           Order Now
-        </Link>
+        </a>
       </div>
       {show ? <DeliverType display={show} /> : null}
     </>

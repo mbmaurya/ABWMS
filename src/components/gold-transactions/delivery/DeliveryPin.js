@@ -34,7 +34,7 @@ const ListTitleStyles = {
   color: `${blackText}`,
 };
 
-function DeliveryPin() {
+function DeliveryPin({statusProp}) {
   const [seller, setSeller] = useState("MMTC-PAMP India Pvt. Ltd");
   const [shipping, setShipping] = useState("Free Shipping");
   const [returnPolicy, setReturnPolicy] = useState(
@@ -42,7 +42,7 @@ function DeliveryPin() {
   );
   const [weight, setWeight] = useState(1);
   const [cancelPolicy, setCancelPolicy] = useState("Cancellation not allowed");
-  const [status, setStatus] = useState("address");
+  const [status, setStatus] = useState(statusProp);
   return (
     <>
       <Container style={transactionContainer}>

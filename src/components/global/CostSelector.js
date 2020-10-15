@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-import { bigCardInput, goldRatePara, prizeBorder } from "../../../styles/index";
-import BuyInOptions from "./BuyInOptions";
-function BuyIn(props) {
+import { bigCardInput, goldRatePara, prizeBorder } from "../../styles/index";
+import Summary from "../gold-transactions/Summary";
+import CostSelectorOptions from "./CostSelectorOptions";
+
+function CostSelector(props) {
   const { component, goldRate } = props;
-  const [buy, setBuy] = useState("buy in rupee");
+  const [transaction, setTransaction] = useState(`${props.type} in rupee`);
+//   const [callingComp, setCallingComp] = useState(props.type)
   const [input, setInput] = useState(15000);
   const [gmInput, setGmInput] = useState(10);
   const selectData = [2500, 5000, 7500, 10000, 15000];
@@ -11,43 +14,45 @@ function BuyIn(props) {
 
   return (
     <div className="buyin" style={{ margin: "auto", width: "100%" }}>
+        {console.log("From CostSelector")}
       {component === "homepage" ? <h5 className="subtitle">Buy-in</h5> : null}
       <div className="d-flex mt-2">
         <div className="mr-4" style={{ position: "relative" }}>
           <input
             type="radio"
-            value="buy in rupee"
-            checked={buy === "buy in rupee"}
-            onChange={(e) => setBuy(e.target.value)}
+            value={`${props.type} in rupee`}
+            checked={transaction === `${props.type} in rupee`}
+            onChange={(e) => setTransaction(e.target.value)}
           />
           <div className="circle"></div>
           <label
             style={{ color: "#6c7174", fontSize: "14px" }}
             className="ml-2"
           >
-            Buy in rupee
+            {props.type} in rupee
           </label>
         </div>
 
         <div style={{ position: "relative" }}>
           <input
             type="radio"
-            value="buy in grams"
-            checked={buy === "buy in grams"}
-            onChange={(e) => setBuy(e.target.value)}
+            value={`${props.type} in grams`}
+            checked={transaction === `${props.type} in grams`}
+            onChange={(e) => setTransaction(e.target.value)}
           />
           <div className="circle"></div>
           <label
             style={{ color: "#6c7174", fontSize: "14px" }}
             className="ml-2"
           >
-            Buy in grams
+            {props.type} in grams
           </label>
         </div>
       </div>
 
-      <BuyInOptions
-        buy={buy}
+      <CostSelectorOptions
+        component = {component}
+        transaction={transaction}
         input={input}
         setInput={setInput}
         gmInput={gmInput}
@@ -56,8 +61,9 @@ function BuyIn(props) {
         selectGmData={selectGmData}
         goldRate={goldRate}
       />
+
     </div>
   );
 }
 
-export default BuyIn;
+export default CostSelector;

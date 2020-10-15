@@ -10,11 +10,11 @@ import {
   CardContainer,
   bannerImageText,
 } from "../../styles/index";
-import { Link } from "react-router-dom";
+import { Link, BrowserRouter as Router } from "react-router-dom";
 
-import CardItemWhite from "./components/CardItemWhite";
-import CardItem from "./components/CardItem";
-import Card2Item from "./components/Card2Item";
+import CardItemWhite from "./CardItemWhite";
+import CardItem from "./CardItem";
+import Card2Item from "./Card2Item";
 import BuyIcon from "../../assets/images/landing-page/buy-export-as-gold.svg";
 import ReedeemIcon from "../../assets/images/landing-page/redeem-gold.svg";
 import GetDeliverIcon from "../../assets/images/landing-page/get-deliver.svg";
@@ -23,8 +23,8 @@ import ConvenientIcon from "../../assets/images/landing-page/convenient.svg";
 import GTIcon from "../../assets/images/landing-page/good-and-transparent-price.svg";
 import SafeLockerIcon from "../../assets/images/landing-page/safe-locker.svg";
 import PurityIcon from "../../assets/images/landing-page/purity-guranteed.svg";
-import BuyIn from "./components/BuyIn";
 import TimeLeft from "../global/TimeLeft";
+import CostSelector from "../global/CostSelector";
 
 const Home = () => {
   const [goldRate, setGoldRate] = useState(5375.38);
@@ -38,12 +38,12 @@ const Home = () => {
           <h1>
             Buy &amp; Sell Digital Gold <br /> Online Instantly
           </h1>
-          <button className="btn heading-button" style={btn}>
+          <Link className="btn heading-button" style={btn} to="/gold-transactions">
             Buy Now
             <span className="btn-icon">
               <i className="fa fa-arrow-right fa-lg" aria-hidden="true"></i>
             </span>
-          </button>
+          </Link>
         </div>
         <p className="bannerSmallText">
           Rishi Jain & Shivna Jain / Newly Married, Corporate Professional
@@ -69,13 +69,12 @@ const Home = () => {
             <TimeLeft />
           </p>
         </div>
-        <BuyIn component="homepage" goldRate={goldRate} />
+        <CostSelector type="buy" component="homepage" goldRate={goldRate} />
         <div className="bigCardButton" style={bigCardButton}>
           <Link
             to="/gold-transactions"
             className="btn"
             style={btn}
-            onClick={() => console.log("fouhgi")}
           >
             Buy Now
           </Link>
@@ -84,7 +83,7 @@ const Home = () => {
 
       {/* How it works */}
 
-      <section style={{ margin: "80px 0" }}>
+      <section style={{ margin: "400px 0px 80px" }} className="home-container">
         <h2 className="text-center main-title">Here's how it works</h2>
         <div className="container cardContainer" style={CardContainer}>
           <CardItemWhite

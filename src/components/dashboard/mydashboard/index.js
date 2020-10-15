@@ -22,7 +22,6 @@ function MyDashboard() {
       <PageTitle
         title="My Dashboard"
         display={true}
-        clickFunction={() => console.log("Clicked")}
       />
 
       {/** Row 3 */}
@@ -31,21 +30,17 @@ function MyDashboard() {
           <LockerBalance />
         </Col>
         <Col lg={6}>
-          <DigitalGoldGraph />
+          <Sold />
         </Col>
       </Row>
 
       {/* Row 4 */}
       <Row noGutters={true} style={{ marginTop: "15px" }}>
-        <Col lg={4}>
-          <Sold />
-        </Col>
-
-        <Col lg={4}>
+        <Col lg={6}>
           <Deliver />
         </Col>
 
-        <Col lg={4}>
+        <Col lg={6}>
           <Transfer />
         </Col>
       </Row>
