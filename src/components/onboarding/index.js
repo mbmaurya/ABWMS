@@ -9,9 +9,9 @@ import AddressDetails from './AddressDetails';
 import Steps from './Steps';
 import BtnGroup from '../global/BtnGroup';
 
-function Onboarding() {
-        const [currentStep, setCurrentStep] = useState(1);
-        const [isVerified, setIsVerified] = useState(false);
+function Onboarding({currentStepValue, Verified}) {
+        const [currentStep, setCurrentStep] = useState(currentStepValue); // set it to 1
+        const [isVerified, setIsVerified] = useState(Verified);
 
         const {width} = useViewport();
         const breakpoint = 767;

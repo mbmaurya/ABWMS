@@ -2,6 +2,7 @@ import React from "react";
 
 //Bootstrap
 import { Col, Row, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 //Styles
 import { btn, blackText } from "../../styles";
@@ -24,9 +25,14 @@ function PageTitle(props) {
       </Col>
       <Col lg={6} className="buy-now">
         {props.display ? (
-          <Button style={btn} onClick={props.clickFunction}>
+          <Link style={{
+              ...btn,
+              display: "inline-block",
+              textAlign: "center",
+              lineHeight: "50px"
+            }} to={"/gold-transactions"}>
             Buy Now
-          </Button>
+          </Link>
         ) : (
           ""
         )}

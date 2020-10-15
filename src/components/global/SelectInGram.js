@@ -1,8 +1,7 @@
 import React from "react";
-import { bigCardInput } from "../../../styles";
-// import currencyFormater from "../../global/currencyFormater";
+import { bigCardInput } from "../../styles";
 
-function BuyInRupee(props) {
+function SelectInGram(props) {
   const { input, setInput, goldRate } = props;
   return (
     <React.Fragment>
@@ -23,7 +22,7 @@ function BuyInRupee(props) {
         }}
         className="calculateddata"
       >
-        = {(Number(input) / goldRate).toFixed(2)}gm
+        = ₹{(Number(input) * goldRate).toFixed(2)}
       </p>
       <p
         style={{
@@ -34,10 +33,10 @@ function BuyInRupee(props) {
           fontWeight: 500,
         }}
       >
-        ₹
+        g
       </p>
     </React.Fragment>
   );
 }
 
-export default BuyInRupee;
+export default SelectInGram;

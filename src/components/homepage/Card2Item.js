@@ -1,5 +1,5 @@
 import React from "react";
-import { cardItem2 } from "../../../styles/index";
+import { cardItem2 } from "../../styles/index";
 const Card2 = ({ title, content }) => {
   return (
     <div className="card2" style={cardItem2}>

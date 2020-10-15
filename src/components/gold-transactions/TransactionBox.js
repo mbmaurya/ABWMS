@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { transactionBox } from "../../styles";
-import BuyIn from "../homepage/components/BuyIn";
-import Buy from "./Buy";
 import GoldRate from "./GoldRate";
-import Summary from "./Summary";
-import SellIn from "./sell-gold/SellIn";
 import DeliverIn from "./delivery/DeliverIn";
 import TransferIn from "./transfer/TransferIn";
+import CostSelector from "../global/CostSelector";
+import Summary from "./Summary";
 
 function TransactionBox(props) {
   const { noInput, type } = props;
@@ -15,10 +13,10 @@ function TransactionBox(props) {
   const checkType = (type) => {
     switch (type) {
       case "buy":
-        return <BuyIn />;
+        return <CostSelector type="buy" goldRate={goldRate} />;
         break;
       case "sell":
-        return <SellIn />;
+        return <CostSelector type="sell" goldRate={goldRate} />;
         break;
       case "deliver":
         return <DeliverIn />;
@@ -56,8 +54,8 @@ function TransactionBox(props) {
       >
         {checkType(type)}
       </div>
-      {Type() ? <hr /> : null}
-      {Type() ? <Summary /> : ""}
+      
+      {checkType(type) ? "" : <Summary goldRate={goldRate} />}
     </div>
   );
 }

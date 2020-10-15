@@ -263,6 +263,9 @@ li.active:before {
     .mrgTopMobile100 {
       margin-top: 100px;
     }
+    .home-container {
+      margin: 500px 0px 80px !important;
+    }
   }
 }
 
