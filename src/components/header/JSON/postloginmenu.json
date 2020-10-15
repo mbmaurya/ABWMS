@@ -1,0 +1,66 @@
+[
+    {
+        "mainHeading": "Mutual Funds",
+        "url": "#",
+        "children": [
+            {
+                "label": "Dashboard",
+                "url": "https://mywealth.adityabirlacapital.com/mf-transaction/dashboard"
+            },
+            {
+                "label": "Investment Portfolio",
+                "url": "https://mywealth.adityabirlacapital.com/mf-transaction/portfolio"
+            },
+            {
+                "label": "My SIP's",
+                "url": "https://mywealth.adityabirlacapital.com/mf-transaction/mysip"
+            },
+            {
+                "label": "My Transactions",
+                "url": "https://mywealth.adityabirlacapital.com/mf-transaction/mytransaction"
+            },
+            {
+                "label": "Explore Solutions",
+                "url": "https://mywealth.adityabirlacapital.com/mf-transaction/Category"
+            }
+        ]
+    },
+    {
+        "mainHeading": "Loans",
+        "url": "#",
+        "children": [
+            {
+                "label": "Personal Loan",
+                "url": "https://personalloan.myuniverse.in/"
+            },
+            {
+                "label": "Home Loan",
+                "url": "https://mywealth.adityabirlacapital.com/home-loan-india/"
+            }
+        ]
+    },
+    {
+        "mainHeading": "Health Insurance",
+        "url": "https://mywealth.adityabirlacapital.com/health-insurance/",
+        "children": []
+    },
+    {
+        "mainHeading": "Tax e-Filing",
+        "url": "https://mywealth.adityabirlacapital.com/income-tax-filing/",
+        "children": []
+    },
+    {
+        "mainHeading": "About Us",
+        "url": "#",
+        "children": [
+            {
+                "label": "Company Profile",
+                "url": "https://wealthmanagement.adityabirlacapital.com/about-us/company-profile"
+            },
+            {
+                "label": "Our People",
+                "url": "https://wealthmanagement.adityabirlacapital.com/about-us/our-people"
+            }
+        ]
+    }
+]

@@ -500,9 +500,11 @@
   .head_top {
     display: none;
   }
+  
   .header-title {
     padding-left: 20px !important;
   }
+
 
   .header-desp {
     margin: 0;

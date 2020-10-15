@@ -1,0 +1,393 @@
+#login_footer {
+  width: 100%;
+  margin-top: 40px;
+  font-family: "PFEncoreSansPro-Regular";
+  background-color: #201e19;
+  color: #7f7e7f;
+}
+
+.footer_top {
+  background: #201e19;
+  padding: 20px;
+}
+
+#login_footer .container {
+  max-width: 1400px;
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  text-align: left;
+  color: inherit;
+  box-shadow: none;
+  font-family: inherit;
+}
+
+footer h4 {
+  color: #a1a2a2;
+  margin-top: 0;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+footer .links:first-child {
+  width: 19%;
+}
+
+footer ul li {
+  list-style: none;
+  padding: 0px 0;
+}
+
+footer ul li a {
+  font-size: 14px;
+  color: #7f7e7f;
+  transition: all 0.1s ease-in-out;
+  text-decoration: none;
+  line-height: 18px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer ul li a:hover,
+footer ul li a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .links {
+  width: 26%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer .social_connection {
+  border-left: 1px solid #2e2e2d;
+  padding: 20px 0 20px 10px;
+}
+
+.social_icons ul {
+  margin: 0;
+}
+
+.social_icons ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.icon-button {
+  background-color: #000;
+  border-radius: 3.3rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  height: 3.3rem;
+  line-height: 3.3rem;
+  margin: 0 3px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 3.3rem;
+}
+
+.social_icons ul li a {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+footer h4 a,
+footer h4 a:hover {
+  color: #a1a2a2;
+}
+
+.companyname {
+  color: #a1a2a2;
+  font-family: "PFHandbookPro-Bold" !important;
+  font-size: 18px !important;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.companyadd {
+  color: #a1a2a2;
+  text-align: left;
+  display: block;
+  font-size: 13px !important;
+  margin-bottom: 20px;
+}
+
+#login_footer .container {
+  max-width: 1400px;
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  text-align: left;
+  color: inherit;
+  box-shadow: none;
+  font-family: inherit;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #2e2e2d;
+  margin: 10px auto;
+}
+
+.contactpanel ul {
+  margin-bottom: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.contactpanel ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.fa-phone {
+  font-size: 18px;
+  color: #7f7e7f;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.pad0,
+.padleft0 {
+  padding: 0 !important;
+}
+
+.contactpanel .caption,
+.contactpanel .caption a {
+  font-family: "PFEncoreSansPro-Regular";
+  color: #bebebe;
+  font-size: 14px;
+  margin: 0 0 0 5px;
+  display: inline-block;
+}
+
+.contactpanel h4 {
+  display: inline-block;
+}
+
+.footer_mf_text a {
+  color: #666;
+}
+
+.footer_gray {
+  background-color: #6c7174;
+  padding: 28px 20px 0;
+  float: left;
+  width: 100%;
+  max-width: 100%;
+}
+
+.footerlinks {
+  margin-bottom: 26px;
+  float: left;
+  width: 100%;
+}
+
+.logobx {
+  float: left;
+  width: auto;
+  margin-right: 96px;
+  margin-top: 9px;
+}
+
+.abcicons {
+  font-size: 22px;
+  color: #fff;
+  margin: 0px 0px 0px 3px;
+}
+
+.icon-icon-phone:before {
+  content: "\76";
+}
+
+.abcicons:before,
+.abcicons:before {
+  font-family: "icon-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fmenulink {
+  float: left;
+  width: auto;
+  margin-right: 96px;
+}
+
+.bottom_link ul {
+  margin: 0;
+  padding: 0;
+}
+
+.bottom_link ul li a {
+  color: #fff;
+  line-height: 28px;
+  font-size: 16px;
+  font-family: "PFEncoreSansPro-Regular";
+}
+
+.copyright_section {
+  border-top: 2px solid #a5a8a9;
+  float: left;
+  width: 100%;
+  max-width: 100%;
+}
+
+.copyright {
+  padding: 26px 0 25px;
+  float: left;
+  width: 44%;
+}
+
+.copyright p {
+  text-align: left;
+  margin-bottom: 0;
+  color: #fff;
+  font-family: "PFEncoreSansPro-Regular";
+  font-size: 16px;
+}
+
+.bottom_social {
+  margin-top: 0;
+  float: right;
+  width: 55%;
+  padding: 26px 0 25px;
+  text-align: right;
+}
+
+.contacttext {
+  float: left;
+  margin-right: 32px;
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.caption {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  font-family: "PFEncoreSansPro-Regular";
+  margin: 0;
+}
+
+.contacttext .iconspan {
+  font-size: 18px;
+  margin: 2px 8px;
+}
+
+.bottom_social ul {
+  margin: 0;
+  display: inline-block;
+}
+
+.bottom_social ul li {
+  display: inline-block;
+  padding: 0 8px;
+}
+
+.caption a {
+  color: #fff;
+}
+
+.bottom_social ul li i.fa {
+  color: #fff;
+  font-size: 23px;
+}
+
+.footer_mf_text {
+  font-size: 14px;
+  text-align: left;
+  color: rgb(127, 126, 127);
+  font-family: PFEncoreSansPro-Regular;
+  margin-bottom: 10px;
+  line-height: 20px;
+  margin-top: 4px;
+}
+
+@media (max-width: 800px) {
+  footer .links,
+  footer .links.first {
+    width: 30% !important;
+    margin-bottom: 20px;
+  }
+
+  footer .social_connection,
+  .footer_mf_text {
+    display: none !important;
+  }
+
+  .contactpanel ul {
+    margin-left: 0;
+  }
+
+  .contactpanel ul li {
+    margin-right: 10px;
+  }
+
+  .hide-640,
+    /* .line, */
+    .fmenulink,
+    .bottom_social ul {
+    display: none !important;
+  }
+
+  .copyright_section {
+    border: 0;
+  }
+
+  .copyright {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .bottom_social {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  footer h4 {
+    margin-right: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 680px) {
+  footer .links,
+  footer .links.first {
+    width: 47% !important;
+  }
+}
+
+@media (max-width: 430px) {
+  footer .links,
+  footer .links.first {
+    width: 90% !important;
+  }
+
+  .contacttext {
+    margin-right: 0;
+  }
+
+  .caption {
+    font-size: 12px;
+    text-align: left;
+    line-height: 12px;
+  }
+}

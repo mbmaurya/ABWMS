@@ -1,23 +1,3 @@
-<<<<<<< Updated upstream
-import React from "react";
-
-import { HeaderStyles } from "./style";
-
-import LinkGroupFirst from "./linkgroupfirst";
-import LinkGroupSecond from "./linkgroupsecond";
-import LinkGroupThird from "./linkgroupthird";
-import TextBand from "./textband";
-import MobileLinkGroupFirst from "./mobilemenu/mobilelinkgroupfirst";
-
-function Header() {
-  return (
-    <div>
-      <header className="header header-desktop" style={HeaderStyles}>
-        <div className="container">
-          <LinkGroupFirst />
-          <LinkGroupSecond />
-          <LinkGroupThird />
-=======
 import React, { Component } from "react";
 import "./header.css";
 import MobileHeader from "./MobileHeader";
@@ -369,16 +349,10 @@ class header extends Component {
           {this.state.showABCMobileHeader ? (
             <Backdrop1 click={this.backdropABCShowHandler} />
           ) : null}
->>>>>>> Stashed changes
         </div>
-        <TextBand />
-      </header>
-
-      <header className="header header-mobile">
-        <MobileLinkGroupFirst />
-      </header>
-    </div>
-  );
+      </React.Fragment>
+    );
+  }
 }
 
-export default Header;
+export default header;
