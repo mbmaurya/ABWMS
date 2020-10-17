@@ -25,6 +25,7 @@ import SafeLockerIcon from "../../assets/images/landing-page/safe-locker.svg";
 import PurityIcon from "../../assets/images/landing-page/purity-guranteed.svg";
 import TimeLeft from "../global/TimeLeft";
 import CostSelector from "../global/CostSelector";
+import {ReactComponent as ButtonArrowIcon} from "../../assets/images/landing-page/button-arrow.svg";
 
 const Home = () => {
   const [goldRate, setGoldRate] = useState(5375.38);
@@ -40,13 +41,11 @@ const Home = () => {
           </h1>
           <Link className="btn heading-button" style={btn} to="/gold-transactions">
             Buy Now
-            <span className="btn-icon">
-              <i className="fa fa-arrow-right fa-lg" aria-hidden="true"></i>
-            </span>
+            <ButtonArrowIcon />
           </Link>
         </div>
         <p className="bannerSmallText">
-          Rishi Jain & Shivna Jain / Newly Married, Corporate Professional
+        Amol Patwari &amp; Pallavi Mohadikar Patwari / Couple Entrepreneur
         </p>
       </div>
 
@@ -83,7 +82,7 @@ const Home = () => {
 
       {/* How it works */}
 
-      <section style={{ margin: "400px 0px 80px" }} className="home-container">
+      <section style={{ margin: "385px 0px 80px" }} className="home-container">
         <h2 className="text-center main-title">Here's how it works</h2>
         <div className="container cardContainer" style={CardContainer}>
           <CardItemWhite

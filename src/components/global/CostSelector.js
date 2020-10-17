@@ -10,7 +10,7 @@ function CostSelector(props) {
   const [input, setInput] = useState(15000);
   const [gmInput, setGmInput] = useState(10);
   const selectData = [2500, 5000, 7500, 10000, 15000];
-  const selectGmData = [0.1, 0.5, 1, 3, 5, 10];
+  const selectGmData = [0.5, 1, 3, 5, 10, 15];
 
   return (
     <div className="buyin" style={{ margin: "auto", width: "100%" }}>
@@ -26,7 +26,7 @@ function CostSelector(props) {
           />
           <div className="circle"></div>
           <label
-            style={{ color: "#6c7174", fontSize: "14px" }}
+            style={{ color: "#6c7174", fontSize: "14px", verticalAlign: "middle" }}
             className="ml-2"
           >
             {props.type} in rupee
@@ -42,7 +42,7 @@ function CostSelector(props) {
           />
           <div className="circle"></div>
           <label
-            style={{ color: "#6c7174", fontSize: "14px" }}
+            style={{ color: "#6c7174", fontSize: "14px", verticalAlign: "middle" }}
             className="ml-2"
           >
             {props.type} in grams

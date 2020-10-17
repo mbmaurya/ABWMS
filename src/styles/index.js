@@ -306,6 +306,7 @@ export const bigCard = {
 };
 
 export const bigCardHeading = {
+  fontFamily: "PFHandbookPro-medium, sans-serif",
   margin: "auto",
   gridColumn: "1/-1",
 };
