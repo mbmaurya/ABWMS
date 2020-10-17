@@ -267,12 +267,16 @@ li.active:before {
       margin: 600px 0px 80px !important;
     }
 
-    .main-title-benfits::before {
-      top: 75px !important;
+    .main-title-benfits {
+      text-align: center;
     }
 
-    section .main-title:before {
-      top: 110px !important;
+    .main-title-benfits::before {
+      left: calc(50% - 50px) !important;
+    }
+
+    .title {
+      padding-left: 0 !important;
     }
   }
 }
@@ -315,7 +319,14 @@ li.active:before {
   color: #fff;
   font-size: 18px;
 }
+
+.homepage-section {
+  margin: 80px 0px;
+}
 @media screen and (max-width: 767px) {
+  .homepage-section {
+    margin: 40px 0px;
+  }
   .bannerSmallText {
     position: absolute;
     right: 0;
@@ -468,7 +479,7 @@ li.active:before {
 .main-title-benfits::before {
   content: url("./assets/images/landing-page/underline.png");
   position: absolute;
-  top: 28px;
+  bottom: -30px;
   left: 0;
 }
 
@@ -604,6 +615,9 @@ tfoot tr td {
 }
 
 /* onboarding logo underline */
+.add-new-bank .underline-logo {
+  display: none;
+}
 .underline-logo::before {
   content: "";
   position: absolute;

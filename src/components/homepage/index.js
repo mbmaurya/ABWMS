@@ -110,7 +110,7 @@ const Home = () => {
 
       {/* Benefits of Digital Gold */}
 
-      <section style={{ margin: "80px 0", backgroundColor: "#EBEBEB" }}>
+      <section className="homepage-section" style={{backgroundColor: "#EBEBEB" }}>
         <div className="d-flex benefitsMob justify-content-between container py-5">
           <div className="benefits">
             <h2 className="main-title-benfits">Benefits of Digital Gold</h2>
@@ -150,7 +150,7 @@ to visit to a jeweler. It takes time and effort to purchase physical gold."
 
       {/* Everything you need to know */}
 
-      <section style={{ margin: "80px 0" }}>
+      <section className="homepage-section">
         <div className="container">
           <h2 className="text-center main-title">
             Everything you need to know

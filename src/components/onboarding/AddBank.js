@@ -4,6 +4,7 @@ import {ReactComponent as BankDetailsIcon} from '../../assets/images/transaction
 import Title from './Title';
 import { Col, Row } from 'react-bootstrap';
 import BankDetailsInputs from './BankDetailsInputs';
+import AddBankIcon from "../../assets/images/transaction/add-bank.png";
 
 function AddBank({currentStep, isVerified}) {
         const [addBank, setAddBank] = useState(false);
@@ -24,8 +25,8 @@ function AddBank({currentStep, isVerified}) {
                                         <hr style={{borderTop: '1px solid #cdcece', margin: '41px 0 31px 0'}} />
                                         {
                                                 !addBank ? 
-                                                <p style={addBankLink} onClick={() => setAddBank(!addBank)}>Add Bank</p> : 
-                                                <div>
+                                                <p style={addBankLink} onClick={() => setAddBank(!addBank)}><img src={AddBankIcon}/>Add Bank</p> : 
+                                                <div className="add-new-bank">
                                                         <Title title = "Add Bank" />
                                                         <BankDetailsInputs />
                                                 </div>

@@ -33,7 +33,7 @@ function App() {
             </Route>
             
             <Route path="/onboarding/VerifyKyc">
-               <Onboarding />
+               <Onboarding currentStepValue={1} />
             </Route>
             <Route path="/onboarding/bankdetails">
                 <Onboarding currentStepValue={2} />
