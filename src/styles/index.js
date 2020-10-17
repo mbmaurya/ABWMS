@@ -24,7 +24,7 @@ export const box = {
 
 export const formBox = {
   ...box,
-  padding: 51,
+  padding: 50,
   width: "100%",
   borderBottom: `1px solid ${accentYellow}`,
 };
@@ -99,8 +99,8 @@ export const stepElipse = {
 
 // form container
 export const formContainer = {
-  marginTop: 80,
-  marginBottom: 100,
+  marginTop: 60,
+  marginBottom: 80,
   maxWidth: 916,
   display: "flex",
   flexDirection: "column",
@@ -134,7 +134,7 @@ export const dropzone = {
   alignItems: "center",
   backgroundColor: whiteText,
   border: `1px dashed ${greenText}`,
-  boxShadow: "0px 3px 14.6px 0.5px rgba(0, 0, 0, 0.1)",
+  boxShadow: "0px 2px 10px 0px rgba(0, 0, 0, 0.1)",
   borderRadius: 3,
 };
 
@@ -306,6 +306,7 @@ export const bigCard = {
 };
 
 export const bigCardHeading = {
+  fontFamily: "PFHandbookPro-medium, sans-serif",
   margin: "auto",
   gridColumn: "1/-1",
 };
