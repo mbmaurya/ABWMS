@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import { bigCardInput } from "../../styles";
-// import currencyFormater from "../../global/currencyFormater";
+import currencyFormater from "./currencyFormater";
 
 function SelectInRupee(props) {
   const { input, setInput, goldRate } = props;
+  // const [inputValue, setInputValue] = useState(input);
+  // const newInputValue = setInputValue(new Intl.NumberFormat("en-IN").format(input))
   return (
     <React.Fragment>
       <input

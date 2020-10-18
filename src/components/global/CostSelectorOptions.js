@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { bigCardInput, prizeBorder } from "../../styles";
+import { bigCardInput, prizeBorder, transactionBox } from "../../styles";
 import SelectInGram from "./SelectInGram";
 import SelectInRupee from "./SelectInRupee";
 import currencyFormater from "../global/currencyFormater";
@@ -17,6 +17,23 @@ function CostSelectorOptions(props) {
     component
   } = props;
   const [goldAmount, setGoldAmount] = useState(null)
+  const [unit, setUnit] = useState("rupee");
+
+  const checkComponent = (component) => {
+    switch (component) {
+      case "homepage":
+        return null
+        break;
+      default:
+        return (
+        <div>
+          <hr />
+          <Summary input={input} transaction={transaction} goldRate={goldRate} transaction={transaction} />
+          </div>)
+        break;
+    }
+  }
+  
   return (
     <div>
       <div style={{ position: "relative" }} className="mb-4">
@@ -57,12 +74,14 @@ function CostSelectorOptions(props) {
             ))}
       </ul>
     
-      {component !== "homepage" ? (
-          <>
-          <hr />
-          <Summary input={input} transaction={transaction} goldRate={goldAmount} unit="rupee" />
-          </>
-        ) : ""}
+                
+      {/* {checkComponent(component)}  */}
+      <hr />
+      {transaction === "buy in rupee" || transaction === "sell in rupee" ? (
+          <Summary input={input} component={component} transaction={transaction} goldRate={goldRate} transaction={transaction} />
+        ) : (
+          <Summary input={gmInput} component={component} transaction={transaction} goldRate={goldRate} transaction={transaction} />
+        )}
       
     </div>
   );

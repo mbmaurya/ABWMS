@@ -2,7 +2,8 @@ import React from "react";
 import { bigCardInput } from "../../styles";
 
 function SelectInGram(props) {
-  const { input, setInput, goldRate } = props;
+  const { input, setInput, goldRate,unit } = props;
+  console.log(unit);
   return (
     <React.Fragment>
       <input

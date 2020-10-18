@@ -6,7 +6,6 @@ import CostSelectorOptions from "./CostSelectorOptions";
 function CostSelector(props) {
   const { component, goldRate } = props;
   const [transaction, setTransaction] = useState(`${props.type} in rupee`);
-//   const [callingComp, setCallingComp] = useState(props.type)
   const [input, setInput] = useState(15000);
   const [gmInput, setGmInput] = useState(10);
   const selectData = [2500, 5000, 7500, 10000, 15000];
