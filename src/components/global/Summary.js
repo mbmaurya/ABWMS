@@ -34,6 +34,7 @@ function Summary ({input, transaction, goldRate, component}) {
                                                 <td>Convenience Fee </td>
         <td style={tdRight}>{convenienceFee}</td>
                                         </tr>
+                                        <tr><td height="10"></td></tr>
                                 </tbody>
                                 <tfoot style={tfoot}>
                                         <tr>

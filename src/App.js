@@ -14,6 +14,7 @@ import TransferGoldSucessfully from "./components/gold-transactions/transfer/Suc
 import CostSelector from "./components/global/CostSelector";
 import OrderPlaced from "./components/gold-transactions/delivery/OrderPlaced";
 import Notification from "./components/gold-transactions/sell-gold/Notification";
+import SelectAccount from "./components/gold-transactions/sell-gold";
 
 function App() {
   return (
@@ -21,7 +22,9 @@ function App() {
         <Header />
         <Router>
           <Switch>
-          
+          <Route path="/gold-transactions/sell-gold/account">
+               <SelectAccount />
+            </Route>
           <Route path="/cost-selector">
                <CostSelector />
             </Route>

@@ -624,7 +624,7 @@ tfoot tr td {
 }
 
 .buyInDiv ul {
-  max-width: 90%;
+  margin-bottom: 24px;
 }
 
 /* onboarding logo underline */
@@ -898,6 +898,10 @@ tfoot tr td {
     width: 100% !important;
     margin-left: 0 !important;
     margin-bottom: 30px !important;
+  }
+
+  .buy-now a {
+    width: 100% !important;
   }
 }
 
