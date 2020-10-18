@@ -330,13 +330,12 @@ class header extends Component {
                 </ul>
               </div>
             </div>
-            
           </div>
           <div className="bottombar_dark_active">
-              <p className="header-title">
-                Aditya Birla Finance Limited
-              </p>
-            </div>
+            <p className="header-title header-desp">
+              Aditya Birla Finance Limited
+            </p>
+          </div>
 
           {this.state.showMobileHeader ? (
             <MobileHeader closeMyuniMenu={this.backdropShowHandler} />

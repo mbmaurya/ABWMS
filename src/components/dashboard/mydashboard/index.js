@@ -19,28 +19,25 @@ function MyDashboard() {
   return (
     <section className="my-dashboard dashboard-element">
       <UserName assignClass="dashboard-username-desktop" />
-      <PageTitle
-        title="My Dashboard"
-        display={true}
-      />
+      <PageTitle title="My Dashboard" display={true} />
 
       {/** Row 3 */}
       <Row noGutters={true} style={{ marginTop: "15px" }}>
-        <Col lg={6}>
+        <Col lg={6} className="pr__10">
           <LockerBalance />
         </Col>
-        <Col lg={6}>
+        <Col lg={6} className="pl__10">
           <Sold />
         </Col>
       </Row>
 
       {/* Row 4 */}
       <Row noGutters={true} style={{ marginTop: "15px" }}>
-        <Col lg={6}>
+        <Col lg={6} className="pr__10">
           <Deliver />
         </Col>
 
-        <Col lg={6}>
+        <Col lg={6} className="pl__10">
           <Transfer />
         </Col>
       </Row>

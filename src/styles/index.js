@@ -427,6 +427,8 @@ export const goldRateBox = {
 export const goldRatePara = {
   fontSize: 21,
   color: greyText,
+  display: "flex",
+  alignItems: "center",
 };
 
 export const goldRateSpan = {
