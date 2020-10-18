@@ -17,7 +17,7 @@ import {
 import TimeLeft from "../../global/TimeLeft";
 
 const ModalBodyStyles = {
-  padding: "20px",
+  padding: "30px",
   borderRadius: "2px",
 };
 

@@ -51,12 +51,25 @@ a {
   margin: 0;
   padding: 0;
 }
+select::-ms-expand {
+  display: none;
+}
 
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus {
   outline: none !important;
   box-shadow: none !important;
+}
+
+.form-control {
+  -webkit-appearance: none !important;
+
+  -moz-appearance: none !important;
+
+  appearance: none !important;
+
+  border-radius: 0 !important;
 }
 
 ul {
@@ -724,6 +737,10 @@ tfoot tr td {
 
 .dashboard-menu .nav .nav-item .nav-link.active div {
   background-color: #d8e1ce !important;
+  font-weight: bold;
+}
+.dashboard-menu .nav .nav-item .nav-link.active div p {
+  color: #3e593c !important;
 }
 
 .dashboard-mobile-menu {
@@ -741,9 +758,25 @@ tfoot tr td {
   display: none;
 }
 
+.dashboard-container {
+  max-width: 1400px;
+  padding: 0;
+}
+@media only screen and (max-width: 1400px) {
+  .dashboard-container {
+    max-width: 1280px;
+    margin: 0 46px 0;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .dashboard-username-desktop {
     display: none;
+  }
+  .dashboard-container {
+    padding: 0 15px !important;
+    max-width: auto;
+    margin: 0;
   }
   .dasboard-username-dropdown {
     display: initial;
@@ -915,7 +948,54 @@ tfoot tr td {
   border: none;
 }
 
+.input-dark-background {
+  background-color: #d3d3d3;
+  color: #000;
+}
+
+.input-dark-background:focus {
+  background-color: #d3d3d3;
+  color: #000;
+}
+.input-dark-background::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.transfer-form-container {
+  display: flex;
+  justify-content: space-between;
+}
+.transfer-form-group {
+  width: 190px;
+}
+.transfer-input,
+.transfer-input:hover,
+.transfer-input:focus {
+  border: none !important;
+  border-bottom: 1px solid !important;
+}
+.pr__10 {
+  padding-right: 10px !important;
+}
+.pl__10 {
+  padding-left: 10px !important;
+}
+
 @media screen and (max-width: 767px) {
+  .pr__10 {
+    padding-right: 0 !important;
+  }
+  .pl__10 {
+    padding-left: 0 !important;
+  }
+  .transfer-form-container {
+    flex-direction: column;
+    margin-top: -18px;
+  }
+  .transfer-form-group {
+    width: 100%;
+    margin-top: 10px;
+  }
   .personal-details .myprofile-container {
     margin-top: 0 !important;
     margin-bottom: 30px;
@@ -936,6 +1016,13 @@ tfoot tr td {
     width: 50%;
     display: inline-block;
     vertical-align: top;
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 560px !important;
+    /* margin: 1.75rem auto; */
   }
 }
 

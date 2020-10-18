@@ -8,7 +8,7 @@ import DeliverType from "./DeliverType";
 const OrderBoxStyles = {
   marginTop: "20px",
   backgroundColor: `${whiteText}`,
-  boxShadow: "0px 10px 35px 0 rgba(0, 0, 0, 0.1)",
+  boxShadow: "0 5px 8px 0 rgba(0, 0, 0, 0.1)",
   padding: "20px",
   textAlign: "center",
 };

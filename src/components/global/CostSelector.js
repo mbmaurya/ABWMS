@@ -13,10 +13,13 @@ function CostSelector(props) {
 
   return (
     <div className="buyin" style={{ margin: "auto", width: "100%" }}>
-        {console.log("From CostSelector")}
+      {console.log("From CostSelector")}
       {component === "homepage" ? <h5 className="subtitle">Buy-in</h5> : null}
       <div className="d-flex mt-2">
-        <div className="mr-4" style={{ position: "relative" }}>
+        <div
+          className="mr-4 d-flex align-items-center"
+          style={{ position: "relative" }}
+        >
           <input
             type="radio"
             value={`${props.type} in rupee`}
@@ -25,7 +28,11 @@ function CostSelector(props) {
           />
           <div className="circle"></div>
           <label
-            style={{ color: "#6c7174", fontSize: "14px", verticalAlign: "middle" }}
+            style={{
+              color: "#6c7174",
+              fontSize: "14px",
+              verticalAlign: "middle",
+            }}
             className="ml-2"
           >
             {props.type} in rupee
@@ -41,7 +48,11 @@ function CostSelector(props) {
           />
           <div className="circle"></div>
           <label
-            style={{ color: "#6c7174", fontSize: "14px", verticalAlign: "middle" }}
+            style={{
+              color: "#6c7174",
+              fontSize: "14px",
+              verticalAlign: "middle",
+            }}
             className="ml-2"
           >
             {props.type} in grams
@@ -50,7 +61,7 @@ function CostSelector(props) {
       </div>
 
       <CostSelectorOptions
-        component = {component}
+        component={component}
         transaction={transaction}
         input={input}
         setInput={setInput}
@@ -60,7 +71,6 @@ function CostSelector(props) {
         selectGmData={selectGmData}
         goldRate={goldRate}
       />
-
     </div>
   );
 }

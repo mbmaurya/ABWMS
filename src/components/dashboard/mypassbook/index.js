@@ -202,7 +202,7 @@ function MyPassbook() {
         clickFunction={() => console.log("Clicked")}
       />
       <Row>
-        <Col>
+        <Col style={{ padding: 0 }}>
           <Table>
             <thead>
               <tr style={PassbookHeaderContainerStyles}>

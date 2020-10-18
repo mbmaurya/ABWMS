@@ -3,7 +3,6 @@ import { Redirect, useHistory } from "react-router-dom";
 import { Modal, Form } from "react-bootstrap";
 import { blackText } from "../../../styles";
 import DeliveryPin from "./DeliveryPin";
-
 const FormCheckStyles = {
   opacity: "1",
   display: "inline-block",
@@ -17,7 +16,7 @@ function DeliverType({ display }) {
   return (
     <>
       <Modal show={display} onHide={() => !display}>
-        <Modal.Body style={{ padding: "20px" }}>
+        <Modal.Body style={{ padding: "60px 30px", margin: "auto" }}>
           <h3
             style={{
               fontFamily: "PFHandbookPro-medium, sans-serif",
@@ -28,7 +27,7 @@ function DeliverType({ display }) {
           >
             Gold Deliver
           </h3>
-          <Form>
+          {/* <Form>
             <Form.Check
               style={FormCheckStyles}
               type="radio"
@@ -46,7 +45,52 @@ function DeliverType({ display }) {
               label="Existing gold deliver"
               onClick={() => history.push(path)}
             />
-          </Form>
+          </Form> */}
+
+          <div className="d-flex mt-2 ml-1">
+            <div
+              onClick={() => history.push(path)}
+              className="mr-4 d-flex align-items-center"
+              style={{ position: "relative" }}
+            >
+              <input type="radio" name="deliverGold" style={{ opacity: 0 }} />
+              <div className="circle"></div>
+              <label
+                style={{
+                  color: "#6c7174",
+                  fontSize: "14px",
+                  verticalAlign: "middle",
+                }}
+                className="ml-2"
+              >
+                New purchase gold deliver
+              </label>
+            </div>
+
+            <div
+              onClick={() => history.push(path)}
+              className="mr-4 d-flex align-items-center"
+              style={{ position: "relative" }}
+            >
+              <input
+                type="radio"
+                checked
+                name="deliverGold"
+                style={{ opacity: 0 }}
+              />
+              <div className="circle"></div>
+              <label
+                style={{
+                  color: "#6c7174",
+                  fontSize: "14px",
+                  verticalAlign: "middle",
+                }}
+                className="ml-2"
+              >
+                Existing gold deliver
+              </label>
+            </div>
+          </div>
         </Modal.Body>
       </Modal>
     </>

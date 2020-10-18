@@ -4,6 +4,7 @@ import { ReactComponent as PersonalDetailsIcon } from "../../../assets/images/pr
 import { ReactComponent as EditDetailsIcon } from "../../../assets/images/profile/edit-icon.svg";
 import { ReactComponent as BankDetailsIcon } from "../../../assets/images/profile/bank-account-details.svg";
 import { ReactComponent as AddressDetailsIcon } from "../../../assets/images/profile/address.svg";
+import AddBankIcon from "../../../assets/images/transaction/add-bank.png";
 
 import UserName from "../username";
 import {
@@ -27,7 +28,7 @@ const MyProfileContainerStyles = {
 };
 
 const MyProfileHeaderStyles = {
-  padding: "15px 30px",
+  padding: "6px 30px",
   borderBottom: `1px solid ${accentYellow}`,
 };
 
@@ -35,7 +36,7 @@ const MyProfileHeadingStyles = {
   display: "inline-block",
   verticalAlign: "middle",
   fontFamily: "PFHandbookPro-regular, sans-serif",
-  fontSize: "21px",
+  fontSize: "18px",
   lineHeight: "24px",
   color: `${greenText}`,
   letterSpacing: "2px",
@@ -75,7 +76,7 @@ const MyProfileBodyTitleStyles = {
 
 const MyProfileBodyValueStyles = {
   fontFamily: "PFHandbookPro-regular, sans-serif",
-  fontSize: "18px",
+  fontSize: "16px",
   lineHeight: "21px",
   color: `${blackText}`,
   letterSpacing: "initial",
@@ -113,7 +114,7 @@ function MyProfile() {
     <div className="personal-details dashboard-element">
       <PageTitle title="My Profile" display={false} />
       <Row>
-        <Col>
+        <Col style={{ padding: 0 }}>
           <div className="myprofile-container" style={MyProfileContainerStyles}>
             <div className="myprofile-header" style={MyProfileHeaderStyles}>
               <PersonalDetailsIcon style={Icon} />
@@ -165,7 +166,7 @@ function MyProfile() {
       </Row>
 
       <Row>
-        <Col>
+        <Col style={{ padding: 0 }}>
           <div className="myprofile-container" style={MyProfileContainerStyles}>
             <div className="myprofile-header" style={MyProfileHeaderStyles}>
               <BankDetailsIcon style={Icon} />
@@ -233,11 +234,11 @@ function MyProfile() {
                 </li>
               </ul>
               <p>
-                <i
-                  style={{ marginRight: 5 }}
-                  class="fa fa-plus-circle"
-                  aria-hidden="true"
-                ></i>
+                <img
+                  src={AddBankIcon}
+                  style={{ transform: "translateY(-3px)" }}
+                />
+
                 <span style={addBankLink}>Add Bank</span>
               </p>
             </div>
@@ -246,7 +247,7 @@ function MyProfile() {
       </Row>
 
       <Row>
-        <Col>
+        <Col style={{ padding: 0 }}>
           <div className="myprofile-container" style={MyProfileContainerStyles}>
             <div className="myprofile-header" style={MyProfileHeaderStyles}>
               <AddressDetailsIcon style={Icon} />

@@ -1,3 +1,4 @@
+
 import React, {useState} from "react";
 import { bigCardInput, prizeBorder, transactionBox } from "../../styles";
 import SelectInGram from "./SelectInGram";
@@ -14,8 +15,9 @@ function CostSelectorOptions(props) {
     goldRate,
     selectData,
     selectGmData,
-    component
+    component,
   } = props;
+  
   const [goldAmount, setGoldAmount] = useState(null)
   const [unit, setUnit] = useState("rupee");
 
@@ -37,14 +39,22 @@ function CostSelectorOptions(props) {
   return (
     <div>
       <div style={{ position: "relative" }} className="mb-4">
-        {transaction === "buy in rupee" || transaction === "sell in rupee" ? (
-          <SelectInRupee input={input} setInput={setInput} goldRate={goldRate} />
+        {transaction === "Buy in rupee" || transaction === "Sell in rupee" ? (
+          <SelectInRupee
+            input={input}
+            setInput={setInput}
+            goldRate={goldRate}
+          />
         ) : (
-          <SelectInGram input={gmInput} setInput={setGmInput} goldRate={goldRate} />
+          <SelectInGram
+            input={gmInput}
+            setInput={setGmInput}
+            goldRate={goldRate}
+          />
         )}
       </div>
       <ul className="d-flex justify-content-between">
-        {transaction === "buy in rupee" || transaction === "sell in rupee"
+        {transaction === "Buy in rupee" || transaction === "Sell in rupee"
           ? selectData.map((data, i) => (
               <li
                 key={i}
@@ -53,7 +63,10 @@ function CostSelectorOptions(props) {
                   background: data === input ? "#3E593C" : "transparent",
                   color: data === input ? "#ffffff" : "#3E593C",
                 }}
-                onClick={() => {setInput(data); setGoldAmount(data)}}
+                onClick={() => {
+                  setInput(data);
+                  setGoldAmount(data);
+                }}
               >
                 <p>{currencyFormater.format(data)}</p>
                 {console.log(goldRate)}
@@ -67,13 +80,15 @@ function CostSelectorOptions(props) {
                   background: data === gmInput ? "#3E593C" : "transparent",
                   color: data === gmInput ? "#ffffff" : "#3E593C",
                 }}
-                onClick={() => {setGmInput(data); setGoldAmount(data * goldRate)}}
+                onClick={() => {
+                  setGmInput(data);
+                  setGoldAmount(data * goldRate);
+                }}
               >
                 <p>{data}gm</p>
               </li>
             ))}
       </ul>
-    
                 
       {/* {checkComponent(component)}  */}
       <hr />

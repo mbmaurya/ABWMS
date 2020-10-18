@@ -1,3 +1,4 @@
+
 import React, {useState} from 'react';
 import { Table } from 'react-bootstrap';
 import {table, tdRight, tfoot, tfootright} from '../../styles'
@@ -46,4 +47,4 @@ function Summary ({input, transaction, goldRate, component}) {
 }
 
 
-export default Summary
+export default Summary;

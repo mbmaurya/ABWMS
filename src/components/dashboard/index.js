@@ -16,15 +16,20 @@ import MyPassbook from "./mypassbook";
 
 function Dashboard() {
   return (
-    <Container fluid="md" style={{ backgrounndColor: greyBackground }}>
+    <Container
+      fluid="md"
+      style={{ backgrounndColor: greyBackground }}
+      className="dashboard-container"
+    >
       <Row noGutters={true}>
         <Col sm={12}>
           <Tab.Container id="left-tabs-example" defaultActiveKey="dashboard">
             <Row noGutters={true}>
-              <Col lg={2}>
+              <Col lg={1}>
                 <DashboardMenu />
               </Col>
-              <Col lg={10}>
+
+              <Col lg={{ span: 10, offset: 1 }}>
                 <Tab.Content defaultActiveKey="dashboard">
                   <Tab.Pane eventKey="transaction">My Transaction</Tab.Pane>
                   <Tab.Pane eventKey="dashboard">

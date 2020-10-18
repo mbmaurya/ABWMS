@@ -9,7 +9,7 @@ import { btn, blackText } from "../../styles";
 
 const BlockTitleStyles = {
   fontFamily: "PFHandbookPro-medium, sans-serif",
-  fontSize: "36px",
+  fontSize: "30px",
   lineHeight: "40px",
   color: `${blackText}`,
   letterSpacing: "1px",
@@ -25,12 +25,15 @@ function PageTitle(props) {
       </Col>
       <Col lg={6} className="buy-now">
         {props.display ? (
-          <Link style={{
+          <Link
+            style={{
               ...btn,
               display: "inline-block",
               textAlign: "center",
-              lineHeight: "50px"
-            }} to={"/gold-transactions"}>
+              lineHeight: "50px",
+            }}
+            to={"/gold-transactions"}
+          >
             Buy Now
           </Link>
         ) : (

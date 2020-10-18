@@ -26,7 +26,7 @@ function Sold() {
         </p>
       </div>
       <div className="dashboard-card-body">
-        <ul style={{ paddingLeft: "20px", paddingBottom: "20px" }}>
+        <ul style={{ paddingLeft: "80px", paddingBottom: "20px" }}>
           <li style={DashboardCardElementStyles}>
             <p style={DashboardCardElementTitleStyles}>Amount</p>
             <p
