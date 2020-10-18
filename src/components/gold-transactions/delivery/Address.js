@@ -4,14 +4,15 @@ import { Form, Row, Col, FormControl } from "react-bootstrap";
 function Address() {
   return (
     <>
-      <h3 style={{ marginBottom: "40px" }}>Address Details</h3>
+      <h3 style={{ marginBottom: "40px", fontSize: 24, marginLeft: 15 }}>
+        Address Details
+      </h3>
       <Form>
         <Row>
           <Col md={12}>
             <Form.Group>
               <Form.Label>Address*</Form.Label>
               <Form.Control
-                style={{ fontWeight: "bold" }}
                 placeholder="Please Enter Your Address"
                 types="text"
               ></Form.Control>
@@ -23,7 +24,7 @@ function Address() {
             <Form.Group>
               <Form.Label>City</Form.Label>
               <Form.Control
-                style={{ fontWeight: "bold" }}
+                className="input-dark-background"
                 type="text"
                 placeholder="Mumbai"
               ></Form.Control>
@@ -33,7 +34,7 @@ function Address() {
             <Form.Group>
               <Form.Label>State</Form.Label>
               <Form.Control
-                style={{ fontWeight: "bold" }}
+                className="input-dark-background"
                 type="text"
                 placeholder="Maharashtra"
               ></Form.Control>
@@ -45,7 +46,7 @@ function Address() {
             <Form.Group>
               <Form.Label>Country</Form.Label>
               <Form.Control
-                style={{ fontWeight: "bold" }}
+                className="input-dark-background"
                 type="text"
                 placeholder="India"
               ></Form.Control>
@@ -54,11 +55,7 @@ function Address() {
           <Col md={6}>
             <Form.Group>
               <Form.Label>Pin Code*</Form.Label>
-              <Form.Control
-                style={{ fontWeight: "bold" }}
-                type="number"
-                placeholder="400001"
-              ></Form.Control>
+              <Form.Control type="number" placeholder="400001"></Form.Control>
             </Form.Group>
           </Col>
         </Row>

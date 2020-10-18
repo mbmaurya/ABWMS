@@ -9,7 +9,7 @@ export const BlockTitleStyles = {
 };
 
 export const DashboadrCardStyles = {
-  width: "97%",
+  // width: "97%",
   height: "auto",
   backgroundColor: `${whiteText}`,
   boxShadow: "0px 5px 5px 0px rgba(0,0,0,0.1)",

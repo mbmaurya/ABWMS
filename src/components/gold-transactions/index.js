@@ -7,7 +7,12 @@ import {
   clearBtn,
   buttonGroup,
 } from "../../styles";
-import { Link, BrowserRouter as Router, Route, useRouteMatch } from "react-router-dom";
+import {
+  Link,
+  BrowserRouter as Router,
+  Route,
+  useRouteMatch,
+} from "react-router-dom";
 import Buy from "./Buy";
 import DeliveryIcon from "../../assets/images/landing-page/get-deliver.svg";
 import TransferIcon from "../../assets/images/landing-page/transfer.svg";
@@ -41,8 +46,8 @@ function GoldTransactions() {
                   marginTop: "-8px",
                 }}
               >
-                <img src={GoldIcon} style={{ width: 30, marginRight: 8 }} /> Buy
-                <span>Gold</span>
+                <img src={GoldIcon} style={{ width: 30, marginRight: 8 }} />
+                <span>Buy Gold</span>
               </div>
             }
           >

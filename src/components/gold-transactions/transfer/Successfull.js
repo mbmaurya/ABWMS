@@ -42,7 +42,7 @@ const OrderDetailsStyles = {
   lineHeight: "19px",
   color: `${greyText}`,
   backgroundColor: `${greyBackground}`,
-  padding: "15px",
+  padding: "15px 0",
   marginTop: "25px",
   marginBottom: "20px",
 };

@@ -14,7 +14,7 @@ function FormGroup(props) {
     selectOptions,
   } = props;
   return (
-    <Form.Group controlId={controlId}>
+    <Form.Group controlId={controlId} style={{ position: "relative" }}>
       <Form.Label style={formLabel}>
         {controlId === "expYear" ? (
           <span style={{ visibility: "hidden" }}>exp</span>
@@ -31,7 +31,12 @@ function FormGroup(props) {
         />
       ) : (
         <Form.Control as="select" style={formInput}>
-          <option selected>{placeholder}</option>
+          {/* <option>{placeholder}</option> */}
+          {controlId === "default-acc" ? (
+            <option>{selectOptions[0]}</option>
+          ) : (
+            <option>{placeholder}</option>
+          )}
           {selectOptions.map((selectOption) => {
             return (
               <option value={selectOption} key={selectOption}>
@@ -42,17 +47,31 @@ function FormGroup(props) {
         </Form.Control>
       )}
       {controlId === "creditCardNumber" ? (
-        <span style={{ position: "absolute", right: 20, bottom: 25 }}>
+        <span style={{ position: "absolute", right: 10, bottom: 10 }}>
           <img src={Creditcard} />
         </span>
       ) : null}
       {controlId === "cvv" ? (
-        <span style={{ position: "absolute", top: 0, right: 25 }}>
+        <span style={{ position: "absolute", top: 0, right: 10 }}>
           <i
             style={{ color: "orange", fontSize: 14 }}
             class="fa fa-info-circle"
             aria-hidden="true"
           />
+        </span>
+      ) : null}
+      {inputType === "select" ? (
+        <span
+          id="expMonth"
+          style={{
+            position: "absolute",
+            right: 10,
+            bottom: 8,
+            zIndex: 0,
+            pointerEvents: "none",
+          }}
+        >
+          <i class="fa fa-angle-down" style={{ fontSize: 20 }}></i>
         </span>
       ) : null}
       <Form.Text style={inputError}></Form.Text>
