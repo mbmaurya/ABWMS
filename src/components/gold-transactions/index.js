@@ -30,7 +30,7 @@ function GoldTransactions() {
 
   return (
     <Container style={transactionContainer} className="transaction-container">
-      <div style={{ ...box, padding: "18px 30px 30px" }}>
+      <div className="tab-container" style={{ ...box, padding: "18px 30px 30px" }}>
         <Tabs
           id="gold-transaction-tabs"
           activeKey={key}
@@ -106,7 +106,7 @@ function GoldTransactions() {
           </Tab>
         </Tabs>
       </div>
-      <div className="button-group" style={buttonGroup}>
+      <div className="button-group" style={{...buttonGroup, alignItems: "center"}}>
         <Link style={clearBtn} to="/">
           <i class="fa fa-angle-left" aria-hidden="true"></i> &nbsp;Back
         </Link>

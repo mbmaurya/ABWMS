@@ -77,7 +77,7 @@ export const subTitle = {
   fontSize: "18px",
   lineHeight: "21px",
   color: greyText,
-  marginTop: "10px",
+  marginBottom: "10px",
 };
 
 // step elipse

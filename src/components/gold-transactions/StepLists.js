@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Image, Button, Card, Accordion } from "react-bootstrap";
 import {
   goldTitle,
@@ -6,18 +6,32 @@ import {
   stepsListItem,
   listIcon,
   subTitle,
+  box
 } from "../../styles";
+import AccordionArrow from "../../assets/images/transaction/accordion.png";
 
-function StepLists({ listTitle, listSubTitle, stepsList, listSecondaryTitle }) {
+function StepLists({ listTitle, listSubTitle, stepsList, listSecondaryTitle, type }) {
   const isMobile = window.innerWidth <= 992;
+  const refAccordionArrow = useRef("");
+  const rotateArrow = () => {
+    if(refAccordionArrow.current.style.transform === "rotate(180deg)") {
+      refAccordionArrow.current.style.transform = "rotate(0deg)"
+    } else {
+      refAccordionArrow.current.style.transform = "rotate(180deg)"
+    }
+  }
 
   const BoxTitle = () => {
     return (
       <>
-        <h3 style={{ ...goldTitle, color: "black", marginBottom: 0 }}>
+        <h3 style={{ ...goldTitle, color: "black", marginBottom: 0, paddingBottom: "10px", paddingTop: "5px", textDecoration: "none" }}>
           {listTitle}
         </h3>
-        <p style={subTitle}>{listSubTitle}</p>
+        <img ref={refAccordionArrow} src={AccordionArrow} style={{position: "absolute", top: "10px", right: "0px"}}/>
+        {type === "deliver" ?
+          <p style={subTitle}>{listSubTitle}</p>:
+          ""
+    }
       </>
     );
   };
@@ -62,7 +76,9 @@ function StepLists({ listTitle, listSubTitle, stepsList, listSecondaryTitle }) {
             as={Button}
             variant="link"
             eventKey="0"
-            style={{ textAlign: "left" }}
+            style={{textAlign: "left", display: "block",
+            width: "100%", padding: "0px", position: "relative" }}
+            onClick={rotateArrow}
           >
             <BoxTitle />
           </Accordion.Toggle>

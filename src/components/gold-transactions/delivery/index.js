@@ -4,7 +4,7 @@ import StepLists from "../StepLists";
 import TransactionBox from "../TransactionBox";
 import StepOne from "../../../assets/images/transaction/buy-gold-step-1.svg";
 import StepTwo from "../../../assets/images/transaction/buy-gold-step-2.svg";
-import StepThree from "../../../assets/images/transaction/buy-gold-step-3.svg";
+import StepThree from "../../../assets/images/transaction/deliver-step-three.png";
 
 function Delivery() {
   const listTitle = "Deliver Gold";
@@ -32,6 +32,7 @@ function Delivery() {
     <Row>
       <Col lg={6}>
         <StepLists
+          type="deliver"
           listTitle={listTitle}
           listSubTitle={listSubTitle}
           stepsList={stepsList}
