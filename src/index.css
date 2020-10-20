@@ -277,7 +277,7 @@ li.active:before {
       margin-top: 100px;
     }
     .home-container {
-      margin: 600px 0px 80px !important;
+      margin: 620px 0px 80px !important;
     }
 
     .main-title-benfits {
@@ -290,6 +290,15 @@ li.active:before {
 
     .title {
       padding-left: 0 !important;
+    }
+
+    .main-title,
+    .main-title-benfits {
+      font-size: 30px !important;
+    }
+
+    .main-title::before {
+      top: 45px !important;
     }
   }
 }
@@ -603,6 +612,7 @@ input[type="radio"]:checked ~ .circle:after {
   outline: none;
 }
 .nav-tabs .nav-link.active {
+  margin-bottom: -2px;
   border-bottom: 4px solid #3e593c;
 }
 
@@ -653,26 +663,82 @@ tfoot tr td {
     height: auto !important;
     max-width: initial !important;
     margin-top: 0;
+    padding: 15px !important;
+    margin-left: -15px !important;
+    margin-right: -15px !important;
   }
 
   .transaction-container {
     max-width: max-content !important;
   }
 
-  .transaction-container .button-group {
-    padding-left: 30px;
-    padding-right: 30px;
+  .tab-container {
+    padding: 0 !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .steps .btn:focus,
+  .btn:active:focus,
+  .btn.active:focus {
+    text-decoration: none;
+  }
+
+  .steps .accordion .collapse.show {
+    margin-top: 10px !important;
+    border-top: 1px solid #cdcece;
+    padding-top: 14px;
+  }
+
+  .steps .accordion .collapse.show ul {
+    margin-top: 10px !important;
+  }
+
+  .steps {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .stepListItem {
+    font-size: 16px !important;
+  }
+
+  .stepListItem div > p > span {
+    display: block;
+  }
+
+  .stepListItem:nth-of-type(-n + 2):after {
+    height: 52px !important;
+    bottom: -42px !important;
+  }
+
+  .tab-container .nav-tabs {
+    justify-content: space-between;
+  }
+
+  .tab-container .nav-tabs::before,
+  .tab-container .nav-tabs::after {
+    content: unset;
   }
 
   .transaction-container .nav-tabs .nav-link {
-    width: 50%;
+    width: auto;
     margin-right: 0 !important;
     height: auto;
-    margin-bottom: 15px;
+    padding-bottom: 4px;
+  }
+
+  .transaction-container .nav-tabs .nav-link img {
+    display: none;
   }
 
   .steps .accordion {
     margin-bottom: 60px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 10px 15px 5px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 35px 0px;
   }
 
   .payment-method {
