@@ -2,7 +2,7 @@ import React from "react";
 
 //Icons
 
-import { ReactComponent as SoldIcon } from "../../../assets/images/dashboard/redeem-gold.svg";
+import SoldIcon from "../../../assets/images/dashboard/sell-gold.png";
 
 import {
   DashboadrCardStyles,
@@ -12,16 +12,12 @@ import {
   Growth,
 } from "./style";
 
-//Icons
-
-import { ReactComponent as LockerIcon } from "../../../assets/images/dashboard/safe-locker.svg";
-
 function Sold() {
   return (
     <div style={DashboadrCardStyles} className="dashboard-card">
       <div className="dashboard-card-header">
-        <p style={{ paddingTop: "24px", paddingBottom: "18px" }}>
-          <SoldIcon />
+        <p style={{ paddingTop: "20px", paddingBottom: "20px" }}>
+          <img src={SoldIcon} />
           Sold
         </p>
       </div>

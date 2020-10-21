@@ -10,14 +10,14 @@ import {
 
 //Icons
 
-import { ReactComponent as LockerIcon } from "../../../assets/images/dashboard/safe-locker.svg";
+import LockerIcon from "../../../assets/images/dashboard/locker-balance.png";
 
 function LocakerBalance() {
   return (
     <div style={DashboadrCardStyles} className="dashboard-card">
       <div className="dashboard-card-header">
         <p>
-          <LockerIcon />
+          <img src={LockerIcon} />
           Locker balance
           <span>as on 27/08/2020</span>
         </p>

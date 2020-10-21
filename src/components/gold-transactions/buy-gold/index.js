@@ -19,7 +19,7 @@ function BuyGold() {
   const [key, setKey] = useState("credit-card");
 
   return (
-    <Container style={transactionContainer}>
+    <Container style={transactionContainer} className="buy-gold">
       <div style={{ ...box, padding: "18px 30px 30px" }}>
         <Row>
           <Col lg={6}>

@@ -1,5 +1,6 @@
 import React from "react";
 import { bigCardInput } from "../../styles";
+import currencyFormater from "./currencyFormater";
 
 function SelectInGram(props) {
   const { input, setInput, goldRate,unit } = props;
@@ -23,7 +24,7 @@ function SelectInGram(props) {
         }}
         className="calculateddata"
       >
-        = ₹{(Number(input) * goldRate).toFixed(2)}
+        = {currencyFormater.format((Number(input) * goldRate).toFixed(2))}
       </p>
       <p
         style={{

@@ -343,7 +343,7 @@ li.active:before {
 }
 
 .homepage-section {
-  margin: 80px 0px;
+  margin: 40px 0px;
 }
 @media screen and (max-width: 767px) {
   .homepage-section {
@@ -785,6 +785,12 @@ tfoot tr td {
   letter-spacing: 1px;
 }
 
+.my-dashboard .dashboard-card-header p img {
+  position: absolute;
+  left: 15px;
+  top: 8px;
+}
+
 .my-dashboard .dashboard-card-header p svg {
   position: absolute;
   left: 10px;
@@ -1111,6 +1117,26 @@ tfoot tr td {
 
   .gold-transaction-successfull > div:first-of-type {
     padding: 15px !important;
+  }
+}
+
+.buy-gold .nav-tabs::before {
+  content: unset;
+}
+
+.buy-gold .nav-tabs::after {
+  content: "";
+  border-bottom: 1px solid #f7a500;
+  height: 0;
+  width: 116%;
+  position: absolute;
+  bottom: -1px;
+  right: -116%;
+}
+
+@media screen and (max-width: 992px) {
+  .buy-gold .nav-tabs::after {
+    content: unset;
   }
 }
 

@@ -13,10 +13,10 @@ function TransactionBox(props) {
   const checkType = (type) => {
     switch (type) {
       case "buy":
-        return <CostSelector type="Buy" goldRate={goldRate} />;
+        return <CostSelector type="buy" goldRate={goldRate} />;
         break;
       case "sell":
-        return <CostSelector type="Sell" goldRate={goldRate} />;
+        return <CostSelector type="sell" goldRate={goldRate} />;
         break;
       case "deliver":
         return <DeliverIn />;

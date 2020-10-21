@@ -7,7 +7,7 @@ function CostSelector(props) {
   const { component, goldRate } = props;
   const [transaction, setTransaction] = useState(`${props.type} in rupee`);
   const [input, setInput] = useState(15000);
-  const [gmInput, setGmInput] = useState(10);
+  const [gmInput, setGmInput] = useState(15);
   const selectData = [2500, 5000, 7500, 10000, 15000];
   const selectGmData = [0.5, 1, 3, 5, 10, 15];
 

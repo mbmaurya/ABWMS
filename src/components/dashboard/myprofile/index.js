@@ -28,7 +28,7 @@ const MyProfileContainerStyles = {
 };
 
 const MyProfileHeaderStyles = {
-  padding: "6px 30px",
+  padding: "0px 30px",
   borderBottom: `1px solid ${accentYellow}`,
 };
 
@@ -49,7 +49,7 @@ const MyProfileBodyStyles = {
 
 const PersonalDetailsListStyles = {
   display: "inline-block",
-  width: "25%",
+  width: "20%",
   marginTop: "10px",
   verticalAlign: "top",
 };
@@ -134,12 +134,12 @@ function MyProfile() {
                   <p style={MyProfileBodyValueStyles}>ABCDE4556F</p>
                 </li>
                 <li style={PersonalDetailsListStyles}>
-                  <p style={MyProfileBodyTitleStyles}>Email ID</p>
-                  <p style={MyProfileBodyValueStyles}>xxxxxxxxxx@gmail.com</p>
-                </li>
-                <li style={PersonalDetailsListStyles}>
                   <p style={MyProfileBodyTitleStyles}>Mobile Number</p>
                   <p style={MyProfileBodyValueStyles}>9966332255</p>
+                </li>
+                <li style={PersonalDetailsListStyles}>
+                  <p style={MyProfileBodyTitleStyles}>Email ID</p>
+                  <p style={MyProfileBodyValueStyles}>xxxxxxxxxx@gmail.com</p>
                 </li>
               </ul>
               <ul style={{ marginTop: "15px", marginBottom: "15px" }}>

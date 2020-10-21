@@ -5,10 +5,10 @@ import { Nav } from "react-bootstrap";
 import UserName from "./username";
 
 //Icons
-import { ReactComponent as TransactionIcon } from "../../assets/images/dashboard/my-transaction.svg";
-import { ReactComponent as DashboardIcon } from "../../assets/images/dashboard/my-dashboard.svg";
-import { ReactComponent as PassbookIcon } from "../../assets/images/dashboard/my-passbook.svg";
-import { ReactComponent as ProfileIcon } from "../../assets/images/dashboard/my-profile.svg";
+import TransactionIcon from "../../assets/images/dashboard/my-transaction.png";
+import DashboardIcon from "../../assets/images/dashboard/my-dashboard.png";
+import PassbookIcon from "../../assets/images/dashboard/my-passbook.png";
+import ProfileIcon from "../../assets/images/dashboard/my-profile.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,7 +18,7 @@ import { greyText, whiteText } from "../../styles";
 const DashboardMenuStyles = {
   width: "120px",
   backgroundColor: `${whiteText}`,
-  height: "580px",
+  height: "570px",
   boxShadow: "0px 5px 5px 0px rgba(0,0,0,0.1)",
 };
 
@@ -59,7 +59,7 @@ function DashboardMenu() {
             <Nav.Item>
               <Nav.Link eventKey="transaction">
                 <div style={MenuListStyles}>
-                  <TransactionIcon />
+                  <img src={TransactionIcon} />
                   <p style={MenuListNameStyles}>My Transaction</p>
                 </div>
               </Nav.Link>
@@ -67,7 +67,7 @@ function DashboardMenu() {
             <Nav.Item>
               <Nav.Link eventKey="dashboard">
                 <div style={MenuListStyles}>
-                  <DashboardIcon />
+                  <img src={DashboardIcon} />
                   <p style={MenuListNameStyles}>My Dashboard</p>
                 </div>
               </Nav.Link>
@@ -75,7 +75,7 @@ function DashboardMenu() {
             <Nav.Item>
               <Nav.Link eventKey="passbook">
                 <div style={MenuListStyles}>
-                  <PassbookIcon />
+                  <img src={PassbookIcon} />
                   <p style={MenuListNameStyles}>My Passbook</p>
                 </div>
               </Nav.Link>
@@ -83,7 +83,7 @@ function DashboardMenu() {
             <Nav.Item>
               <Nav.Link eventKey="profile">
                 <div style={MenuListStyles}>
-                  <ProfileIcon />
+                  <img src={ProfileIcon} />
                   <p style={MenuListNameStyles}>My Profile</p>
                 </div>
               </Nav.Link>

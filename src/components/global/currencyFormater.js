@@ -1,8 +1,8 @@
 const formatter = new Intl.NumberFormat(undefined, {
   style: "currency",
   currency: "INR",
-  minimumFractionDigits: 0,
-  maximumFractionDigits: 0,
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
 });
 
 export default formatter;
