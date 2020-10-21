@@ -39,7 +39,7 @@ function CostSelectorOptions(props) {
   return (
     <div>
       <div style={{ position: "relative" }} className="mb-4">
-        {transaction === "Buy in rupee" || transaction === "Sell in rupee" ? (
+        {transaction === "buy in rupee" || transaction === "sell in rupee" ? (
           <SelectInRupee
             input={input}
             setInput={setInput}
@@ -54,7 +54,7 @@ function CostSelectorOptions(props) {
         )}
       </div>
       <ul className="d-flex justify-content-between">
-        {transaction === "Buy in rupee" || transaction === "Sell in rupee"
+        {transaction === "buy in rupee" || transaction === "sell in rupee"
           ? selectData.map((data, i) => (
               <li
                 key={i}
@@ -68,7 +68,7 @@ function CostSelectorOptions(props) {
                   setGoldAmount(data);
                 }}
               >
-                <p>{currencyFormater.format(data)}</p>
+                <p>&#x20B9;{data}</p>
                 {console.log(goldRate)}
               </li>
             ))
@@ -91,11 +91,11 @@ function CostSelectorOptions(props) {
       </ul>
                 
       {/* {checkComponent(component)}  */}
-      <hr />
+      {component !== "homepage" ? <hr /> : ""}
       {transaction === "buy in rupee" || transaction === "sell in rupee" ? (
-          <Summary input={input} component={component} transaction={transaction} goldRate={goldRate} transaction={transaction} />
+          <Summary input={input} component={component} transaction={transaction} goldRate={goldRate} />
         ) : (
-          <Summary input={gmInput} component={component} transaction={transaction} goldRate={goldRate} transaction={transaction} />
+          <Summary input={gmInput} component={component} transaction={transaction} goldRate={goldRate} />
         )}
       
     </div>

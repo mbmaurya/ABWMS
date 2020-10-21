@@ -10,7 +10,9 @@ function Summary ({input, transaction, goldRate, component}) {
         const GST = 3; // in percent
         const convenienceFee = 145.64; //in rupees 
         const calculatedGST = ((Number(input) * GST) / 100).toFixed(2);
+        const calculatedGSTGm = (((Number(input) * goldRate) * 3)/100).toFixed(2);
         const totalAmount = (Number(input) + convenienceFee + Number(calculatedGST)).toFixed(2);
+        const totalAmountGm = ((Number(input) * goldRate) + convenienceFee + Number(calculatedGSTGm)).toFixed(2);
         if (component === "homepage") return null;
         return (
                 <div>
@@ -28,7 +30,10 @@ function Summary ({input, transaction, goldRate, component}) {
                                         </tr>
                                         <tr>
                                                 <td>GST @3%</td>
-        <td style={tdRight}>{currencyFormater.format(calculatedGST)}</td>
+        <td style={tdRight}>{transaction === "buy in rupee" || transaction === "sell in rupee" ?
+                        currencyFormater.format(calculatedGST):
+                        currencyFormater.format(calculatedGSTGm)
+                }</td>
                                         </tr>
                                         <tr>
                                                 <td>Convenience Fee </td>
@@ -39,7 +44,12 @@ function Summary ({input, transaction, goldRate, component}) {
                                 <tfoot style={tfoot}>
                                         <tr>
                                                 <td>Total Amount</td>
-                                                <td style={tfootright}>{currencyFormater.format(totalAmount)}</td>
+                                                <td style={tfootright}>
+                                                {transaction === "buy in rupee" || transaction === "sell in rupee" ?
+                        currencyFormater.format(totalAmount):
+                        currencyFormater.format(totalAmountGm)
+                }
+                                                </td>
                                         </tr>
                                 </tfoot>
                         </Table> 

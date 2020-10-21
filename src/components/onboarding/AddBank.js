@@ -25,9 +25,13 @@ function AddBank({currentStep, isVerified}) {
                                         <hr style={{borderTop: '1px solid #cdcece', margin: '41px 0 31px 0'}} />
                                         {
                                                 !addBank ? 
-                                                <p style={addBankLink} onClick={() => setAddBank(!addBank)}><img src={AddBankIcon}/>Add Bank</p> : 
+                                                <p style={addBankLink} onClick={() => setAddBank(!addBank)}><img src={AddBankIcon} style={{ verticalAlign: "top"}} />Add Bank</p> : 
                                                 <div className="add-new-bank">
-                                                        <Title title = "Add Bank" />
+                                                        <Row>
+                                                                <Col>
+                                                                        <Title title = "Add Bank" />
+                                                                </Col>
+                                                        </Row>
                                                         <BankDetailsInputs />
                                                 </div>
                                         }

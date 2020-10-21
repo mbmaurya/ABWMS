@@ -17,7 +17,7 @@ function GoldRate({ goldRate }) {
       </div>
       <div style={goldRateBox}>
         <p style={goldRatePara}>
-          Gold Rate <span style={goldRateSpan}>{rate}</span> /gm
+          Gold Rate &nbsp;<span style={goldRateSpan}>{rate}</span> /gm
           <RefreshIcon width="20" style={{ marginLeft: 8 }} />
         </p>
       </div>

@@ -34,9 +34,7 @@ function FormGroup(props) {
           {/* <option>{placeholder}</option> */}
           {controlId === "default-acc" ? (
             <option>{selectOptions[0]}</option>
-          ) : (
-            <option>{placeholder}</option>
-          )}
+          ) : ""}
           {selectOptions.map((selectOption) => {
             return (
               <option value={selectOption} key={selectOption}>

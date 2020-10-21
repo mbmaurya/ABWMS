@@ -13,6 +13,8 @@ import EmailInvoice from "../../global/EmailInvoice";
 import { Link, useRouteMatch } from "react-router-dom";
 import { buttonGroup, clearBtn, btn } from "../../../styles";
 
+import currencyFormater from "../../global/currencyFormater";
+
 const HeadingStyles = {
   fontFamily: "PFHandbookPro-medium, sans-serif",
   fontSize: "24px",
@@ -74,7 +76,7 @@ function BuyGoldSuccessfully() {
               <SuccessfullIcon />
               <p style={TransactionInfoStyles}>
                 <span style={BoldFontStyles}>{weight} gms</span> gold worth{" "}
-                <span style={BoldFontStyles}>&#x20B9;{cost}</span> added to your
+                <span style={BoldFontStyles}>{currencyFormater.format(cost)}</span> added to your
                 gold account
               </p>
             </center>

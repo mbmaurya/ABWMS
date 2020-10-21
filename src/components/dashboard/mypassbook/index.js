@@ -43,10 +43,11 @@ const PassbookDataContainerStyles = {
 
 const PassbookDataStyles = {
   fontFamily: "PFHandbookPro-regular, sans-serif",
-  fontSize: "18px",
-  lineHeight: "21px",
+  fontSize: "16px",
+  lineHeight: "19px",
   color: `${blackText}`,
   border: "none",
+  width: "16%"
 };
 
 const PassbookMobileContainerStyles = {
