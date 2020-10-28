@@ -13,7 +13,7 @@ export const DashboadrCardStyles = {
   height: "auto",
   backgroundColor: `${whiteText}`,
   boxShadow: "0px 5px 5px 0px rgba(0,0,0,0.1)",
-  marginBottom: "20px",
+  marginBottom: "10px",
 };
 
 export const DashboardCardElementStyles = {

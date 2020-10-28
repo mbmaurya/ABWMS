@@ -54,7 +54,7 @@ function DashboardMenu() {
         onClick={closeMenu}
       >
         <UserName assignClass="dashboard-username-mobile" />
-        <div className={`dashboard-menu`} style={DashboardMenuStyles}>
+        <div className={`dashboard-menu dashboard-cols`} style={DashboardMenuStyles}>
           <Nav>
             <Nav.Item>
               <Nav.Link eventKey="transaction">

@@ -187,7 +187,7 @@ export const buttonGroup = {
   width: "100%",
   display: "flex",
   justifyContent: "space-between",
-  alignItems: "flex-start",
+  alignItems: "center",
 };
 
 export const btn = {

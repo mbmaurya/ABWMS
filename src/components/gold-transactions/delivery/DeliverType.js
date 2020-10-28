@@ -74,7 +74,6 @@ function DeliverType({ display }) {
             >
               <input
                 type="radio"
-                checked
                 name="deliverGold"
                 style={{ opacity: 0 }}
               />
