@@ -27,7 +27,9 @@ function StepLists({ listTitle, listSubTitle, stepsList, listSecondaryTitle, typ
         <h3 style={{ ...goldTitle, color: "black", marginBottom: 0, paddingBottom: "10px", paddingTop: "5px", textDecoration: "none" }}>
           {listTitle}
         </h3>
-        <img ref={refAccordionArrow} src={AccordionArrow} style={{position: "absolute", top: "10px", right: "0px"}}/>
+        
+        {isMobile ?
+        <img ref={refAccordionArrow} src={AccordionArrow} style={{position: "absolute", top: "10px", right: "0px"}}/> : null}
         {type === "deliver" ?
           <p style={subTitle}>{listSubTitle}</p>:
           ""

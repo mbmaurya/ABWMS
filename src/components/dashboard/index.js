@@ -29,8 +29,8 @@ function Dashboard() {
                 <DashboardMenu />
               </Col>
 
-              <Col lg={{ span: 10, offset: 1 }}>
-                <Tab.Content defaultActiveKey="dashboard">
+              <Col lg={11}>
+                <Tab.Content defaultActiveKey="dashboard" className="dashboard-cols">
                   <Tab.Pane eventKey="transaction">My Transaction</Tab.Pane>
                   <Tab.Pane eventKey="dashboard">
                     <MyDashboard />

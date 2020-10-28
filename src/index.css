@@ -712,13 +712,20 @@ tfoot tr td {
     bottom: -42px !important;
   }
 
-  .tab-container .nav-tabs {
+  .tab-container .nav-tabs,
+  .buy-gold .nav-tabs {
     justify-content: space-between;
   }
 
   .tab-container .nav-tabs::before,
-  .tab-container .nav-tabs::after {
-    content: unset;
+  .tab-container .nav-tabs::after,
+  .buy-gold .nav-tabs:before,
+  .buy-gold .nav-tabs:after {
+    content: unset !important;
+  }
+
+  .buy-gold > div {
+    padding: 18px 0px !important;
   }
 
   .transaction-container .nav-tabs .nav-link {
@@ -749,7 +756,6 @@ tfoot tr td {
   #buy-gold-tabs-tab-neft.nav-link,
   #buy-gold-tabs-tab-net-banking.nav-link,
   #buy-gold-tabs-tab-upi.nav-link {
-    width: 50%;
     margin-right: 0 !important;
   }
 }
@@ -833,6 +839,10 @@ tfoot tr td {
 .dashboard-container {
   max-width: 1400px;
   padding: 0;
+}
+
+.dashboard-container .col-lg-11 {
+  padding-left: 60px;
 }
 @media only screen and (max-width: 1400px) {
   .dashboard-container {
@@ -953,6 +963,11 @@ tfoot tr td {
   .my-dashboard .dashboard-card-body ul li:nth-child(4) {
     width: 55% !important;
     padding-left: 30px !important;
+  }
+
+  .my-dashboard .dashboard-card-body ul li p:first-child {
+    font-size: 1.5rem !important;
+    line-height: 1.6rem !important;
   }
 
   .my-dashboard .dashboard-card-body ul li p {
@@ -1121,7 +1136,13 @@ tfoot tr td {
 }
 
 .buy-gold .nav-tabs::before {
-  content: unset;
+  content: "";
+  border-bottom: 1px solid #f7a500;
+  height: 0;
+  width: 45px;
+  position: absolute;
+  bottom: -1px;
+  left: -45px;
 }
 
 .buy-gold .nav-tabs::after {
@@ -1137,6 +1158,10 @@ tfoot tr td {
 @media screen and (max-width: 992px) {
   .buy-gold .nav-tabs::after {
     content: unset;
+  }
+
+  .dashboard-container .col-lg-11 {
+    padding-left: 0px;
   }
 }
 
@@ -1154,4 +1179,8 @@ tfoot tr td {
 }
 .textBreaker {
   display: none;
+}
+
+.noInputTransactionBoxDiv {
+  margin-top: 30px;
 }
