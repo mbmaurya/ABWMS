@@ -43,9 +43,10 @@ function DeliveryPin({statusProp}) {
   const [weight, setWeight] = useState(1);
   const [cancelPolicy, setCancelPolicy] = useState("Cancellation not allowed");
   const [status, setStatus] = useState(statusProp);
+  const isMobile = window.innerWidth <= 992;
   return (
     <>
-      <Container style={transactionContainer}>
+      <Container style={transactionContainer} className="transaction-container">
         <div style={{ ...box, padding: "18px 30px 30px" }}>
           <Row>
             <Col lg={6}>
@@ -56,6 +57,7 @@ function DeliveryPin({statusProp}) {
               </div>
             </Col>
             <Col lg={6}>
+              {!isMobile ?
               <div style={{ ...box, padding: "30px" }}>
                 <ul style={ListTitleStyles}>
                   <li style={{ display: "inline-block", width: "50%" }}>
@@ -107,6 +109,7 @@ function DeliveryPin({statusProp}) {
                   </li>
                 </ul>
               </div>
+              : null}
             </Col>
           </Row>
         </div>

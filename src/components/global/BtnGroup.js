@@ -8,9 +8,9 @@ function BtnGroup({ prev, next }) {
       <Button style={clearBtn} onClick={() => prev()}>
         <i class="fa fa-angle-left" aria-hidden="true"></i> &nbsp;Back
       </Button>
-      <Button style={btn} onClick={() => next()}>
+      {/* <Button style={btn} onClick={() => next()}>
         Proceed
-      </Button>
+      </Button> */}
     </div>
   );
 }

@@ -30,7 +30,7 @@ function CreditCard() {
               placeholder="xxxx xxxx xxxx xxxx"
             />
           </Col>
-          <Col md={4}>
+          <Col xs={4} className="padd-right-zero">
             <FormGroup
               controlId="expMonth"
               placeholder="MM"
@@ -39,7 +39,7 @@ function CreditCard() {
               selectOptions={months}
             />
           </Col>
-          <Col md={4}>
+          <Col xs={4} className="padd-right-zero">
             <FormGroup
               controlId="expYear"
               placeholder="YYYY"
@@ -48,7 +48,7 @@ function CreditCard() {
               selectOptions={months}
             />
           </Col>
-          <Col md={4}>
+          <Col xs={4} className="padd-right-zero">
             <FormGroup
               controlId="cvv"
               label="CVV Number"

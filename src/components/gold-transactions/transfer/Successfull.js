@@ -84,7 +84,7 @@ function TransferGoldSucessfully() {
               <Row>
                 <Col>
                   <p>
-                    Order Id: {orderId} | {date}
+                    <span className="block-mobile">Order Id: {orderId}</span> <span className="vhr">|</span> <span className="block-mobile">{date}</span>
                   </p>
                 </Col>
                 <Col>

@@ -69,7 +69,7 @@ function DeliverType({ display }) {
 
             <div
               onClick={() => history.push(path)}
-              className="mr-4 d-flex align-items-center"
+              className="d-flex align-items-center"
               style={{ position: "relative" }}
             >
               <input

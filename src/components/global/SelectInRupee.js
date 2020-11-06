@@ -6,6 +6,11 @@ function SelectInRupee(props) {
   const { input, setInput, goldRate } = props;
   // const [inputValue, setInputValue] = useState(input);
   // const newInputValue = setInputValue(new Intl.NumberFormat("en-IN").format(input))
+  function numberWithCommas(x) {
+    var parts = x.toString().split(".");
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return parts.join(".");
+}
   return (
     <React.Fragment>
       <input

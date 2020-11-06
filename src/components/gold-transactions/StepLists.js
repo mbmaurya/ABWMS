@@ -29,7 +29,7 @@ function StepLists({ listTitle, listSubTitle, stepsList, listSecondaryTitle, typ
         </h3>
         
         {isMobile ?
-        <img ref={refAccordionArrow} src={AccordionArrow} style={{position: "absolute", top: "10px", right: "0px"}}/> : null}
+        <img ref={refAccordionArrow} src={AccordionArrow} style={{position: "absolute", top: "10px", right: "0px", transform: "rotate(180deg)"}}/> : null}
         {type === "deliver" ?
           <p style={subTitle}>{listSubTitle}</p>:
           ""
@@ -73,7 +73,7 @@ function StepLists({ listTitle, listSubTitle, stepsList, listSecondaryTitle, typ
   return (
     <div style={stepsDiv} className="steps">
       {isMobile ? (
-        <Accordion defaultActiveKey="0">
+        <Accordion>
           <Accordion.Toggle
             as={Button}
             variant="link"

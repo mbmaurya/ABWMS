@@ -17,6 +17,7 @@ import Upi from "./Upi";
 function BuyGold() {
   const match = useRouteMatch();
   const [key, setKey] = useState("credit-card");
+  const isMobile = window.innerWidth <= 992;
 
   return (
     <Container style={transactionContainer} className="buy-gold">
@@ -63,9 +64,11 @@ function BuyGold() {
             </Tabs>
           </Col>
           <Col lg={6}>
+            {!isMobile ?
             <div className="noInputTransactionBoxDiv">
               <TransactionBox noInput={true} />
             </div>
+            : null}
           </Col>
         </Row>
       </div>

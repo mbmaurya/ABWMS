@@ -31,7 +31,7 @@ const MenuListStyles = {
 
 const MenuListNameStyles = {
   fontFamily: "PFHandbookPro-regular, sans-serif",
-  fontSize: "14px",
+  fontSize: "16px",
   lineHeight: "17px",
   color: `${greyText}`,
 };

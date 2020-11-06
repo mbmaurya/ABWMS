@@ -404,7 +404,7 @@ li.active:before {
     margin: 0 !important;
   }
   .title {
-    margin: 0 0 30px 0 !important;
+    margin: 0 0 15px 0 !important;
   }
   .container {
     padding-left: 15px !important;
@@ -668,6 +668,10 @@ tfoot tr td {
     margin-right: -15px !important;
   }
 
+  .padd-right-zero {
+    padding-right: 0;
+  }
+
   .transaction-container {
     max-width: max-content !important;
   }
@@ -726,6 +730,32 @@ tfoot tr td {
 
   .buy-gold > div {
     padding: 18px 0px !important;
+  }
+
+  .buy-gold .button-group {
+    margin-top: 0 !important;
+  }
+
+  .modal-body {
+    padding: 30px 15px !important;
+  }
+
+  .transaction-container > div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .block-mobile {
+    display: block;
+  }
+
+  .vhr {
+    display: none;
+  }
+
+  .select-account {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
   }
 
   .transaction-container .nav-tabs .nav-link {
@@ -880,7 +910,7 @@ tfoot tr td {
     width: 100%;
     height: 100%;
     left: -100%;
-    top: 80px;
+    top: 172px;
     background-color: rgba(252, 252, 252, 0.9);
     z-index: 999;
   }
@@ -954,7 +984,7 @@ tfoot tr td {
   }
 
   .my-dashboard .dashboard-card-body ul li:nth-child(3) {
-    padding-top: 0;
+    padding-top: 0 !important;
     margin-top: 20px;
     border-right: 1px solid #cdcece;
     width: 45% !important;
@@ -963,11 +993,12 @@ tfoot tr td {
   .my-dashboard .dashboard-card-body ul li:nth-child(4) {
     width: 55% !important;
     padding-left: 30px !important;
+    padding-top: 0px !important;
   }
 
   .my-dashboard .dashboard-card-body ul li p:first-child {
-    font-size: 1.5rem !important;
-    line-height: 1.6rem !important;
+    font-size: 1.3rem !important;
+    line-height: 1.4rem !important;
   }
 
   .my-dashboard .dashboard-card-body ul li p {
@@ -1063,7 +1094,7 @@ tfoot tr td {
 .transfer-input:hover,
 .transfer-input:focus {
   border: none !important;
-  border-bottom: 1px solid !important;
+  border-bottom: 1px solid #ced4da !important;
 }
 .pr__10 {
   padding-right: 10px !important;
@@ -1092,7 +1123,7 @@ tfoot tr td {
     margin-bottom: 30px;
   }
   .personal-details .myprofile-header {
-    padding-left: 15px !important;
+    padding-left: 0px !important;
   }
   .personal-details .myprofile-body {
     padding-left: 15px !important;
@@ -1162,6 +1193,10 @@ tfoot tr td {
 
   .dashboard-container .col-lg-11 {
     padding-left: 0px;
+  }
+
+  .myprofile-header {
+    padding: 0 !important;
   }
 }
 

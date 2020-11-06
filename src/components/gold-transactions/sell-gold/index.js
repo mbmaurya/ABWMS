@@ -34,10 +34,11 @@ const SubHeadingStyles = {
 
 function SelectAccount() {
   const accounts = ["HDFC Bank Ltd. - 123456789"];
+  const isMobile = window.innerWidth <= 992;
   return (
     <div>
-      <Container style={transactionContainer}>
-        <div style={{ ...box, padding: "18px 30px 30px" }}>
+      <Container style={transactionContainer} className="transaction-container">
+        <div style={{ ...box, padding: "18px 30px 30px" }} className="select-account">
           <Row>
             <Col lg={6}>
               <h3 style={HeadingStyles}>Select an account</h3>
@@ -59,16 +60,19 @@ function SelectAccount() {
               </div>
             </Col>
             <Col lg={6}>
+            {!isMobile ?
               <div className="noInputTransactionBoxDiv">
                 <TransactionBox noInput={true} />
               </div>
+              : null
+            }
             </Col>
           </Row>
         </div>
         <div className="button-group" style={buttonGroup}>
-          <Link style={clearBtn} to="/gold-transactions">
-            Back
-          </Link>
+        <Link style={clearBtn} to="/gold-transactions">
+          <i class="fa fa-angle-left" aria-hidden="true"></i> &nbsp;Back
+        </Link>
           <Link
             style={{
               ...btn,
