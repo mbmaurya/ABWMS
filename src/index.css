@@ -137,6 +137,16 @@ li.active:before {
   left: -3px;
 }
 
+.option-styles {
+  color: rgb(108, 113, 116);
+}
+
+.option-styles:hover,
+.option-styles.selected {
+  background-color: #f7f7f7 !important;
+  color: rgb(108, 113, 116);
+}
+
 /* header */
 .header-mobile {
   display: none;
