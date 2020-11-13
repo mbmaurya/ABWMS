@@ -8,7 +8,7 @@ import {
   greyBackground,
 } from "../../../styles";
 import { ReactComponent as FailureIcon } from "../../../assets/images/transaction/transaction-failure.svg";
-import Summary from "../Summary";
+import Summary from "../../global/Summary";
 import EmailInvoice from "../../global/EmailInvoice";
 import { Link } from "react-router-dom";
 import { buttonGroup, clearBtn, btn } from "../../../styles";

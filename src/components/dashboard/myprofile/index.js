@@ -28,7 +28,7 @@ const MyProfileContainerStyles = {
 };
 
 const MyProfileHeaderStyles = {
-  padding: "0px 30px",
+  padding: "0px 15px",
   borderBottom: `1px solid ${accentYellow}`,
 };
 

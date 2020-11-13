@@ -1,5 +1,6 @@
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Form, Row } from 'react-bootstrap';
+import SelectMenu from '../global/SelectMenu';
 import FormGroup from './FormGroup';
 
 function BankDetailsInputs() {
@@ -22,7 +23,8 @@ function BankDetailsInputs() {
                                 <FormGroup controlId="confirmBankAccountNumber" label="Confirm Bank Account Number*" inputType="number" placeholder="xxxxxxxxxxxxxxx" />
                         </Col>
                         <Col md={4}>
-                                <FormGroup controlId="accountType" label="Account Type" inputType="select" selectOptions={selectOptions} />
+                                {/* <FormGroup controlId="accountType" label="Account Type" inputType="select" selectOptions={selectOptions} /> */}
+                                <SelectMenu />
                         </Col>
                 </Row>
         )
