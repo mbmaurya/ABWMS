@@ -48,7 +48,7 @@ function CreditCard() {
               selectOptions={months}
             />
           </Col>
-          <Col xs={4} className="padd-right-zero">
+          <Col xs={4}>
             <FormGroup
               controlId="cvv"
               label="CVV Number"

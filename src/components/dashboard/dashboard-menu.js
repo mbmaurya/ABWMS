@@ -15,12 +15,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 //Styles
 import { greyText, whiteText } from "../../styles";
 
-const DashboardMenuStyles = {
-  width: "120px",
-  backgroundColor: `${whiteText}`,
-  height: "570px",
-  boxShadow: "0px 5px 5px 0px rgba(0,0,0,0.1)",
-};
+
 
 const MenuListStyles = {
   width: "120px",
@@ -54,7 +49,7 @@ function DashboardMenu() {
         onClick={closeMenu}
       >
         <UserName assignClass="dashboard-username-mobile" />
-        <div className={`dashboard-menu dashboard-cols`} style={DashboardMenuStyles}>
+        <div className={`dashboard-menu dashboard-cols`}>
           <Nav>
             <Nav.Item>
               <Nav.Link eventKey="transaction">

@@ -10,9 +10,14 @@ import DashboardMenu from "./dashboard-menu";
 import MyProfile from "./myprofile";
 
 //Styles
-import { greyBackground } from "../../styles";
+import { greyBackground, whiteText } from "../../styles";
 import UserName from "./username";
 import MyPassbook from "./mypassbook";
+
+const DashboardMenuStyles = {
+  backgroundColor: `${whiteText}`,
+  boxShadow: "0px 5px 5px 0px rgba(0,0,0,0.1)",
+};
 
 function Dashboard() {
   return (
@@ -25,7 +30,7 @@ function Dashboard() {
         <Col sm={12}>
           <Tab.Container id="left-tabs-example" defaultActiveKey="dashboard">
             <Row noGutters={true}>
-              <Col lg={1}>
+              <Col lg={1} style={DashboardMenuStyles}>
                 <DashboardMenu />
               </Col>
 

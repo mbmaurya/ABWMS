@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 
 //Components
 import LockerBalance from "./LockerBalance";
@@ -16,8 +16,10 @@ import Transfer from "./Transefer";
 import PageTitle from "../pagetitle";
 
 function MyDashboard() {
+  const rightdashboard = useRef();
+  console.log(rightdashboard);
   return (
-    <section className="my-dashboard dashboard-element">
+    <section ref={rightdashboard} className="my-dashboard dashboard-element">
       <UserName assignClass="dashboard-username-desktop" />
       <PageTitle title="My Dashboard" display={true} />
 
@@ -32,7 +34,7 @@ function MyDashboard() {
       </Row>
 
       {/* Row 4 */}
-      <Row noGutters={true} style={{ marginTop: "15px" }}>
+      <Row noGutters={true} style={{ marginTop: "15px", marginBottom: "-10px" }}>
         <Col lg={6} className="pr__10">
           <Deliver />
         </Col>

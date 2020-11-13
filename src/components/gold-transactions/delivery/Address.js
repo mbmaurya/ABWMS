@@ -24,7 +24,6 @@ function Address() {
             <Form.Group>
               <Form.Label>City</Form.Label>
               <Form.Control
-                className="input-dark-background"
                 type="text"
                 placeholder="Mumbai"
               ></Form.Control>
@@ -34,7 +33,6 @@ function Address() {
             <Form.Group>
               <Form.Label>State</Form.Label>
               <Form.Control
-                className="input-dark-background"
                 type="text"
                 placeholder="Maharashtra"
               ></Form.Control>
@@ -46,7 +44,6 @@ function Address() {
             <Form.Group>
               <Form.Label>Country</Form.Label>
               <Form.Control
-                className="input-dark-background"
                 type="text"
                 placeholder="India"
               ></Form.Control>

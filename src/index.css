@@ -143,7 +143,7 @@ li.active:before {
 
 .option-styles:hover,
 .option-styles.selected {
-  background-color: #f7f7f7 !important;
+  background-color: #f7f7f7 !important; /* Change color as per requirement */
   color: rgb(108, 113, 116);
 }
 
@@ -416,6 +416,9 @@ li.active:before {
   .title {
     margin: 0 0 15px 0 !important;
   }
+  .description2 {
+    margin-top: 15px;
+  }
   .container {
     padding-left: 15px !important;
     padding-right: 15px !important;
@@ -537,6 +540,7 @@ section .main-title {
   font-size: 36px;
 }
 .circle {
+  cursor: pointer;
   position: absolute;
   height: 18px;
   width: 18px;
@@ -546,9 +550,23 @@ section .main-title {
   top: 1px;
   z-index: 0;
   border-radius: 50%;
+  z-index: 1;
 }
 
-.circle:after {
+.circle span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+.circle span:hover {
+  background-color: #3e593c;
+}
+
+.buyin .circle:after {
   content: "";
   height: 9px;
   width: 9px;
@@ -561,6 +579,7 @@ section .main-title {
   border-radius: 50%;
   opacity: 0;
 }
+
 input[type="radio"] {
   position: relative;
   z-index: 999;
@@ -573,6 +592,16 @@ input[type="radio"] {
   opacity: 1;
   vertical-align: top;
   margin-right: 5px;
+  width: 18px;
+  height: 18px;
+  margin-left: -4px;
+  margin-top: -9px;
+  background: aliceblue;
+  z-index: 0;
+}
+
+.modal-body input[type="radio"]:hover {
+  box-shadow: 0px 1px 3px 0px rgba(62, 89, 60, 1);
 }
 
 input[type="radio"]:checked ~ .circle:after {
@@ -802,7 +831,15 @@ tfoot tr td {
 
 /* Dashboard */
 .my-dashboard {
-  margin: 0px 0px 40px;
+  margin: 0px;
+  /* min-height: 570px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.my-dashboard tr:last-child {
+  margin-bottom: -15px;
 }
 
 .dashboard-element .buy-now {
@@ -883,6 +920,10 @@ tfoot tr td {
 
 .dashboard-container .col-lg-11 {
   padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
 }
 @media only screen and (max-width: 1400px) {
   .dashboard-container {
@@ -993,6 +1034,12 @@ tfoot tr td {
     width: 100% !important;
   }
 
+  .my-dashboard .dashboard-card-body ul li:nth-child(1) p,
+  .my-dashboard .dashboard-card-body ul li:nth-child(2) p {
+    font-size: 2.3rem !important;
+    line-height: 2.3rem !important;
+  }
+
   .my-dashboard .dashboard-card-body ul li:nth-child(3) {
     padding-top: 0 !important;
     margin-top: 20px;
@@ -1004,6 +1051,11 @@ tfoot tr td {
     width: 55% !important;
     padding-left: 30px !important;
     padding-top: 0px !important;
+  }
+
+  .my-dashboard .dashboard-card-body ul li:nth-child(3) p,
+  .my-dashboard .dashboard-card-body ul li:nth-child(4) p {
+    margin-bottom: 0 !important;
   }
 
   .my-dashboard .dashboard-card-body ul li p:first-child {
@@ -1038,6 +1090,12 @@ tfoot tr td {
     padding: 15px !important;
   }
 
+  span .fa.fa-info-circle {
+    position: absolute;
+    top: 5px;
+    right: -15px;
+  }
+
   .my-dashboard .dashboard-card-body ul li:nth-child(3) {
     width: 49% !important;
   }
@@ -1051,7 +1109,8 @@ tfoot tr td {
 /* My Passbook */
 .my-passbook .table {
   border-collapse: separate;
-  border-spacing: 0px 12px;
+  border-spacing: 0px 8px;
+  margin-bottom: 0;
 }
 
 .my-passbook .passbook-mobile {
@@ -1073,7 +1132,7 @@ tfoot tr td {
 
 /* MyProfile */
 .personal-details {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .personal-details .myprofile-body input {

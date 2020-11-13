@@ -25,8 +25,9 @@ const DropdownIconStyles = {
 
 const OptionContainerStyles = {
     position: "absolute",
-    width: "88.5%",
+    width: "100%",
     border: "1px solid rgb(194, 194, 194)",
+    marginLeft: "-30px"
 }
 
 const OptionStyles = {
@@ -56,9 +57,7 @@ function SelectMenu() {
             <label style={LabelStyles}>Account Type</label>
             <div onClick={toggleOptions} style={SelectBoxStyles}>
                 {selectedOption}
-                {displayOptions ?
-                <img style={{...DropdownIconStyles, transform: "rotate(180deg"}} src={DropDownIcon} />
-            :<img style={DropdownIconStyles} src={DropDownIcon} />}
+                <img style={DropdownIconStyles} src={DropDownIcon} />
                 
             </div>
             {displayOptions ?

@@ -54,7 +54,7 @@ function DeliverType({ display }) {
               style={{ position: "relative" }}
             >
               <input type="radio" name="deliverGold" style={{ opacity: 0 }} />
-              <div className="circle"></div>
+              <div className="circle"><span></span></div>
               <label
                 style={{
                   color: "#6c7174",
@@ -77,7 +77,7 @@ function DeliverType({ display }) {
                 name="deliverGold"
                 style={{ opacity: 0 }}
               />
-              <div className="circle"></div>
+              <div className="circle"><span></span></div>
               <label
                 style={{
                   color: "#6c7174",

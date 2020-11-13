@@ -22,10 +22,20 @@ function AddBank({currentStep, isVerified}) {
                                                         <p style={bankDetail}>HDFC Bank Ltd. - 123456789</p>
                                                 </Col>
                                         </Row>
-                                        <hr style={{borderTop: '1px solid #cdcece', margin: '41px 0 31px 0'}} />
+                                        <Row>
+                                                <Col>
+                                                <hr style={{borderTop: '1px solid #cdcece', margin: '41px 0 31px 0'}} />
+                                                </Col>
+                                        </Row>
+                                        
                                         {
                                                 !addBank ? 
-                                                <p style={addBankLink} onClick={() => setAddBank(!addBank)}><img src={AddBankIcon} style={{ verticalAlign: "top"}} />Add Bank</p> : 
+                                                <Row>
+                                                        <Col>
+                                                        <p style={addBankLink} onClick={() => setAddBank(!addBank)}><img src={AddBankIcon} style={{ verticalAlign: "top"}} />Add Bank</p> 
+                                                        </Col>
+                                                </Row>
+                                                : 
                                                 <div className="add-new-bank">
                                                         <Row>
                                                                 <Col>
