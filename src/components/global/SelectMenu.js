@@ -25,9 +25,11 @@ const DropdownIconStyles = {
 
 const OptionContainerStyles = {
     position: "absolute",
-    width: "100%",
+    width: `calc(100% - 30px)`,
     border: "1px solid rgb(194, 194, 194)",
-    marginLeft: "-30px"
+    zIndex: 1,
+    maxHeight: "250px",
+    overflow: "scroll"
 }
 
 const OptionStyles = {
@@ -41,9 +43,9 @@ const OptionStyles = {
     zIndex: 1
 }
 
-function SelectMenu() {
+function SelectMenu({options, optionType}) {
     const [displayOptions, setDisplayOptions] = useState(false)
-    const [selectedOption, setSelectedOption] = useState("Savings");
+    const [selectedOption, setSelectedOption] = useState(options[0]);
     const toggleOptions = () => {
         setDisplayOptions(!displayOptions)
     }
@@ -51,10 +53,10 @@ function SelectMenu() {
         setSelectedOption(e.target.innerHTML);
         setDisplayOptions(!displayOptions)
     }
-    const options = ["Savings", "Current", "Demat"];
+    // const options = ["Savings", "Current", "Demat"];
     return (
         <React.Fragment>
-            <label style={LabelStyles}>Account Type</label>
+            <label style={LabelStyles}>{optionType}</label>
             <div onClick={toggleOptions} style={SelectBoxStyles}>
                 {selectedOption}
                 <img style={DropdownIconStyles} src={DropDownIcon} />

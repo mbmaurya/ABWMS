@@ -15,6 +15,7 @@ import {
 import FormGroup from "../../onboarding/FormGroup";
 import TransactionBox from "../TransactionBox";
 import Notification from "./Notification";
+import SelectMenu from "../../global/SelectMenu";
 
 const HeadingStyles = {
   fontFamily: "PFHandbookPro-medium, sans-serif",
@@ -41,19 +42,19 @@ function SelectAccount() {
         <div style={{ ...box, padding: "18px 30px 30px" }} className="select-account">
           <Row>
             <Col lg={6}>
+              <Row>
+                <Col>
               <h3 style={HeadingStyles}>Select an account</h3>
               <p style={SubHeadingStyles}>
                 Amount will be credited to your account
               </p>
+              </Col>
+              </Row>
               <div>
                 <Form>
-                  <Row noGutters={true}>
+                  <Row>
                     <Col md={12}>
-                      <FormGroup
-                        controlId="expYear"
-                        inputType="select"
-                        selectOptions={accounts}
-                      />
+                      <SelectMenu options={accounts} optionType="" />
                     </Col>
                   </Row>
                 </Form>

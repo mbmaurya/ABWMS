@@ -696,6 +696,10 @@ tfoot tr td {
   outline: none;
 }
 
+.credit-card-months {
+  padding-top: 5px;
+}
+
 @media screen and (max-width: 992px) {
   .transaction-box {
     min-height: initial !important;
@@ -1088,6 +1092,10 @@ tfoot tr td {
 @media screen and (max-width: 767px) {
   .my-dashboard .dashboard-card-body ul {
     padding: 15px !important;
+  }
+
+  .credit-card-months {
+    padding-top: 20px;
   }
 
   span .fa.fa-info-circle {

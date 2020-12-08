@@ -24,7 +24,7 @@ function BankDetailsInputs() {
                         </Col>
                         <Col md={4}>
                                 {/* <FormGroup controlId="accountType" label="Account Type" inputType="select" selectOptions={selectOptions} /> */}
-                                <SelectMenu />
+                                <SelectMenu options={selectOptions} optionType="Account Type" />
                         </Col>
                 </Row>
         )

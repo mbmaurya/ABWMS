@@ -22,7 +22,7 @@ function Summary ({input, transaction, goldRate, component}) {
                                                 <td>Gold Amount</td>
         <td style={tdRight}>
                 {transaction === "buy in rupee" || transaction === "sell in rupee" ?
-                        currencyFormater.format(input):
+                        currencyFormater.format(input).toFixed(2):
                         currencyFormater.format((Number(input) * goldRate).toFixed(2))
                 }
                 

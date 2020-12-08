@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Form, Row } from "react-bootstrap";
+import SelectMenu from "../../global/SelectMenu";
 import FormGroup from "../../onboarding/FormGroup";
 
 function NetBanking() {
@@ -10,12 +11,7 @@ function NetBanking() {
       <Form>
         <Row>
           <Col md={12}>
-            <FormGroup
-              controlId="default-acc"
-              label="Select Your Bank Account"
-              inputType="select"
-              selectOptions={accounts}
-            />
+            <SelectMenu options={accounts} optionType="Select Your Bank Account" />
           </Col>
         </Row>
       </Form>

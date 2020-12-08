@@ -2,8 +2,41 @@ import React from "react";
 import Cleave from "cleave.js/react";
 import { Col, Form, Row } from "react-bootstrap";
 import FormGroup from "../../onboarding/FormGroup";
+import SelectMenu from "../../global/SelectMenu";
 
 function CreditCard() {
+  const date = [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30"
+  ]
   const months = [
     "01",
     "02",
@@ -31,22 +64,10 @@ function CreditCard() {
             />
           </Col>
           <Col xs={4} className="padd-right-zero">
-            <FormGroup
-              controlId="expMonth"
-              placeholder="MM"
-              label="Expiration Date"
-              inputType="select"
-              selectOptions={months}
-            />
+            <SelectMenu options={date} optionType="Expiration Date" />
           </Col>
-          <Col xs={4} className="padd-right-zero">
-            <FormGroup
-              controlId="expYear"
-              placeholder="YYYY"
-              inputType="select"
-              label="Expiration Date"
-              selectOptions={months}
-            />
+          <Col xs={4} className="padd-right-zero credit-card-months">
+            <SelectMenu options={months} optionType=" " />
           </Col>
           <Col xs={4}>
             <FormGroup

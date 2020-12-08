@@ -4,6 +4,7 @@ import {ReactComponent as AddressIcon} from '../../assets/images/transaction/add
 import Title from './Title';
 import FormGroup from './FormGroup';
 import FileDropzone from './FileDropzone';
+import SelectMenu from '../global/SelectMenu';
 
 function BankDetails({currentStep}) {
         const addressProofs = ["Light Bill", "Tax Slip", "Adhar Card"]
@@ -33,10 +34,11 @@ function BankDetails({currentStep}) {
                         <hr style={{borderTop: '1px solid #cdcece', margin: '41px 0 31px 0'}} />
                         <Row>
                                 <Col md={4}>
-                                        <FormGroup controlId="addressProof" label="Address Proof*" inputType="select" selectOptions={addressProofs} />
+                                        {/* <FormGroup controlId="addressProof" label="Address Proof*" inputType="select" selectOptions={addressProofs} /> */}
+                                        <SelectMenu options={addressProofs} optionType="Address Proof*" />
                                 </Col>
                                 <Col md={8}></Col>
-                                <Col md={8}>
+                                <Col md={8} style={{marginTop: "20px"}}>
                                         <FileDropzone />
                                 </Col>
                         </Row>

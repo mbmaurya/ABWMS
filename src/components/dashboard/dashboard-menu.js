@@ -18,7 +18,7 @@ import { greyText, whiteText } from "../../styles";
 
 
 const MenuListStyles = {
-  width: "120px",
+  width: "117px",
   padding: "15px",
   backgroundColor: `${whiteText}`,
   textAlign: "center",
